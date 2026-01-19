@@ -1,0 +1,338 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO alarm
+  CLASS BLOCK ;
+  FOREIGN alarm ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 50.000 BY 50.000 ;
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT -5.380 -0.020 -3.780 48.980 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT -5.380 -0.020 55.060 1.580 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT -5.380 47.380 55.060 48.980 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 53.460 -0.020 55.060 48.980 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 24.340 -0.020 25.940 48.980 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT -5.380 30.030 55.060 31.630 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT -2.080 3.280 -0.480 45.680 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT -2.080 3.280 51.760 4.880 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT -2.080 44.080 51.760 45.680 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 50.160 3.280 51.760 45.680 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 21.040 -0.020 22.640 48.980 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT -5.380 26.730 55.060 28.330 ;
+    END
+  END VPWR
+  PIN alarm_hour[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT -1.000 28.070 4.690 28.370 ;
+    END
+  END alarm_hour[0]
+  PIN alarm_hour[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT -1.000 31.470 4.230 31.770 ;
+    END
+  END alarm_hour[1]
+  PIN alarm_hour[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT -1.000 34.870 5.150 35.170 ;
+    END
+  END alarm_hour[2]
+  PIN alarm_hour[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT -1.000 38.270 4.230 38.570 ;
+    END
+  END alarm_hour[3]
+  PIN alarm_hour[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT -1.000 41.670 4.690 41.970 ;
+    END
+  END alarm_hour[4]
+  PIN alarm_i
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT -1.000 45.070 5.610 45.370 ;
+    END
+  END alarm_i
+  PIN alarm_min[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT -1.000 7.670 6.070 7.970 ;
+    END
+  END alarm_min[0]
+  PIN alarm_min[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT -1.000 11.070 11.590 11.370 ;
+    END
+  END alarm_min[1]
+  PIN alarm_min[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT -1.000 14.470 6.530 14.770 ;
+    END
+  END alarm_min[2]
+  PIN alarm_min[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT -1.000 17.870 4.690 18.170 ;
+    END
+  END alarm_min[3]
+  PIN alarm_min[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT -1.000 21.270 4.230 21.570 ;
+    END
+  END alarm_min[4]
+  PIN alarm_min[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT -1.000 24.670 4.230 24.970 ;
+    END
+  END alarm_min[5]
+  PIN alarm_o
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT -1.000 4.270 4.230 4.570 ;
+    END
+  END alarm_o
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.852000 ;
+    PORT
+      LAYER met3 ;
+        RECT 41.770 4.270 51.000 4.570 ;
+    END
+  END clk
+  PIN hour[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 41.310 31.470 51.000 31.770 ;
+    END
+  END hour[0]
+  PIN hour[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 42.690 34.870 51.000 35.170 ;
+    END
+  END hour[1]
+  PIN hour[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 42.690 38.270 51.000 38.570 ;
+    END
+  END hour[2]
+  PIN hour[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 41.310 41.670 51.000 41.970 ;
+    END
+  END hour[3]
+  PIN hour[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 39.930 45.070 51.000 45.370 ;
+    END
+  END hour[4]
+  PIN minute[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 44.070 11.070 51.000 11.370 ;
+    END
+  END minute[0]
+  PIN minute[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 42.690 14.470 51.000 14.770 ;
+    END
+  END minute[1]
+  PIN minute[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 42.690 17.870 51.000 18.170 ;
+    END
+  END minute[2]
+  PIN minute[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 42.690 21.270 51.000 21.570 ;
+    END
+  END minute[3]
+  PIN minute[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 42.690 24.670 51.000 24.970 ;
+    END
+  END minute[4]
+  PIN minute[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 42.690 28.070 51.000 28.370 ;
+    END
+  END minute[5]
+  PIN rst_n
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 42.230 7.670 51.000 7.970 ;
+    END
+  END rst_n
+  OBS
+      LAYER nwell ;
+        RECT 5.330 10.795 44.350 38.165 ;
+      LAYER li1 ;
+        RECT 5.520 10.795 44.160 38.165 ;
+      LAYER met1 ;
+        RECT 4.210 10.640 44.160 38.320 ;
+      LAYER met2 ;
+        RECT 4.230 4.235 44.070 45.405 ;
+      LAYER met3 ;
+        RECT 6.010 44.670 39.530 45.385 ;
+        RECT 4.205 42.370 44.095 44.670 ;
+        RECT 5.090 41.270 40.910 42.370 ;
+        RECT 4.205 38.970 44.095 41.270 ;
+        RECT 4.630 37.870 42.290 38.970 ;
+        RECT 4.205 35.570 44.095 37.870 ;
+        RECT 5.550 34.470 42.290 35.570 ;
+        RECT 4.205 32.170 44.095 34.470 ;
+        RECT 4.630 31.070 40.910 32.170 ;
+        RECT 4.205 28.770 44.095 31.070 ;
+        RECT 5.090 27.670 42.290 28.770 ;
+        RECT 4.205 25.370 44.095 27.670 ;
+        RECT 4.630 24.270 42.290 25.370 ;
+        RECT 4.205 21.970 44.095 24.270 ;
+        RECT 4.630 20.870 42.290 21.970 ;
+        RECT 4.205 18.570 44.095 20.870 ;
+        RECT 5.090 17.470 42.290 18.570 ;
+        RECT 4.205 15.170 44.095 17.470 ;
+        RECT 6.930 14.070 42.290 15.170 ;
+        RECT 4.205 11.770 44.095 14.070 ;
+        RECT 11.990 10.670 43.670 11.770 ;
+        RECT 4.205 8.370 44.095 10.670 ;
+        RECT 6.470 7.270 41.830 8.370 ;
+        RECT 4.205 4.970 44.095 7.270 ;
+        RECT 4.630 4.255 41.370 4.970 ;
+  END
+END alarm
+END LIBRARY
+

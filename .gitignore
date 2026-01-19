@@ -1,0 +1,15 @@
+runs/
+results/
+reports/
+tmp/
+log/
+*.log
+*.rpt
+*.vcd
+*.out
+*.vvp
+sim_top
+work/
+build/
+.vscode/
+.DS_Store

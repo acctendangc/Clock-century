@@ -1,0 +1,107 @@
+{
+    "DESIGN_NAME": "clock_century",
+    "VERILOG_FILES": ["dir::hdl/clock_century.v"],
+    
+    "CLOCK_PORT": "clk",
+    "CLOCK_PERIOD": 1000000000,
+
+    
+
+    "MACROS": {
+        "counter_all": {
+            "gds": ["dir::macros/counter_all.gds"],
+            "lef": ["dir::macros/counter_all.lef"],
+            "lib": { "*": "dir::macros/counter_all__max_ss_100C_1v60.lib" },
+            "instances": { "counter_all_inst": { "location": [40, 160], "orientation": "N" } }
+        },
+        "alarm": {
+            "gds": ["dir::macros/alarm.gds"],
+            "lef": ["dir::macros/alarm.lef"],
+            "lib": { "*": "dir::macros/alarm__max_ss_100C_1v60.lib"},
+            "instances": { "alarm_inst": { "location": [280, 40], "orientation": "N" } }
+        },
+        "decode_all": {
+            "gds": ["dir::macros/decode_all.gds"],
+            "lef": ["dir::macros/decode_all.lef"],
+            "lib": { "*": "dir::macros/decode_all__max_ss_100C_1v60.lib"},
+            "instances": { "decode_all_inst": { "location": [180, 160], "orientation": "N" } }
+        },
+        "decode_day": {
+            "gds": ["dir::macros/decode_day.gds"],
+            "lef": ["dir::macros/decode_day.lef"],
+            "lib": { "*": "dir::macros/decode_day__max_ss_100C_1v60.lib"},
+            "instances": { "decode_day_inst": { "location": [40, 40], "orientation": "N" } }
+        },
+        "decode_input": {
+            "gds": ["dir::macros/decode_input.gds"],
+            "lef": ["dir::macros/decode_input.lef"],
+            "lib": { "*": "dir::macros/decode_input__max_ss_100C_1v60.lib"},
+            "instances": { "decode_input_inst": { "location": [180, 40], "orientation": "N" } }
+        }
+    },
+
+    "PDN_MACRO_CONNECTIONS": [
+        "counter_all_inst VPWR VGND VPWR VGND",
+        "alarm_inst VPWR VGND VPWR VGND",
+        "decode_all_inst VPWR VGND VPWR VGND",
+        "decode_day_inst VPWR VGND VPWR VGND",
+        "decode_input_inst VPWR VGND VPWR VGND"
+    ],
+
+
+
+    
+    "FP_PDN_MACRO_HOOKS": [
+        "counter_all_inst VPWR VGND VPWR VGND",
+        "alarm_inst VPWR VGND VPWR VGND",
+        "decode_all_inst VPWR VGND VPWR VGND",
+        "decode_day_inst VPWR VGND VPWR VGND",
+        "decode_input_inst VPWR VGND VPWR VGND"
+    ],
+    "FP_CORE_UTIL": 35, 
+    "FP_CORE_MARGIN": 20,
+    "RT_MAX_LAYER": "met5",
+    "FP_PDN_CORE_RING_VWIDTH": 6,
+    "FP_PDN_CORE_RING_HWIDTH": 6,
+    "FP_PDN_CORE_RING_VOFFSET": 6,
+    "FP_PDN_CORE_RING_HOFFSET": 6,
+    "FP_PDN_MULTILAYER": true,  
+    "PL_TARGET_DENSITY_PCT": 35, 
+    "FP_PDN_VLAYER": "met3",
+    "FP_PDN_HLAYER": "met2",
+    "FP_IO_VTHICKNESS_MULT": 1, 
+    "FP_IO_HTHICKNESS_MULT": 1,
+    "FP_IO_VEXTEND":2,
+    "FP_IO_HEXTEND":2,
+    "GRT_REPAIR_ANTENNAS": true, 
+    "RUN_FILL_INSERTION": true,
+    "RUN_HEURISTIC_DIODE_INSERTION": true,
+    "DIODE_INSERTION_STRATEGY": 4, 
+    "GRT_ANT_ITERS": 40,
+    "GRT_MAX_DIODE_INS_ITERS": 10,
+    "FP_SIZING": "absolute",
+    "DIE_AREA": [0, 0, 400, 300],
+    "PL_RESIZER_DESIGN_OPTIMIZATIONS": true,
+    "PL_RESIZER_TIMING_OPTIMIZATIONS": true,
+    "GLB_RESIZER_TIMING_OPTIMIZATIONS": true,
+    "PL_RESIZER_MAX_WIRE_LENGTH": 500,
+    "VDD_NETS": ["VPWR"],
+    "GND_NETS": ["VGND"],
+    "PL_MACRO_HALO": [15, 15],
+    "PL_MACRO_CHANNEL": [60, 60],
+
+    "RUN_LINTER": true,
+    "RUN_CTS": true,
+    "QUIT_ON_LINTER_ERRORS": false,
+    "FP_PDN_VPITCH": 40,
+    "FP_PDN_HPITCH": 40,
+    "FP_PDN_VOFFSET": 5,
+    "FP_PDN_HOFFSET": 5,
+    "FP_PDN_ENABLE_RAILS": true, 
+    "FP_PDN_IR_DROP": true,
+    
+    "RUN_CLOCK_GATING": true,
+    "CLOCK_GATE_MAX_FANOUT": 16,
+    "CLOCK_GATE_MIN_FANOUT": 4
+
+}
