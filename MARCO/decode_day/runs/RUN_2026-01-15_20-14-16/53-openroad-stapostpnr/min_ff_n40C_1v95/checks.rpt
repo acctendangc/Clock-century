@@ -1,0 +1,99 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= min_ff_n40C_1v95 Corner ===================================
+
+Startpoint: month[0] (input port clocked by __VIRTUAL_CLK__)
+Endpoint: day_num[0] (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  2.000000    2.000000 v input external delay
+     1    0.003179    0.005283    0.002600    2.002600 v month[0] (in)
+                                                         month[0] (net)
+                      0.005283    0.000000    2.002600 v input2/A (sky130_fd_sc_hd__buf_1)
+     3    0.011308    0.048591    0.073230    2.075830 v input2/X (sky130_fd_sc_hd__buf_1)
+                                                         net2 (net)
+                      0.048591    0.000137    2.075966 v _06_/A (sky130_fd_sc_hd__or4b_1)
+     2    0.008291    0.077166    0.327119    2.403085 v _06_/X (sky130_fd_sc_hd__or4b_1)
+                                                         net9 (net)
+                      0.077166    0.000091    2.403177 v _07_/C (sky130_fd_sc_hd__nor3_1)
+     1    0.003504    0.111932    0.108358    2.511535 ^ _07_/Y (sky130_fd_sc_hd__nor3_1)
+                                                         _01_ (net)
+                      0.111932    0.000046    2.511581 ^ _10_/A (sky130_fd_sc_hd__or3_1)
+     1    0.005883    0.048200    0.095944    2.607525 ^ _10_/X (sky130_fd_sc_hd__or3_1)
+                                                         net8 (net)
+                      0.048200    0.000149    2.607674 ^ output8/A (sky130_fd_sc_hd__buf_2)
+     1    0.034493    0.128902    0.143166    2.750840 ^ output8/X (sky130_fd_sc_hd__buf_2)
+                                                         day_num[0] (net)
+                      0.128940    0.000404    2.751245 ^ day_num[0] (out)
+                                              2.751245   data arrival time
+
+                      0.000000   10.000000   10.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000   10.000000   clock network delay (ideal)
+                                 -0.250000    9.750000   clock uncertainty
+                                  0.000000    9.750000   clock reconvergence pessimism
+                                 -2.000000    7.750000   output external delay
+                                              7.750000   data required time
+---------------------------------------------------------------------------------------------
+                                              7.750000   data required time
+                                             -2.751245   data arrival time
+---------------------------------------------------------------------------------------------
+                                              4.998755   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= min_ff_n40C_1v95 Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= min_ff_n40C_1v95 Corner ===================================
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 11 unannotated drivers.
+ year[2]
+ year[3]
+ year[4]
+ year[5]
+ year[6]
+ decode_day_12/HI
+ decode_day_13/HI
+ decode_day_14/LO
+ decode_day_15/LO
+ decode_day_16/LO
+ decode_day_17/LO
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 6 unconstrained endpoints.
+  day_num[2]
+  day_num[3]
+  day_num[4]
+  hour_num[0]
+  hour_num[1]
+  hour_num[3]

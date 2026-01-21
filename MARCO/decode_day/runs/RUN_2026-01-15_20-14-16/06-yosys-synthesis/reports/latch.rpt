@@ -1,0 +1,4 @@
+
+15. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\decode_day.\day_num' from process `\decode_day.$proc$/home/kien/openlane2/MARCO/decode_day/hdl/decode_day.v:23$2'.
+No latch inferred for signal `\decode_day.\hour_num' from process `\decode_day.$proc$/home/kien/openlane2/MARCO/decode_day/hdl/decode_day.v:13$1'.

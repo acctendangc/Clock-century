@@ -1,0 +1,26 @@
+116. Printing statistics.
+
+=== decode_day ===
+
+   Number of wires:                  9
+   Number of wire bits:             26
+   Number of public wires:           5
+   Number of public wire bits:      22
+   Number of ports:                  5
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     sky130_fd_sc_hd__a211oi_2       1
+     sky130_fd_sc_hd__buf_2          1
+     sky130_fd_sc_hd__conb_1         6
+     sky130_fd_sc_hd__inv_2          2
+     sky130_fd_sc_hd__mux2_1         1
+     sky130_fd_sc_hd__nor3_2         1
+     sky130_fd_sc_hd__or3_2          1
+     sky130_fd_sc_hd__or4b_2         1
+
+   Chip area for module '\decode_day': 86.332800
+     of which used for sequential elements: 0.000000 (0.00%)
+

@@ -1,0 +1,23 @@
+digraph "decode_day" {
+label="decode_day";
+rankdir="LR";
+remincross=true;
+n7 [ shape=octagon, label="hour_num", color="black", fontcolor="black"];
+n8 [ shape=octagon, label="day_num", color="black", fontcolor="black"];
+n9 [ shape=octagon, label="month", color="black", fontcolor="black"];
+n10 [ shape=octagon, label="year", color="black", fontcolor="black"];
+n11 [ shape=octagon, label="am_pm", color="black", fontcolor="black"];
+v0 [ label="2'00" ];
+c15 [ shape=record, label="{{<p12> A|<p13> B}|$3\n$eq|{<p14> Y}}",  ];
+x1 [ shape=record, style=rounded, label="<s0> 1:0 - 1:0 ", color="black", fontcolor="black" ];
+x1:e -> c15:p12:w [arrowhead=odiamond, arrowtail=odiamond, dir=both, color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+p2 [shape=box, style=rounded, label="PROC $2\n/home/kien/openlane2/MARCO/decode_day/hdl/decode_day.v:23.1-67.4", ];
+p3 [shape=box, style=rounded, label="PROC $1\n/home/kien/openlane2/MARCO/decode_day/hdl/decode_day.v:13.1-20.4", ];
+n10:e -> x1:s0:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n11:e -> p3:w [color="black", fontcolor="black", label=""];
+c15:p14:e -> p2:w [color="black", fontcolor="black", label=""];
+p3:e -> n7:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+p2:e -> n8:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n9:e -> p2:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+v0:e -> c15:p13:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+}

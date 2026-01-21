@@ -1,0 +1,908 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2024  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)
+Loaded SDC plugin
+
+1. Executing Liberty frontend: /home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Imported 428 cell types from liberty file.
+[INFO] Using SDC file '/home/kien/openlane2/MARCO/alarm/runs/RUN_2026-01-16_19-22-04/06-yosys-synthesis/synthesis.abc.sdc' for ABC…
+
+2. Executing Verilog-2005 frontend: /home/kien/openlane2/MARCO/alarm/hdl/alarm.v
+Parsing SystemVerilog input from `/home/kien/openlane2/MARCO/alarm/hdl/alarm.v' to AST representation.
+Storing AST representation for module `$abstract\alarm'.
+Successfully finished Verilog frontend.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+4. Executing AST frontend in derive mode using pre-parsed AST for module `\alarm'.
+Generating RTLIL representation for module `\alarm'.
+
+4.1. Analyzing design hierarchy..
+Top module:  \alarm
+
+4.2. Analyzing design hierarchy..
+Top module:  \alarm
+Removing unused module `$abstract\alarm'.
+Removed 1 unused modules.
+Renaming module alarm to alarm.
+
+5. Generating Graphviz representation of design.
+Writing dot description to `/home/kien/openlane2/MARCO/alarm/runs/RUN_2026-01-16_19-22-04/06-yosys-synthesis/hierarchy.dot'.
+Dumping module alarm to page 1.
+
+6. Executing TRIBUF pass.
+
+7. Executing HIERARCHY pass (managing design hierarchy).
+
+7.1. Analyzing design hierarchy..
+Top module:  \alarm
+
+7.2. Analyzing design hierarchy..
+Top module:  \alarm
+Removed 0 unused modules.
+
+8. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+9. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 2 switch rules as full_case in process $proc$/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:30$4 in module alarm.
+Marked 1 switch rules as full_case in process $proc$/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:15$1 in module alarm.
+Removed a total of 0 dead cases.
+
+10. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+11. Executing PROC_INIT pass (extract init attributes).
+
+12. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst_n in `\alarm.$proc$/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:30$4'.
+Found async reset \rst_n in `\alarm.$proc$/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:15$1'.
+
+13. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~3 debug messages>
+
+14. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\alarm.$proc$/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:30$4'.
+     1/1: $0\alarm_o[0:0]
+Creating decoders for process `\alarm.$proc$/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:15$1'.
+     1/1: $0\state_alarm[0:0]
+
+15. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+16. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\alarm.\alarm_o' using process `\alarm.$proc$/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:30$4'.
+  created $adff cell `$procdff$20' with positive edge clock and positive level reset.
+Creating register for signal `\alarm.\state_alarm' using process `\alarm.$proc$/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:15$1'.
+  created $adff cell `$procdff$25' with positive edge clock and positive level reset.
+
+17. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+18. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 2 empty switches in `\alarm.$proc$/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:30$4'.
+Removing empty process `alarm.$proc$/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:30$4'.
+Found and cleaned up 1 empty switch in `\alarm.$proc$/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:15$1'.
+Removing empty process `alarm.$proc$/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:15$1'.
+Cleaned up 3 empty switches.
+
+19. Executing CHECK pass (checking for obvious problems).
+Checking module alarm...
+Found and reported 0 problems.
+
+20. Executing OPT_EXPR pass (perform const folding).
+Optimizing module alarm.
+<suppressed ~4 debug messages>
+
+21. Executing FLATTEN pass (flatten design).
+
+22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module alarm.
+
+23. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alarm..
+Removed 4 unused cells and 11 unused wires.
+<suppressed ~5 debug messages>
+
+24. Executing OPT_EXPR pass (perform const folding).
+Optimizing module alarm.
+
+25. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\alarm'.
+Removed a total of 0 cells.
+
+26. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \alarm..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~2 debug messages>
+
+27. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \alarm.
+Performed a total of 0 changes.
+
+28. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\alarm'.
+Removed a total of 0 cells.
+
+29. Executing OPT_DFF pass (perform DFF optimizations).
+
+30. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alarm..
+
+31. Executing OPT_EXPR pass (perform const folding).
+Optimizing module alarm.
+
+32. Executing FSM pass (extract and optimize FSM).
+
+32.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+32.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+32.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+32.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alarm..
+
+32.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+32.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+32.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+32.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+33. Executing OPT_EXPR pass (perform const folding).
+Optimizing module alarm.
+
+34. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\alarm'.
+Removed a total of 0 cells.
+
+35. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \alarm..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~2 debug messages>
+
+36. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \alarm.
+Performed a total of 0 changes.
+
+37. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\alarm'.
+Removed a total of 0 cells.
+
+38. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $procdff$25 ($adff) from module alarm (D = $logic_not$/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:21$3_Y, Q = \state_alarm).
+Adding EN signal on $procdff$20 ($adff) from module alarm (D = $0\alarm_o[0:0], Q = \alarm_o).
+
+39. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alarm..
+Removed 1 unused cells and 1 unused wires.
+<suppressed ~2 debug messages>
+
+40. Executing OPT_EXPR pass (perform const folding).
+Optimizing module alarm.
+
+41. Rerunning OPT passes. (Maybe there is more to do…)
+
+42. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \alarm..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1 debug messages>
+
+43. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \alarm.
+Performed a total of 0 changes.
+
+44. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\alarm'.
+Removed a total of 0 cells.
+
+45. Executing OPT_DFF pass (perform DFF optimizations).
+
+46. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alarm..
+
+47. Executing OPT_EXPR pass (perform const folding).
+Optimizing module alarm.
+
+48. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 2) from port B of cell alarm.$auto$opt_dff.cc:195:make_patterns_logic$29 ($ne).
+
+49. Executing PEEPOPT pass (run peephole optimizers).
+
+50. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alarm..
+
+51. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module alarm:
+  created 0 $alu and 0 $macc cells.
+
+52. Executing SHARE pass (SAT-based resource sharing).
+
+53. Executing OPT_EXPR pass (perform const folding).
+Optimizing module alarm.
+
+54. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\alarm'.
+Removed a total of 0 cells.
+
+55. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \alarm..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1 debug messages>
+
+56. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \alarm.
+Performed a total of 0 changes.
+
+57. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\alarm'.
+Removed a total of 0 cells.
+
+58. Executing OPT_DFF pass (perform DFF optimizations).
+
+59. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alarm..
+
+60. Executing OPT_EXPR pass (perform const folding).
+Optimizing module alarm.
+
+61. Executing MEMORY pass.
+
+61.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+61.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+61.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+61.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+61.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+61.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alarm..
+
+61.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+61.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+61.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alarm..
+
+61.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+62. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alarm..
+
+63. Executing OPT_EXPR pass (perform const folding).
+Optimizing module alarm.
+<suppressed ~3 debug messages>
+
+64. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\alarm'.
+Removed a total of 0 cells.
+
+65. Executing OPT_DFF pass (perform DFF optimizations).
+
+66. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alarm..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+67. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+68. Executing OPT_EXPR pass (perform const folding).
+Optimizing module alarm.
+
+69. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\alarm'.
+Removed a total of 0 cells.
+
+70. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \alarm..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+71. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \alarm.
+Performed a total of 0 changes.
+
+72. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\alarm'.
+Removed a total of 0 cells.
+
+73. Executing OPT_SHARE pass.
+
+74. Executing OPT_DFF pass (perform DFF optimizations).
+
+75. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alarm..
+
+76. Executing OPT_EXPR pass (perform const folding).
+Optimizing module alarm.
+
+77. Executing TECHMAP pass (map to technology primitives).
+
+77.1. Executing Verilog-2005 frontend: /nix/store/9r0bh7sp051dpm8km8bqlb028anpd3v3-yosys/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/nix/store/9r0bh7sp051dpm8km8bqlb028anpd3v3-yosys/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+77.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $ne.
+Using extmapper simplemap for cells of type $adffe.
+No more expansions possible.
+<suppressed ~80 debug messages>
+
+78. Executing OPT_EXPR pass (perform const folding).
+Optimizing module alarm.
+<suppressed ~2 debug messages>
+
+79. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\alarm'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+80. Executing OPT_DFF pass (perform DFF optimizations).
+
+81. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alarm..
+Removed 0 unused cells and 5 unused wires.
+<suppressed ~1 debug messages>
+
+82. Executing OPT_EXPR pass (perform const folding).
+Optimizing module alarm.
+
+83. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\alarm'.
+Removed a total of 0 cells.
+
+84. Executing OPT_DFF pass (perform DFF optimizations).
+
+85. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alarm..
+
+86. Executing ABC pass (technology mapping using ABC).
+
+86.1. Extracting gate netlist of module `\alarm' to `<abc-temp-dir>/input.blif'..
+Extracted 25 gates and 48 wires to a netlist network with 23 inputs and 2 outputs.
+
+86.1.1. Executing ABC.
+Running ABC command: "/nix/store/6l3aj1gi4lja8z5s4lan2k2cfz9mqkrz-yosys-abc/bin/abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 13 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+86.1.2. Re-integrating ABC results.
+ABC RESULTS:               NOT cells:        1
+ABC RESULTS:              XNOR cells:        1
+ABC RESULTS:               XOR cells:       10
+ABC RESULTS:            ANDNOT cells:        4
+ABC RESULTS:                OR cells:        7
+ABC RESULTS:        internal signals:       23
+ABC RESULTS:           input signals:       23
+ABC RESULTS:          output signals:        2
+Removing temp directory.
+
+87. Executing OPT pass (performing simple optimizations).
+
+87.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module alarm.
+
+87.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\alarm'.
+Removed a total of 0 cells.
+
+87.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+87.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alarm..
+Removed 0 unused cells and 36 unused wires.
+<suppressed ~1 debug messages>
+
+87.5. Finished fast OPT passes.
+
+88. Executing HIERARCHY pass (managing design hierarchy).
+
+88.1. Analyzing design hierarchy..
+Top module:  \alarm
+
+88.2. Analyzing design hierarchy..
+Top module:  \alarm
+Removed 0 unused modules.
+
+89. Executing CHECK pass (checking for obvious problems).
+Checking module alarm...
+Found and reported 0 problems.
+
+90. Printing statistics.
+
+=== alarm ===
+
+   Number of wires:                 32
+   Number of wire bits:             50
+   Number of public wires:           9
+   Number of public wire bits:      27
+   Number of ports:                  8
+   Number of port bits:             26
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 25
+     $_ANDNOT_                       4
+     $_DFFE_PN0P_                    2
+     $_NOT_                          1
+     $_OR_                           7
+     $_XNOR_                         1
+     $_XOR_                         10
+
+91. Generating Graphviz representation of design.
+Writing dot description to `/home/kien/openlane2/MARCO/alarm/runs/RUN_2026-01-16_19-22-04/06-yosys-synthesis/primitive_techmap.dot'.
+Dumping module alarm to page 1.
+
+92. Executing OPT pass (performing simple optimizations).
+
+92.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module alarm.
+
+92.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\alarm'.
+Removed a total of 0 cells.
+
+92.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \alarm..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+92.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \alarm.
+Performed a total of 0 changes.
+
+92.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\alarm'.
+Removed a total of 0 cells.
+
+92.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+92.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alarm..
+
+92.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module alarm.
+
+92.9. Finished OPT passes. (There is nothing left to do.)
+
+93. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alarm..
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/kien/openlane2/MARCO/alarm/runs/RUN_2026-01-16_19-22-04/tmp/823a3cf7b7bb4bc1b7f381e4663fee7f.lib ",
+   "modules": {
+      "\\alarm": {
+         "num_wires":         32,
+         "num_wire_bits":     50,
+         "num_pub_wires":     9,
+         "num_pub_wire_bits": 27,
+         "num_ports":         8,
+         "num_port_bits":     26,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         25,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 4,
+            "$_DFFE_PN0P_": 2,
+            "$_NOT_": 1,
+            "$_OR_": 7,
+            "$_XNOR_": 1,
+            "$_XOR_": 10
+         }
+      }
+   },
+      "design": {
+         "num_wires":         32,
+         "num_wire_bits":     50,
+         "num_pub_wires":     9,
+         "num_pub_wire_bits": 27,
+         "num_ports":         8,
+         "num_port_bits":     26,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         25,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 4,
+            "$_DFFE_PN0P_": 2,
+            "$_NOT_": 1,
+            "$_OR_": 7,
+            "$_XNOR_": 1,
+            "$_XOR_": 10
+         }
+      }
+}
+
+94. Printing statistics.
+
+=== alarm ===
+
+   Number of wires:                 32
+   Number of wire bits:             50
+   Number of public wires:           9
+   Number of public wire bits:      27
+   Number of ports:                  8
+   Number of port bits:             26
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 25
+     $_ANDNOT_                       4
+     $_DFFE_PN0P_                    2
+     $_NOT_                          1
+     $_OR_                           7
+     $_XNOR_                         1
+     $_XOR_                         10
+
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_DFFE_PN0P_ is unknown!
+
+[INFO] Applying tri-state buffer mapping from '/home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v'…
+
+95. Executing TECHMAP pass (map to technology primitives).
+
+95.1. Executing Verilog-2005 frontend: /home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v
+Parsing Verilog input from `/home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v' to AST representation.
+Generating RTLIL representation for module `\$_TBUF_'.
+Successfully finished Verilog frontend.
+
+95.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+96. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+[INFO] Applying latch mapping from '/home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v'…
+
+97. Executing TECHMAP pass (map to technology primitives).
+
+97.1. Executing Verilog-2005 frontend: /home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v
+Parsing Verilog input from `/home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DLATCH_P_'.
+Generating RTLIL representation for module `\$_DLATCH_N_'.
+Successfully finished Verilog frontend.
+
+97.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+98. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+99. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell sky130_fd_sc_hd__dfxtp_2 (noninv, pins=3, area=21.27) is a direct match for cell type $_DFF_P_.
+  cell sky130_fd_sc_hd__dfrtp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN0_.
+  cell sky130_fd_sc_hd__dfstp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN1_.
+  cell sky130_fd_sc_hd__dfbbn_2 (noninv, pins=6, area=35.03) is a direct match for cell type $_DFFSR_NNN_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    \sky130_fd_sc_hd__dfxtp_2 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \sky130_fd_sc_hd__dfrtp_2 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    \sky130_fd_sc_hd__dfstp_2 _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .SET_B( R));
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    \sky130_fd_sc_hd__dfbbn_2 _DFFSR_NNN_ (.CLK_N( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R), .SET_B( S));
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    unmapped dff cell: $_DFFSR_PNN_
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+99.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+Mapping DFF cells in module `\alarm':
+  mapped 2 $_DFF_PN0_ cells to \sky130_fd_sc_hd__dfrtp_2 cells.
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/kien/openlane2/MARCO/alarm/runs/RUN_2026-01-16_19-22-04/tmp/823a3cf7b7bb4bc1b7f381e4663fee7f.lib ",
+   "modules": {
+      "\\alarm": {
+         "num_wires":         34,
+         "num_wire_bits":     52,
+         "num_pub_wires":     9,
+         "num_pub_wire_bits": 27,
+         "num_ports":         8,
+         "num_port_bits":     26,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         27,
+         "area":              52.550400,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 4,
+            "$_MUX_": 2,
+            "$_NOT_": 1,
+            "$_OR_": 7,
+            "$_XNOR_": 1,
+            "$_XOR_": 10,
+            "sky130_fd_sc_hd__dfrtp_2": 2
+         }
+      }
+   },
+      "design": {
+         "num_wires":         34,
+         "num_wire_bits":     52,
+         "num_pub_wires":     9,
+         "num_pub_wire_bits": 27,
+         "num_ports":         8,
+         "num_port_bits":     26,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         27,
+         "area":              52.550400,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 4,
+            "$_MUX_": 2,
+            "$_NOT_": 1,
+            "$_OR_": 7,
+            "$_XNOR_": 1,
+            "$_XOR_": 10,
+            "sky130_fd_sc_hd__dfrtp_2": 2
+         }
+      }
+}
+
+100. Printing statistics.
+
+=== alarm ===
+
+   Number of wires:                 34
+   Number of wire bits:             52
+   Number of public wires:           9
+   Number of public wire bits:      27
+   Number of ports:                  8
+   Number of port bits:             26
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 27
+     $_ANDNOT_                       4
+     $_MUX_                          2
+     $_NOT_                          1
+     $_OR_                           7
+     $_XNOR_                         1
+     $_XOR_                         10
+     sky130_fd_sc_hd__dfrtp_2        2
+
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+
+   Chip area for module '\alarm': 52.550400
+     of which used for sequential elements: 52.550400 (100.00%)
+
+[INFO] Using generated ABC script '/home/kien/openlane2/MARCO/alarm/runs/RUN_2026-01-16_19-22-04/06-yosys-synthesis/AREA_0.abc'…
+
+101. Executing ABC pass (technology mapping using ABC).
+
+101.1. Extracting gate netlist of module `\alarm' to `/tmp/yosys-abc-dsgws4/input.blif'..
+Extracted 25 gates and 50 wires to a netlist network with 25 inputs and 2 outputs.
+
+101.1.1. Executing ABC.
+Running ABC command: "/nix/store/6l3aj1gi4lja8z5s4lan2k2cfz9mqkrz-yosys-abc/bin/abc" -s -f /tmp/yosys-abc-dsgws4/abc.script 2>&1
+ABC: ABC command line: "source /tmp/yosys-abc-dsgws4/abc.script".
+ABC: 
+ABC: + read_blif /tmp/yosys-abc-dsgws4/input.blif 
+ABC: + read_lib -w /home/kien/openlane2/MARCO/alarm/runs/RUN_2026-01-16_19-22-04/tmp/823a3cf7b7bb4bc1b7f381e4663fee7f.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.03 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfsbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
+ABC: Library "sky130_fd_sc_hd__tt_025C_1v80" from "/home/kien/openlane2/MARCO/alarm/runs/RUN_2026-01-16_19-22-04/tmp/823a3cf7b7bb4bc1b7f381e4663fee7f.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.05 sec
+ABC: Memory =    9.54 MB. Time =     0.05 sec
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + read_constr -v /home/kien/openlane2/MARCO/alarm/runs/RUN_2026-01-16_19-22-04/06-yosys-synthesis/synthesis.abc.sdc 
+ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_2/Y".
+ABC: Setting output load to be 33.442001.
+ABC: + source /home/kien/openlane2/MARCO/alarm/runs/RUN_2026-01-16_19-22-04/06-yosys-synthesis/AREA_0.abc 
+ABC: Error: The network is combinational.
+ABC: Cannot find the default PI driving cell (sky130_fd_sc_hd__inv_2/Y) in the library.
+ABC: WireLoad = "none"  Gates =     19 (  0.0 %)   Cap =  6.9 ff (  0.0 %)   Area =      235.23 (100.0 %)   Delay =  1195.43 ps  ( 63.2 %)               
+ABC: Path  0 --      12 : 0    1 pi                      A =   0.00  Df =   0.0   -0.0 ps  S =   0.0 ps  Cin =  0.0 ff  Cout =   9.4 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --      35 : 2    1 sky130_fd_sc_hd__xor2_2 A =  16.27  Df = 139.5  -33.0 ps  S =  77.3 ps  Cin =  8.6 ff  Cout =   1.5 ff  Cmax = 130.0 ff  G =   16  
+ABC: Path  2 --      39 : 4    1 sky130_fd_sc_hd__or4_2  A =   8.76  Df = 799.3 -565.4 ps  S = 106.7 ps  Cin =  1.5 ff  Cout =   4.7 ff  Cmax = 310.4 ff  G =  292  
+ABC: Path  3 --      45 : 3    1 sky130_fd_sc_hd__nor3_2 A =  10.01  Df = 957.8 -689.4 ps  S = 112.7 ps  Cin =  4.4 ff  Cout =   2.6 ff  Cmax =  92.5 ff  G =   55  
+ABC: Path  4 --      46 : 3    1 sky130_fd_sc_hd__o21a_2 A =   8.76  Df =1195.4 -667.8 ps  S = 182.3 ps  Cin =  2.4 ff  Cout =  33.4 ff  Cmax = 294.8 ff  G = 1403  
+ABC: Start-point = pi11 (\minute [0]).  End-point = po1 ($auto$rtlil.cc:2739:MuxGate$186).
+ABC: netlist                       : i/o =   25/    2  lat =    0  nd =    19  edge =     47  area =235.29  delay = 4.00  lev = 4
+ABC: + write_blif /tmp/yosys-abc-dsgws4/output.blif 
+
+101.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__nand2_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__or2_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a221o_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__xor2_2 cells:       10
+ABC RESULTS:   sky130_fd_sc_hd__or4_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__nor3_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o21a_2 cells:        1
+ABC RESULTS:        internal signals:       23
+ABC RESULTS:           input signals:       25
+ABC RESULTS:          output signals:        2
+Removing temp directory.
+
+102. Executing SETUNDEF pass (replace undef values with defined constants).
+
+103. Executing HILOMAP pass (mapping to constant drivers).
+
+104. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+105. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alarm..
+Removed 0 unused cells and 50 unused wires.
+<suppressed ~1 debug messages>
+
+106. Executing INSBUF pass (insert buffer cells for connected wires).
+
+107. Executing CHECK pass (checking for obvious problems).
+Checking module alarm...
+Found and reported 0 problems.
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/kien/openlane2/MARCO/alarm/runs/RUN_2026-01-16_19-22-04/tmp/823a3cf7b7bb4bc1b7f381e4663fee7f.lib ",
+   "modules": {
+      "\\alarm": {
+         "num_wires":         28,
+         "num_wire_bits":     46,
+         "num_pub_wires":     9,
+         "num_pub_wire_bits": 27,
+         "num_ports":         8,
+         "num_port_bits":     26,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         21,
+         "area":              287.776000,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a221o_2": 1,
+            "sky130_fd_sc_hd__dfrtp_2": 2,
+            "sky130_fd_sc_hd__nand2_2": 2,
+            "sky130_fd_sc_hd__nor3_2": 1,
+            "sky130_fd_sc_hd__o21a_2": 1,
+            "sky130_fd_sc_hd__or2_2": 2,
+            "sky130_fd_sc_hd__or4_2": 2,
+            "sky130_fd_sc_hd__xor2_2": 10
+         }
+      }
+   },
+      "design": {
+         "num_wires":         28,
+         "num_wire_bits":     46,
+         "num_pub_wires":     9,
+         "num_pub_wire_bits": 27,
+         "num_ports":         8,
+         "num_port_bits":     26,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         21,
+         "area":              287.776000,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a221o_2": 1,
+            "sky130_fd_sc_hd__dfrtp_2": 2,
+            "sky130_fd_sc_hd__nand2_2": 2,
+            "sky130_fd_sc_hd__nor3_2": 1,
+            "sky130_fd_sc_hd__o21a_2": 1,
+            "sky130_fd_sc_hd__or2_2": 2,
+            "sky130_fd_sc_hd__or4_2": 2,
+            "sky130_fd_sc_hd__xor2_2": 10
+         }
+      }
+}
+
+108. Printing statistics.
+
+=== alarm ===
+
+   Number of wires:                 28
+   Number of wire bits:             46
+   Number of public wires:           9
+   Number of public wire bits:      27
+   Number of ports:                  8
+   Number of port bits:             26
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 21
+     sky130_fd_sc_hd__a221o_2        1
+     sky130_fd_sc_hd__dfrtp_2        2
+     sky130_fd_sc_hd__nand2_2        2
+     sky130_fd_sc_hd__nor3_2         1
+     sky130_fd_sc_hd__o21a_2         1
+     sky130_fd_sc_hd__or2_2          2
+     sky130_fd_sc_hd__or4_2          2
+     sky130_fd_sc_hd__xor2_2        10
+
+   Chip area for module '\alarm': 287.776000
+     of which used for sequential elements: 52.550400 (18.26%)
+
+109. Executing Verilog backend.
+Dumping module `\alarm'.
+
+110. Executing JSON backend.

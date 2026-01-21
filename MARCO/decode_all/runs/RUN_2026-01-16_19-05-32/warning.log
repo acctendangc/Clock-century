@@ -1,0 +1,575 @@
+8 Lint warnings found.
+'PNR_SDC_FILE' is not defined. Using generic fallback SDC for OpenROAD PnR steps.
+'SIGNOFF_SDC_FILE' is not defined. Using generic fallback SDC for OpenROAD PnR steps.
+[STA-0366] port 'clk' not found.
+[STA-0366] port 'clk' not found.
+[STA-0419] transition time can not be specified for virtual clocks.
+[STA-0450] virtual clock clk can not be propagated.
+[STA-0366] port 'clk' not found.
+[STA-0366] port 'clk' not found.
+[STA-0419] transition time can not be specified for virtual clocks.
+[STA-0450] virtual clock clk can not be propagated.
+[STA-0366] port 'clk' not found.
+[STA-0366] port 'clk' not found.
+[STA-0419] transition time can not be specified for virtual clocks.
+[STA-0450] virtual clock clk can not be propagated.
+[STA-0366] port 'clk' not found.
+[STA-0366] port 'clk' not found.
+[STA-0419] transition time can not be specified for virtual clocks.
+[STA-0450] virtual clock clk can not be propagated.
+[STA-0366] port 'clk' not found.
+[STA-0366] port 'clk' not found.
+[STA-0419] transition time can not be specified for virtual clocks.
+[STA-0450] virtual clock clk can not be propagated.
+[STA-0366] port 'clk' not found.
+[STA-0366] port 'clk' not found.
+[STA-0419] transition time can not be specified for virtual clocks.
+[STA-0450] virtual clock clk can not be propagated.
+[STA-0366] port 'clk' not found.
+[STA-0366] port 'clk' not found.
+[STA-0419] transition time can not be specified for virtual clocks.
+[STA-0450] virtual clock clk can not be propagated.
+[GRT-0097] No global routing found for nets.
+[STA-0366] port 'clk' not found.
+[STA-0366] port 'clk' not found.
+[STA-0419] transition time can not be specified for virtual clocks.
+[STA-0450] virtual clock clk can not be propagated.
+[STA-0366] port 'clk' not found.
+[STA-0366] port 'clk' not found.
+[STA-0419] transition time can not be specified for virtual clocks.
+[STA-0450] virtual clock clk can not be propagated.
+[STA-0366] port 'clk' not found.
+[STA-0366] port 'clk' not found.
+[STA-0419] transition time can not be specified for virtual clocks.
+[STA-0450] virtual clock clk can not be propagated.
+[CTS-0083] No clock nets have been found.
+[CTS-0082] No valid clock nets in the design.
+[STA-0450] virtual clock clk can not be propagated.
+[STA-0366] port 'clk' not found.
+[STA-0366] port 'clk' not found.
+[STA-0419] transition time can not be specified for virtual clocks.
+[STA-0450] virtual clock clk can not be propagated.
+[GRT-0097] No global routing found for nets.
+[STA-0366] port 'clk' not found.
+[STA-0366] port 'clk' not found.
+[STA-0419] transition time can not be specified for virtual clocks.
+[STA-0450] virtual clock clk can not be propagated.
+[STA-0450] virtual clock clk can not be propagated.
+[STA-0366] port 'clk' not found.
+[STA-0366] port 'clk' not found.
+[STA-0419] transition time can not be specified for virtual clocks.
+[STA-0450] virtual clock clk can not be propagated.
+[GRT-0097] No global routing found for nets.
+[STA-0366] port 'clk' not found.
+[STA-0366] port 'clk' not found.
+[STA-0419] transition time can not be specified for virtual clocks.
+[STA-0450] virtual clock clk can not be propagated.
+[STA-0450] virtual clock clk can not be propagated.
+[GRT-0036] Pin day[0] is outside die area.
+[GRT-0036] Pin day[1] is outside die area.
+[GRT-0036] Pin day[2] is outside die area.
+[GRT-0036] Pin day[3] is outside die area.
+[GRT-0036] Pin day[4] is outside die area.
+[GRT-0036] Pin hour[0] is outside die area.
+[GRT-0036] Pin hour[1] is outside die area.
+[GRT-0036] Pin hour[2] is outside die area.
+[GRT-0036] Pin hour[3] is outside die area.
+[GRT-0036] Pin hour[4] is outside die area.
+[GRT-0036] Pin led_day[0] is outside die area.
+[GRT-0036] Pin led_day[10] is outside die area.
+[GRT-0036] Pin led_day[11] is outside die area.
+[GRT-0036] Pin led_day[12] is outside die area.
+[GRT-0036] Pin led_day[13] is outside die area.
+[GRT-0036] Pin led_day[1] is outside die area.
+[GRT-0036] Pin led_day[2] is outside die area.
+[GRT-0036] Pin led_day[3] is outside die area.
+[GRT-0036] Pin led_day[4] is outside die area.
+[GRT-0036] Pin led_day[5] is outside die area.
+[GRT-0036] Pin led_day[6] is outside die area.
+[GRT-0036] Pin led_day[7] is outside die area.
+[GRT-0036] Pin led_hour[8] is outside die area.
+[GRT-0036] Pin led_day[9] is outside die area.
+[GRT-0036] Pin led_hour[0] is outside die area.
+[GRT-0036] Pin led_hour[10] is outside die area.
+[GRT-0036] Pin led_hour[11] is outside die area.
+[GRT-0036] Pin led_hour[12] is outside die area.
+[GRT-0036] Pin led_hour[13] is outside die area.
+[GRT-0036] Pin led_hour[1] is outside die area.
+[GRT-0036] Pin led_hour[2] is outside die area.
+[GRT-0036] Pin led_hour[3] is outside die area.
+[GRT-0036] Pin led_hour[4] is outside die area.
+[GRT-0036] Pin led_hour[5] is outside die area.
+[GRT-0036] Pin led_hour[6] is outside die area.
+[GRT-0036] Pin led_hour[7] is outside die area.
+[GRT-0036] Pin led_month[13] is outside die area.
+[GRT-0036] Pin led_hour[9] is outside die area.
+[GRT-0036] Pin led_min[0] is outside die area.
+[GRT-0036] Pin led_min[10] is outside die area.
+[GRT-0036] Pin led_min[11] is outside die area.
+[GRT-0036] Pin led_min[12] is outside die area.
+[GRT-0036] Pin led_min[13] is outside die area.
+[GRT-0036] Pin led_min[1] is outside die area.
+[GRT-0036] Pin led_min[2] is outside die area.
+[GRT-0036] Pin led_min[3] is outside die area.
+[GRT-0036] Pin led_min[4] is outside die area.
+[GRT-0036] Pin led_min[5] is outside die area.
+[GRT-0036] Pin led_min[6] is outside die area.
+[GRT-0036] Pin led_min[7] is outside die area.
+[GRT-0036] Pin led_min[8] is outside die area.
+[GRT-0036] Pin led_min[9] is outside die area.
+[GRT-0036] Pin led_month[0] is outside die area.
+[GRT-0036] Pin led_month[10] is outside die area.
+[GRT-0036] Pin led_month[11] is outside die area.
+[GRT-0036] Pin led_month[12] is outside die area.
+[GRT-0036] Pin led_month[1] is outside die area.
+[GRT-0036] Pin led_month[2] is outside die area.
+[GRT-0036] Pin led_month[3] is outside die area.
+[GRT-0036] Pin led_month[4] is outside die area.
+[GRT-0036] Pin led_month[5] is outside die area.
+[GRT-0036] Pin led_month[6] is outside die area.
+[GRT-0036] Pin led_month[7] is outside die area.
+[GRT-0036] Pin led_month[9] is outside die area.
+[GRT-0036] Pin led_day[8] is outside die area.
+[GRT-0036] Pin led_sec[0] is outside die area.
+[GRT-0036] Pin led_sec[10] is outside die area.
+[GRT-0036] Pin led_sec[11] is outside die area.
+[GRT-0036] Pin led_sec[12] is outside die area.
+[GRT-0036] Pin led_sec[13] is outside die area.
+[GRT-0036] Pin led_sec[1] is outside die area.
+[GRT-0036] Pin led_sec[2] is outside die area.
+[GRT-0036] Pin led_sec[3] is outside die area.
+[GRT-0036] Pin led_sec[4] is outside die area.
+[GRT-0036] Pin led_sec[5] is outside die area.
+[GRT-0036] Pin led_sec[6] is outside die area.
+[GRT-0036] Pin led_sec[7] is outside die area.
+[GRT-0036] Pin led_sec[8] is outside die area.
+[GRT-0036] Pin led_sec[9] is outside die area.
+[GRT-0036] Pin led_year[0] is outside die area.
+[GRT-0036] Pin led_year[10] is outside die area.
+[GRT-0036] Pin led_year[11] is outside die area.
+[GRT-0036] Pin led_year[12] is outside die area.
+[GRT-0036] Pin led_year[13] is outside die area.
+[GRT-0036] Pin led_year[1] is outside die area.
+[GRT-0036] Pin led_year[2] is outside die area.
+[GRT-0036] Pin led_year[3] is outside die area.
+[GRT-0036] Pin led_year[4] is outside die area.
+[GRT-0036] Pin led_year[5] is outside die area.
+[GRT-0036] Pin led_year[6] is outside die area.
+[GRT-0036] Pin led_year[7] is outside die area.
+[GRT-0036] Pin led_year[8] is outside die area.
+[GRT-0036] Pin led_year[9] is outside die area.
+[GRT-0036] Pin minute[0] is outside die area.
+[GRT-0036] Pin minute[1] is outside die area.
+[GRT-0036] Pin minute[2] is outside die area.
+[GRT-0036] Pin minute[3] is outside die area.
+[GRT-0036] Pin minute[4] is outside die area.
+[GRT-0036] Pin minute[5] is outside die area.
+[GRT-0036] Pin month[0] is outside die area.
+[GRT-0036] Pin month[1] is outside die area.
+[GRT-0036] Pin month[2] is outside die area.
+[GRT-0036] Pin month[3] is outside die area.
+[GRT-0036] Pin second[0] is outside die area.
+[GRT-0036] Pin second[1] is outside die area.
+[GRT-0036] Pin second[2] is outside die area.
+[GRT-0036] Pin second[3] is outside die area.
+[GRT-0036] Pin second[4] is outside die area.
+[GRT-0036] Pin second[5] is outside die area.
+[GRT-0036] Pin year[0] is outside die area.
+[GRT-0036] Pin year[1] is outside die area.
+[GRT-0036] Pin year[2] is outside die area.
+[GRT-0036] Pin year[3] is outside die area.
+[GRT-0036] Pin year[4] is outside die area.
+[GRT-0036] Pin year[5] is outside die area.
+[GRT-0036] Pin year[6] is outside die area.
+[GRT-0036] Pin led_month[8] is outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[STA-0366] port 'clk' not found.
+[STA-0366] port 'clk' not found.
+[STA-0419] transition time can not be specified for virtual clocks.
+[STA-0450] virtual clock clk can not be propagated.
+[STA-0366] port 'clk' not found.
+[STA-0366] port 'clk' not found.
+[STA-0419] transition time can not be specified for virtual clocks.
+[STA-0450] virtual clock clk can not be propagated.
+[STA-0450] virtual clock clk can not be propagated.
+[GRT-0036] Pin day[0] is outside die area.
+[GRT-0036] Pin day[1] is outside die area.
+[GRT-0036] Pin day[2] is outside die area.
+[GRT-0036] Pin day[3] is outside die area.
+[GRT-0036] Pin day[4] is outside die area.
+[GRT-0036] Pin hour[0] is outside die area.
+[GRT-0036] Pin hour[1] is outside die area.
+[GRT-0036] Pin hour[2] is outside die area.
+[GRT-0036] Pin hour[3] is outside die area.
+[GRT-0036] Pin hour[4] is outside die area.
+[GRT-0036] Pin led_day[0] is outside die area.
+[GRT-0036] Pin led_day[10] is outside die area.
+[GRT-0036] Pin led_day[11] is outside die area.
+[GRT-0036] Pin led_day[12] is outside die area.
+[GRT-0036] Pin led_day[13] is outside die area.
+[GRT-0036] Pin led_day[1] is outside die area.
+[GRT-0036] Pin led_day[2] is outside die area.
+[GRT-0036] Pin led_day[3] is outside die area.
+[GRT-0036] Pin led_day[4] is outside die area.
+[GRT-0036] Pin led_day[5] is outside die area.
+[GRT-0036] Pin led_day[6] is outside die area.
+[GRT-0036] Pin led_day[7] is outside die area.
+[GRT-0036] Pin led_hour[8] is outside die area.
+[GRT-0036] Pin led_day[9] is outside die area.
+[GRT-0036] Pin led_hour[0] is outside die area.
+[GRT-0036] Pin led_hour[10] is outside die area.
+[GRT-0036] Pin led_hour[11] is outside die area.
+[GRT-0036] Pin led_hour[12] is outside die area.
+[GRT-0036] Pin led_hour[13] is outside die area.
+[GRT-0036] Pin led_hour[1] is outside die area.
+[GRT-0036] Pin led_hour[2] is outside die area.
+[GRT-0036] Pin led_hour[3] is outside die area.
+[GRT-0036] Pin led_hour[4] is outside die area.
+[GRT-0036] Pin led_hour[5] is outside die area.
+[GRT-0036] Pin led_hour[6] is outside die area.
+[GRT-0036] Pin led_hour[7] is outside die area.
+[GRT-0036] Pin led_month[13] is outside die area.
+[GRT-0036] Pin led_hour[9] is outside die area.
+[GRT-0036] Pin led_min[0] is outside die area.
+[GRT-0036] Pin led_min[10] is outside die area.
+[GRT-0036] Pin led_min[11] is outside die area.
+[GRT-0036] Pin led_min[12] is outside die area.
+[GRT-0036] Pin led_min[13] is outside die area.
+[GRT-0036] Pin led_min[1] is outside die area.
+[GRT-0036] Pin led_min[2] is outside die area.
+[GRT-0036] Pin led_min[3] is outside die area.
+[GRT-0036] Pin led_min[4] is outside die area.
+[GRT-0036] Pin led_min[5] is outside die area.
+[GRT-0036] Pin led_min[6] is outside die area.
+[GRT-0036] Pin led_min[7] is outside die area.
+[GRT-0036] Pin led_min[8] is outside die area.
+[GRT-0036] Pin led_min[9] is outside die area.
+[GRT-0036] Pin led_month[0] is outside die area.
+[GRT-0036] Pin led_month[10] is outside die area.
+[GRT-0036] Pin led_month[11] is outside die area.
+[GRT-0036] Pin led_month[12] is outside die area.
+[GRT-0036] Pin led_month[1] is outside die area.
+[GRT-0036] Pin led_month[2] is outside die area.
+[GRT-0036] Pin led_month[3] is outside die area.
+[GRT-0036] Pin led_month[4] is outside die area.
+[GRT-0036] Pin led_month[5] is outside die area.
+[GRT-0036] Pin led_month[6] is outside die area.
+[GRT-0036] Pin led_month[7] is outside die area.
+[GRT-0036] Pin led_month[9] is outside die area.
+[GRT-0036] Pin led_day[8] is outside die area.
+[GRT-0036] Pin led_sec[0] is outside die area.
+[GRT-0036] Pin led_sec[10] is outside die area.
+[GRT-0036] Pin led_sec[11] is outside die area.
+[GRT-0036] Pin led_sec[12] is outside die area.
+[GRT-0036] Pin led_sec[13] is outside die area.
+[GRT-0036] Pin led_sec[1] is outside die area.
+[GRT-0036] Pin led_sec[2] is outside die area.
+[GRT-0036] Pin led_sec[3] is outside die area.
+[GRT-0036] Pin led_sec[4] is outside die area.
+[GRT-0036] Pin led_sec[5] is outside die area.
+[GRT-0036] Pin led_sec[6] is outside die area.
+[GRT-0036] Pin led_sec[7] is outside die area.
+[GRT-0036] Pin led_sec[8] is outside die area.
+[GRT-0036] Pin led_sec[9] is outside die area.
+[GRT-0036] Pin led_year[0] is outside die area.
+[GRT-0036] Pin led_year[10] is outside die area.
+[GRT-0036] Pin led_year[11] is outside die area.
+[GRT-0036] Pin led_year[12] is outside die area.
+[GRT-0036] Pin led_year[13] is outside die area.
+[GRT-0036] Pin led_year[1] is outside die area.
+[GRT-0036] Pin led_year[2] is outside die area.
+[GRT-0036] Pin led_year[3] is outside die area.
+[GRT-0036] Pin led_year[4] is outside die area.
+[GRT-0036] Pin led_year[5] is outside die area.
+[GRT-0036] Pin led_year[6] is outside die area.
+[GRT-0036] Pin led_year[7] is outside die area.
+[GRT-0036] Pin led_year[8] is outside die area.
+[GRT-0036] Pin led_year[9] is outside die area.
+[GRT-0036] Pin minute[0] is outside die area.
+[GRT-0036] Pin minute[1] is outside die area.
+[GRT-0036] Pin minute[2] is outside die area.
+[GRT-0036] Pin minute[3] is outside die area.
+[GRT-0036] Pin minute[4] is outside die area.
+[GRT-0036] Pin minute[5] is outside die area.
+[GRT-0036] Pin month[0] is outside die area.
+[GRT-0036] Pin month[1] is outside die area.
+[GRT-0036] Pin month[2] is outside die area.
+[GRT-0036] Pin month[3] is outside die area.
+[GRT-0036] Pin second[0] is outside die area.
+[GRT-0036] Pin second[1] is outside die area.
+[GRT-0036] Pin second[2] is outside die area.
+[GRT-0036] Pin second[3] is outside die area.
+[GRT-0036] Pin second[4] is outside die area.
+[GRT-0036] Pin second[5] is outside die area.
+[GRT-0036] Pin year[0] is outside die area.
+[GRT-0036] Pin year[1] is outside die area.
+[GRT-0036] Pin year[2] is outside die area.
+[GRT-0036] Pin year[3] is outside die area.
+[GRT-0036] Pin year[4] is outside die area.
+[GRT-0036] Pin year[5] is outside die area.
+[GRT-0036] Pin year[6] is outside die area.
+[GRT-0036] Pin led_month[8] is outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0036] Pin day[0] is outside die area.
+[GRT-0036] Pin day[1] is outside die area.
+[GRT-0036] Pin day[2] is outside die area.
+[GRT-0036] Pin day[3] is outside die area.
+[GRT-0036] Pin day[4] is outside die area.
+[GRT-0036] Pin hour[0] is outside die area.
+[GRT-0036] Pin hour[1] is outside die area.
+[GRT-0036] Pin hour[2] is outside die area.
+[GRT-0036] Pin hour[3] is outside die area.
+[GRT-0036] Pin hour[4] is outside die area.
+[GRT-0036] Pin led_day[0] is outside die area.
+[GRT-0036] Pin led_day[10] is outside die area.
+[GRT-0036] Pin led_day[11] is outside die area.
+[GRT-0036] Pin led_day[12] is outside die area.
+[GRT-0036] Pin led_day[13] is outside die area.
+[GRT-0036] Pin led_day[1] is outside die area.
+[GRT-0036] Pin led_day[2] is outside die area.
+[GRT-0036] Pin led_day[3] is outside die area.
+[GRT-0036] Pin led_day[4] is outside die area.
+[GRT-0036] Pin led_day[5] is outside die area.
+[GRT-0036] Pin led_day[6] is outside die area.
+[GRT-0036] Pin led_day[7] is outside die area.
+[GRT-0036] Pin led_hour[8] is outside die area.
+[GRT-0036] Pin led_day[9] is outside die area.
+[GRT-0036] Pin led_hour[0] is outside die area.
+[GRT-0036] Pin led_hour[10] is outside die area.
+[GRT-0036] Pin led_hour[11] is outside die area.
+[GRT-0036] Pin led_hour[12] is outside die area.
+[GRT-0036] Pin led_hour[13] is outside die area.
+[GRT-0036] Pin led_hour[1] is outside die area.
+[GRT-0036] Pin led_hour[2] is outside die area.
+[GRT-0036] Pin led_hour[3] is outside die area.
+[GRT-0036] Pin led_hour[4] is outside die area.
+[GRT-0036] Pin led_hour[5] is outside die area.
+[GRT-0036] Pin led_hour[6] is outside die area.
+[GRT-0036] Pin led_hour[7] is outside die area.
+[GRT-0036] Pin led_month[13] is outside die area.
+[GRT-0036] Pin led_hour[9] is outside die area.
+[GRT-0036] Pin led_min[0] is outside die area.
+[GRT-0036] Pin led_min[10] is outside die area.
+[GRT-0036] Pin led_min[11] is outside die area.
+[GRT-0036] Pin led_min[12] is outside die area.
+[GRT-0036] Pin led_min[13] is outside die area.
+[GRT-0036] Pin led_min[1] is outside die area.
+[GRT-0036] Pin led_min[2] is outside die area.
+[GRT-0036] Pin led_min[3] is outside die area.
+[GRT-0036] Pin led_min[4] is outside die area.
+[GRT-0036] Pin led_min[5] is outside die area.
+[GRT-0036] Pin led_min[6] is outside die area.
+[GRT-0036] Pin led_min[7] is outside die area.
+[GRT-0036] Pin led_min[8] is outside die area.
+[GRT-0036] Pin led_min[9] is outside die area.
+[GRT-0036] Pin led_month[0] is outside die area.
+[GRT-0036] Pin led_month[10] is outside die area.
+[GRT-0036] Pin led_month[11] is outside die area.
+[GRT-0036] Pin led_month[12] is outside die area.
+[GRT-0036] Pin led_month[1] is outside die area.
+[GRT-0036] Pin led_month[2] is outside die area.
+[GRT-0036] Pin led_month[3] is outside die area.
+[GRT-0036] Pin led_month[4] is outside die area.
+[GRT-0036] Pin led_month[5] is outside die area.
+[GRT-0036] Pin led_month[6] is outside die area.
+[GRT-0036] Pin led_month[7] is outside die area.
+[GRT-0036] Pin led_month[9] is outside die area.
+[GRT-0036] Pin led_day[8] is outside die area.
+[GRT-0036] Pin led_sec[0] is outside die area.
+[GRT-0036] Pin led_sec[10] is outside die area.
+[GRT-0036] Pin led_sec[11] is outside die area.
+[GRT-0036] Pin led_sec[12] is outside die area.
+[GRT-0036] Pin led_sec[13] is outside die area.
+[GRT-0036] Pin led_sec[1] is outside die area.
+[GRT-0036] Pin led_sec[2] is outside die area.
+[GRT-0036] Pin led_sec[3] is outside die area.
+[GRT-0036] Pin led_sec[4] is outside die area.
+[GRT-0036] Pin led_sec[5] is outside die area.
+[GRT-0036] Pin led_sec[6] is outside die area.
+[GRT-0036] Pin led_sec[7] is outside die area.
+[GRT-0036] Pin led_sec[8] is outside die area.
+[GRT-0036] Pin led_sec[9] is outside die area.
+[GRT-0036] Pin led_year[0] is outside die area.
+[GRT-0036] Pin led_year[10] is outside die area.
+[GRT-0036] Pin led_year[11] is outside die area.
+[GRT-0036] Pin led_year[12] is outside die area.
+[GRT-0036] Pin led_year[13] is outside die area.
+[GRT-0036] Pin led_year[1] is outside die area.
+[GRT-0036] Pin led_year[2] is outside die area.
+[GRT-0036] Pin led_year[3] is outside die area.
+[GRT-0036] Pin led_year[4] is outside die area.
+[GRT-0036] Pin led_year[5] is outside die area.
+[GRT-0036] Pin led_year[6] is outside die area.
+[GRT-0036] Pin led_year[7] is outside die area.
+[GRT-0036] Pin led_year[8] is outside die area.
+[GRT-0036] Pin led_year[9] is outside die area.
+[GRT-0036] Pin minute[0] is outside die area.
+[GRT-0036] Pin minute[1] is outside die area.
+[GRT-0036] Pin minute[2] is outside die area.
+[GRT-0036] Pin minute[3] is outside die area.
+[GRT-0036] Pin minute[4] is outside die area.
+[GRT-0036] Pin minute[5] is outside die area.
+[GRT-0036] Pin month[0] is outside die area.
+[GRT-0036] Pin month[1] is outside die area.
+[GRT-0036] Pin month[2] is outside die area.
+[GRT-0036] Pin month[3] is outside die area.
+[GRT-0036] Pin second[0] is outside die area.
+[GRT-0036] Pin second[1] is outside die area.
+[GRT-0036] Pin second[2] is outside die area.
+[GRT-0036] Pin second[3] is outside die area.
+[GRT-0036] Pin second[4] is outside die area.
+[GRT-0036] Pin second[5] is outside die area.
+[GRT-0036] Pin year[0] is outside die area.
+[GRT-0036] Pin year[1] is outside die area.
+[GRT-0036] Pin year[2] is outside die area.
+[GRT-0036] Pin year[3] is outside die area.
+[GRT-0036] Pin year[4] is outside die area.
+[GRT-0036] Pin year[5] is outside die area.
+[GRT-0036] Pin year[6] is outside die area.
+[GRT-0036] Pin led_month[8] is outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VPWR has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[GRT-0041] Net VGND has wires/vias outside die area.
+[STA-0366] port 'clk' not found.
+[STA-0366] port 'clk' not found.
+[STA-0419] transition time can not be specified for virtual clocks.
+[STA-0450] virtual clock clk can not be propagated.
+[STA-0366] port 'clk' not found.
+[STA-0366] port 'clk' not found.
+[STA-0419] transition time can not be specified for virtual clocks.
+[STA-0450] virtual clock clk can not be propagated.
+[STA-0366] port 'clk' not found.
+[STA-0366] port 'clk' not found.
+[STA-0419] transition time can not be specified for virtual clocks.
+[STA-0450] virtual clock clk can not be propagated.
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer mcon
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer mcon
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via2
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via2
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via3
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via3
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via4
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via4
+[STA-0366] port 'clk' not found.
+[STA-0366] port 'clk' not found.
+[STA-0419] transition time can not be specified for virtual clocks.
+[STA-0450] virtual clock clk can not be propagated.
+Threshold for Threshold-surpassing long wires is not set. The checker will be skipped.
+[STA-0366] port 'clk' not found.
+[STA-0366] port 'clk' not found.
+[STA-0419] transition time can not be specified for virtual clocks.
+[STA-0450] virtual clock clk can not be propagated.
+'VSRC_LOC_FILES' was not given a value, which may make the results of IR drop analysis inaccurate. If you are not integrating a top-level chip for manufacture, you may ignore this warning, otherwise, see the documentation for 'VSRC_LOC_FILES'.
+[STA-0366] port 'clk' not found.
+[STA-0366] port 'clk' not found.
+[STA-0419] transition time can not be specified for virtual clocks.
+[STA-0450] virtual clock clk can not be propagated.
+Cell 'decode_all' has (5) output pin(s) without antenna diffusion information. They might not be driven.

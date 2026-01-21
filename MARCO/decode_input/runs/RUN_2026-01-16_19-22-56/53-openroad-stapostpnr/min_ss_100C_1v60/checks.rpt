@@ -1,0 +1,81 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= min_ss_100C_1v60 Corner ===================================
+
+Startpoint: mode[0] (input port clocked by __VIRTUAL_CLK__)
+Endpoint: dec[5] (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  2.000000    2.000000 ^ input external delay
+     1    0.003108    0.034292    0.017401    2.017401 ^ mode[0] (in)
+                                                         mode[0] (net)
+                      0.034292    0.000000    2.017401 ^ input13/A (sky130_fd_sc_hd__buf_1)
+     2    0.010093    0.202695    0.229378    2.246779 ^ input13/X (sky130_fd_sc_hd__buf_1)
+                                                         net13 (net)
+                      0.202755    0.000244    2.247022 ^ fanout40/A (sky130_fd_sc_hd__buf_2)
+    10    0.031819    0.254132    0.392873    2.639895 ^ fanout40/X (sky130_fd_sc_hd__buf_2)
+                                                         net40 (net)
+                      0.254132    0.000495    2.640390 ^ _14_/A_N (sky130_fd_sc_hd__and3b_1)
+     5    0.012889    0.154559    0.510384    3.150774 v _14_/X (sky130_fd_sc_hd__and3b_1)
+                                                         _03_ (net)
+                      0.154559    0.000054    3.150828 v _15_/B1 (sky130_fd_sc_hd__a31o_1)
+     1    0.004155    0.078336    0.378676    3.529504 v _15_/X (sky130_fd_sc_hd__a31o_1)
+                                                         net26 (net)
+                      0.078336    0.000065    3.529569 v output26/A (sky130_fd_sc_hd__buf_2)
+     1    0.035347    0.170113    0.351907    3.881476 v output26/X (sky130_fd_sc_hd__buf_2)
+                                                         dec[5] (net)
+                      0.170113    0.000572    3.882048 v dec[5] (out)
+                                              3.882048   data arrival time
+
+                      0.000000   10.000000   10.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000   10.000000   clock network delay (ideal)
+                                 -0.250000    9.750000   clock uncertainty
+                                  0.000000    9.750000   clock reconvergence pessimism
+                                 -2.000000    7.750000   output external delay
+                                              7.750000   data required time
+---------------------------------------------------------------------------------------------
+                                              7.750000   data required time
+                                             -3.882048   data arrival time
+---------------------------------------------------------------------------------------------
+                                              3.867952   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= min_ss_100C_1v60 Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= min_ss_100C_1v60 Corner ===================================
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 0 unannotated drivers.
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================

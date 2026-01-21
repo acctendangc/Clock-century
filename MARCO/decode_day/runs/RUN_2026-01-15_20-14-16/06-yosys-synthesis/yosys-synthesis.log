@@ -1,0 +1,961 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2024  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)
+Loaded SDC plugin
+
+1. Executing Liberty frontend: /home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Imported 428 cell types from liberty file.
+[INFO] Using SDC file '/home/kien/openlane2/MARCO/decode_day/runs/RUN_2026-01-15_20-14-16/06-yosys-synthesis/synthesis.abc.sdc' for ABC…
+
+2. Executing Verilog-2005 frontend: /home/kien/openlane2/MARCO/decode_day/hdl/decode_day.v
+Parsing SystemVerilog input from `/home/kien/openlane2/MARCO/decode_day/hdl/decode_day.v' to AST representation.
+Storing AST representation for module `$abstract\decode_day'.
+Successfully finished Verilog frontend.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+4. Executing AST frontend in derive mode using pre-parsed AST for module `\decode_day'.
+Generating RTLIL representation for module `\decode_day'.
+
+4.1. Analyzing design hierarchy..
+Top module:  \decode_day
+
+4.2. Analyzing design hierarchy..
+Top module:  \decode_day
+Removing unused module `$abstract\decode_day'.
+Removed 1 unused modules.
+Renaming module decode_day to decode_day.
+
+5. Generating Graphviz representation of design.
+Writing dot description to `/home/kien/openlane2/MARCO/decode_day/runs/RUN_2026-01-15_20-14-16/06-yosys-synthesis/hierarchy.dot'.
+Dumping module decode_day to page 1.
+
+6. Executing TRIBUF pass.
+
+7. Executing HIERARCHY pass (managing design hierarchy).
+
+7.1. Analyzing design hierarchy..
+Top module:  \decode_day
+
+7.2. Analyzing design hierarchy..
+Top module:  \decode_day
+Removed 0 unused modules.
+
+8. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+9. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 2 switch rules as full_case in process $proc$/home/kien/openlane2/MARCO/decode_day/hdl/decode_day.v:23$2 in module decode_day.
+Marked 1 switch rules as full_case in process $proc$/home/kien/openlane2/MARCO/decode_day/hdl/decode_day.v:13$1 in module decode_day.
+Removed a total of 0 dead cases.
+
+10. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 2 assignments to connections.
+
+11. Executing PROC_INIT pass (extract init attributes).
+
+12. Executing PROC_ARST pass (detect async resets in processes).
+
+13. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~3 debug messages>
+
+14. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\decode_day.$proc$/home/kien/openlane2/MARCO/decode_day/hdl/decode_day.v:23$2'.
+     1/2: $2\day_num[4:0]
+     2/2: $1\day_num[4:0]
+Creating decoders for process `\decode_day.$proc$/home/kien/openlane2/MARCO/decode_day/hdl/decode_day.v:13$1'.
+     1/1: $1\hour_num[4:0]
+
+15. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\decode_day.\day_num' from process `\decode_day.$proc$/home/kien/openlane2/MARCO/decode_day/hdl/decode_day.v:23$2'.
+No latch inferred for signal `\decode_day.\hour_num' from process `\decode_day.$proc$/home/kien/openlane2/MARCO/decode_day/hdl/decode_day.v:13$1'.
+
+16. Executing PROC_DFF pass (convert process syncs to FFs).
+
+17. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+18. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 2 empty switches in `\decode_day.$proc$/home/kien/openlane2/MARCO/decode_day/hdl/decode_day.v:23$2'.
+Removing empty process `decode_day.$proc$/home/kien/openlane2/MARCO/decode_day/hdl/decode_day.v:23$2'.
+Found and cleaned up 1 empty switch in `\decode_day.$proc$/home/kien/openlane2/MARCO/decode_day/hdl/decode_day.v:13$1'.
+Removing empty process `decode_day.$proc$/home/kien/openlane2/MARCO/decode_day/hdl/decode_day.v:13$1'.
+Cleaned up 3 empty switches.
+
+19. Executing CHECK pass (checking for obvious problems).
+Checking module decode_day...
+Found and reported 0 problems.
+
+20. Executing OPT_EXPR pass (perform const folding).
+Optimizing module decode_day.
+<suppressed ~1 debug messages>
+
+21. Executing FLATTEN pass (flatten design).
+
+22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module decode_day.
+
+23. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decode_day..
+Removed 0 unused cells and 9 unused wires.
+<suppressed ~1 debug messages>
+
+24. Executing OPT_EXPR pass (perform const folding).
+Optimizing module decode_day.
+
+25. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\decode_day'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+26. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \decode_day..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$12.
+Removed 1 multiplexer ports.
+<suppressed ~2 debug messages>
+
+27. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \decode_day.
+    New ctrl vector for $pmux cell $procmux$15: { $procmux$13_CMP $auto$opt_reduce.cc:134:opt_pmux$25 }
+  Optimizing cells in module \decode_day.
+Performed a total of 1 changes.
+
+28. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\decode_day'.
+Removed a total of 0 cells.
+
+29. Executing OPT_DFF pass (perform DFF optimizations).
+
+30. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decode_day..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+31. Executing OPT_EXPR pass (perform const folding).
+Optimizing module decode_day.
+
+32. Rerunning OPT passes. (Maybe there is more to do…)
+
+33. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \decode_day..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~2 debug messages>
+
+34. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \decode_day.
+Performed a total of 0 changes.
+
+35. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\decode_day'.
+Removed a total of 0 cells.
+
+36. Executing OPT_DFF pass (perform DFF optimizations).
+
+37. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decode_day..
+
+38. Executing OPT_EXPR pass (perform const folding).
+Optimizing module decode_day.
+
+39. Executing FSM pass (extract and optimize FSM).
+
+39.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+39.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+39.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+39.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decode_day..
+
+39.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+39.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+39.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+39.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+40. Executing OPT_EXPR pass (perform const folding).
+Optimizing module decode_day.
+
+41. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\decode_day'.
+Removed a total of 0 cells.
+
+42. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \decode_day..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~2 debug messages>
+
+43. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \decode_day.
+Performed a total of 0 changes.
+
+44. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\decode_day'.
+Removed a total of 0 cells.
+
+45. Executing OPT_DFF pass (perform DFF optimizations).
+
+46. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decode_day..
+
+47. Executing OPT_EXPR pass (perform const folding).
+Optimizing module decode_day.
+
+48. Executing WREDUCE pass (reducing word size of cells).
+Removed top 4 bits (of 5) from mux cell decode_day.$procmux$10 ($mux).
+Removed top 2 bits (of 4) from port B of cell decode_day.$procmux$13_CMP0 ($eq).
+Removed top 3 bits (of 5) from mux cell decode_day.$procmux$15 ($pmux).
+Removed top 1 bits (of 4) from port B of cell decode_day.$procmux$18_CMP0 ($eq).
+Removed top 1 bits (of 4) from port B of cell decode_day.$procmux$19_CMP0 ($eq).
+Removed top 4 bits (of 5) from wire decode_day.$2\day_num[4:0].
+
+49. Executing PEEPOPT pass (run peephole optimizers).
+
+50. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decode_day..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+51. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module decode_day:
+  created 0 $alu and 0 $macc cells.
+
+52. Executing SHARE pass (SAT-based resource sharing).
+
+53. Executing OPT_EXPR pass (perform const folding).
+Optimizing module decode_day.
+
+54. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\decode_day'.
+Removed a total of 0 cells.
+
+55. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \decode_day..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~2 debug messages>
+
+56. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \decode_day.
+Performed a total of 0 changes.
+
+57. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\decode_day'.
+Removed a total of 0 cells.
+
+58. Executing OPT_DFF pass (perform DFF optimizations).
+
+59. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decode_day..
+
+60. Executing OPT_EXPR pass (perform const folding).
+Optimizing module decode_day.
+
+61. Executing MEMORY pass.
+
+61.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+61.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+61.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+61.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+61.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+61.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decode_day..
+
+61.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+61.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+61.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decode_day..
+
+61.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+62. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decode_day..
+
+63. Executing OPT_EXPR pass (perform const folding).
+Optimizing module decode_day.
+<suppressed ~1 debug messages>
+
+64. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\decode_day'.
+Removed a total of 0 cells.
+
+65. Executing OPT_DFF pass (perform DFF optimizations).
+
+66. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decode_day..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+67. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+68. Executing OPT_EXPR pass (perform const folding).
+Optimizing module decode_day.
+
+69. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\decode_day'.
+Removed a total of 0 cells.
+
+70. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \decode_day..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~2 debug messages>
+
+71. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \decode_day.
+    Consolidated identical input bits for $mux cell $procmux$22:
+      Old ports: A=5'11000, B=5'01100, Y=\hour_num
+      New ports: A=2'10, B=2'01, Y={ \hour_num [4] \hour_num [2] }
+      New connections: { \hour_num [3] \hour_num [1:0] } = 3'100
+  Optimizing cells in module \decode_day.
+Performed a total of 1 changes.
+
+72. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\decode_day'.
+Removed a total of 0 cells.
+
+73. Executing OPT_SHARE pass.
+
+74. Executing OPT_DFF pass (perform DFF optimizations).
+
+75. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decode_day..
+
+76. Executing OPT_EXPR pass (perform const folding).
+Optimizing module decode_day.
+
+77. Rerunning OPT passes. (Maybe there is more to do…)
+
+78. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \decode_day..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~2 debug messages>
+
+79. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \decode_day.
+Performed a total of 0 changes.
+
+80. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\decode_day'.
+Removed a total of 0 cells.
+
+81. Executing OPT_SHARE pass.
+
+82. Executing OPT_DFF pass (perform DFF optimizations).
+
+83. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decode_day..
+
+84. Executing OPT_EXPR pass (perform const folding).
+Optimizing module decode_day.
+
+85. Executing TECHMAP pass (map to technology primitives).
+
+85.1. Executing Verilog-2005 frontend: /nix/store/9r0bh7sp051dpm8km8bqlb028anpd3v3-yosys/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/nix/store/9r0bh7sp051dpm8km8bqlb028anpd3v3-yosys/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+85.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $reduce_or.
+Using template $paramod$521ce43182eecb9f60c72393a788160d2c356bf5\_90_pmux for cells of type $pmux.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $and.
+No more expansions possible.
+<suppressed ~101 debug messages>
+
+86. Executing OPT_EXPR pass (perform const folding).
+Optimizing module decode_day.
+<suppressed ~26 debug messages>
+
+87. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\decode_day'.
+<suppressed ~24 debug messages>
+Removed a total of 8 cells.
+
+88. Executing OPT_DFF pass (perform DFF optimizations).
+
+89. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decode_day..
+Removed 0 unused cells and 32 unused wires.
+<suppressed ~1 debug messages>
+
+90. Executing OPT_EXPR pass (perform const folding).
+Optimizing module decode_day.
+
+91. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\decode_day'.
+Removed a total of 0 cells.
+
+92. Executing OPT_DFF pass (perform DFF optimizations).
+
+93. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decode_day..
+
+94. Executing ABC pass (technology mapping using ABC).
+
+94.1. Extracting gate netlist of module `\decode_day' to `<abc-temp-dir>/input.blif'..
+Extracted 31 gates and 39 wires to a netlist network with 7 inputs and 3 outputs.
+
+94.1.1. Executing ABC.
+Running ABC command: "/nix/store/6l3aj1gi4lja8z5s4lan2k2cfz9mqkrz-yosys-abc/bin/abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 13 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+94.1.2. Re-integrating ABC results.
+ABC RESULTS:               NOT cells:        1
+ABC RESULTS:              NAND cells:        2
+ABC RESULTS:               AND cells:        2
+ABC RESULTS:                OR cells:        2
+ABC RESULTS:            ANDNOT cells:        7
+ABC RESULTS:               NOR cells:        2
+ABC RESULTS:               MUX cells:        1
+ABC RESULTS:             ORNOT cells:        2
+ABC RESULTS:        internal signals:       29
+ABC RESULTS:           input signals:        7
+ABC RESULTS:          output signals:        3
+Removing temp directory.
+
+95. Executing OPT pass (performing simple optimizations).
+
+95.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module decode_day.
+
+95.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\decode_day'.
+Removed a total of 0 cells.
+
+95.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+95.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decode_day..
+Removed 0 unused cells and 34 unused wires.
+<suppressed ~1 debug messages>
+
+95.5. Finished fast OPT passes.
+
+96. Executing HIERARCHY pass (managing design hierarchy).
+
+96.1. Analyzing design hierarchy..
+Top module:  \decode_day
+
+96.2. Analyzing design hierarchy..
+Top module:  \decode_day
+Removed 0 unused modules.
+
+97. Executing CHECK pass (checking for obvious problems).
+Checking module decode_day...
+Found and reported 0 problems.
+
+98. Printing statistics.
+
+=== decode_day ===
+
+   Number of wires:                 21
+   Number of wire bits:             38
+   Number of public wires:           5
+   Number of public wire bits:      22
+   Number of ports:                  5
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $_ANDNOT_                       7
+     $_AND_                          2
+     $_MUX_                          1
+     $_NAND_                         2
+     $_NOR_                          2
+     $_NOT_                          1
+     $_ORNOT_                        2
+     $_OR_                           2
+
+99. Generating Graphviz representation of design.
+Writing dot description to `/home/kien/openlane2/MARCO/decode_day/runs/RUN_2026-01-15_20-14-16/06-yosys-synthesis/primitive_techmap.dot'.
+Dumping module decode_day to page 1.
+
+100. Executing OPT pass (performing simple optimizations).
+
+100.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module decode_day.
+
+100.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\decode_day'.
+Removed a total of 0 cells.
+
+100.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \decode_day..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+100.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \decode_day.
+Performed a total of 0 changes.
+
+100.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\decode_day'.
+Removed a total of 0 cells.
+
+100.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+100.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decode_day..
+
+100.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module decode_day.
+
+100.9. Finished OPT passes. (There is nothing left to do.)
+
+101. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decode_day..
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/kien/openlane2/MARCO/decode_day/runs/RUN_2026-01-15_20-14-16/tmp/b0392572decc411bbe3386d205602871.lib ",
+   "modules": {
+      "\\decode_day": {
+         "num_wires":         21,
+         "num_wire_bits":     38,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 22,
+         "num_ports":         5,
+         "num_port_bits":     22,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         19,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 7,
+            "$_AND_": 2,
+            "$_MUX_": 1,
+            "$_NAND_": 2,
+            "$_NOR_": 2,
+            "$_NOT_": 1,
+            "$_ORNOT_": 2,
+            "$_OR_": 2
+         }
+      }
+   },
+      "design": {
+         "num_wires":         21,
+         "num_wire_bits":     38,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 22,
+         "num_ports":         5,
+         "num_port_bits":     22,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         19,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 7,
+            "$_AND_": 2,
+            "$_MUX_": 1,
+            "$_NAND_": 2,
+            "$_NOR_": 2,
+            "$_NOT_": 1,
+            "$_ORNOT_": 2,
+            "$_OR_": 2
+         }
+      }
+}
+
+102. Printing statistics.
+
+=== decode_day ===
+
+   Number of wires:                 21
+   Number of wire bits:             38
+   Number of public wires:           5
+   Number of public wire bits:      22
+   Number of ports:                  5
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $_ANDNOT_                       7
+     $_AND_                          2
+     $_MUX_                          1
+     $_NAND_                         2
+     $_NOR_                          2
+     $_NOT_                          1
+     $_ORNOT_                        2
+     $_OR_                           2
+
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+
+[INFO] Applying tri-state buffer mapping from '/home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v'…
+
+103. Executing TECHMAP pass (map to technology primitives).
+
+103.1. Executing Verilog-2005 frontend: /home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v
+Parsing Verilog input from `/home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v' to AST representation.
+Generating RTLIL representation for module `\$_TBUF_'.
+Successfully finished Verilog frontend.
+
+103.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+104. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+[INFO] Applying latch mapping from '/home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v'…
+
+105. Executing TECHMAP pass (map to technology primitives).
+
+105.1. Executing Verilog-2005 frontend: /home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v
+Parsing Verilog input from `/home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DLATCH_P_'.
+Generating RTLIL representation for module `\$_DLATCH_N_'.
+Successfully finished Verilog frontend.
+
+105.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+106. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+107. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell sky130_fd_sc_hd__dfxtp_2 (noninv, pins=3, area=21.27) is a direct match for cell type $_DFF_P_.
+  cell sky130_fd_sc_hd__dfrtp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN0_.
+  cell sky130_fd_sc_hd__dfstp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN1_.
+  cell sky130_fd_sc_hd__dfbbn_2 (noninv, pins=6, area=35.03) is a direct match for cell type $_DFFSR_NNN_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    \sky130_fd_sc_hd__dfxtp_2 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \sky130_fd_sc_hd__dfrtp_2 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    \sky130_fd_sc_hd__dfstp_2 _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .SET_B( R));
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    \sky130_fd_sc_hd__dfbbn_2 _DFFSR_NNN_ (.CLK_N( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R), .SET_B( S));
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    unmapped dff cell: $_DFFSR_PNN_
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+107.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+Mapping DFF cells in module `\decode_day':
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/kien/openlane2/MARCO/decode_day/runs/RUN_2026-01-15_20-14-16/tmp/b0392572decc411bbe3386d205602871.lib ",
+   "modules": {
+      "\\decode_day": {
+         "num_wires":         21,
+         "num_wire_bits":     38,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 22,
+         "num_ports":         5,
+         "num_port_bits":     22,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         19,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 7,
+            "$_AND_": 2,
+            "$_MUX_": 1,
+            "$_NAND_": 2,
+            "$_NOR_": 2,
+            "$_NOT_": 1,
+            "$_ORNOT_": 2,
+            "$_OR_": 2
+         }
+      }
+   },
+      "design": {
+         "num_wires":         21,
+         "num_wire_bits":     38,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 22,
+         "num_ports":         5,
+         "num_port_bits":     22,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         19,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 7,
+            "$_AND_": 2,
+            "$_MUX_": 1,
+            "$_NAND_": 2,
+            "$_NOR_": 2,
+            "$_NOT_": 1,
+            "$_ORNOT_": 2,
+            "$_OR_": 2
+         }
+      }
+}
+
+108. Printing statistics.
+
+=== decode_day ===
+
+   Number of wires:                 21
+   Number of wire bits:             38
+   Number of public wires:           5
+   Number of public wire bits:      22
+   Number of ports:                  5
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $_ANDNOT_                       7
+     $_AND_                          2
+     $_MUX_                          1
+     $_NAND_                         2
+     $_NOR_                          2
+     $_NOT_                          1
+     $_ORNOT_                        2
+     $_OR_                           2
+
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+
+[INFO] Using generated ABC script '/home/kien/openlane2/MARCO/decode_day/runs/RUN_2026-01-15_20-14-16/06-yosys-synthesis/AREA_0.abc'…
+
+109. Executing ABC pass (technology mapping using ABC).
+
+109.1. Extracting gate netlist of module `\decode_day' to `/tmp/yosys-abc-oSQH16/input.blif'..
+Extracted 19 gates and 26 wires to a netlist network with 7 inputs and 3 outputs.
+
+109.1.1. Executing ABC.
+Running ABC command: "/nix/store/6l3aj1gi4lja8z5s4lan2k2cfz9mqkrz-yosys-abc/bin/abc" -s -f /tmp/yosys-abc-oSQH16/abc.script 2>&1
+ABC: ABC command line: "source /tmp/yosys-abc-oSQH16/abc.script".
+ABC: 
+ABC: + read_blif /tmp/yosys-abc-oSQH16/input.blif 
+ABC: + read_lib -w /home/kien/openlane2/MARCO/decode_day/runs/RUN_2026-01-15_20-14-16/tmp/b0392572decc411bbe3386d205602871.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.03 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfsbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
+ABC: Library "sky130_fd_sc_hd__tt_025C_1v80" from "/home/kien/openlane2/MARCO/decode_day/runs/RUN_2026-01-15_20-14-16/tmp/b0392572decc411bbe3386d205602871.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.05 sec
+ABC: Memory =    9.54 MB. Time =     0.05 sec
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + read_constr -v /home/kien/openlane2/MARCO/decode_day/runs/RUN_2026-01-15_20-14-16/06-yosys-synthesis/synthesis.abc.sdc 
+ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_2/Y".
+ABC: Setting output load to be 33.442001.
+ABC: + source /home/kien/openlane2/MARCO/decode_day/runs/RUN_2026-01-15_20-14-16/06-yosys-synthesis/AREA_0.abc 
+ABC: Error: The network is combinational.
+ABC: Cannot find the default PI driving cell (sky130_fd_sc_hd__inv_2/Y) in the library.
+ABC: WireLoad = "none"  Gates =      7 ( 28.6 %)   Cap = 11.2 ff (  7.1 %)   Area =       58.81 ( 57.1 %)   Delay =  1195.18 ps  ( 42.9 %)               
+ABC: Path  0 --       3 : 0    3 pi                      A =   0.00  Df =   0.0   -0.0 ps  S =   0.0 ps  Cin =  0.0 ff  Cout =   9.7 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --      13 : 4    2 sky130_fd_sc_hd__or4b_2 A =  10.01  Df = 820.7 -507.5 ps  S = 227.0 ps  Cin =  1.5 ff  Cout =  38.1 ff  Cmax = 265.5 ff  G = 2571  
+ABC: Path  2 --      14 : 3    1 sky130_fd_sc_hd__nor3_2 A =  10.01  Df = 961.3 -599.6 ps  S = 113.1 ps  Cin =  4.4 ff  Cout =   1.6 ff  Cmax =  92.5 ff  G =   35  
+ABC: Path  3 --      17 : 3    1 sky130_fd_sc_hd__or3_2  A =   7.51  Df =1195.2 -238.4 ps  S = 172.1 ps  Cin =  1.5 ff  Cout =  33.4 ff  Cmax = 310.4 ff  G = 2202  
+ABC: Start-point = pi2 (\month [0]).  End-point = po1 (\day_num [0]).
+ABC: netlist                       : i/o =    7/    3  lat =    0  nd =     7  edge =     19  area =58.80  delay = 3.00  lev = 3
+ABC: + write_blif /tmp/yosys-abc-oSQH16/output.blif 
+
+109.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__inv_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__or4b_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nor3_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a211oi_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__mux2_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or3_2 cells:        1
+ABC RESULTS:        internal signals:       16
+ABC RESULTS:           input signals:        7
+ABC RESULTS:          output signals:        3
+Removing temp directory.
+
+110. Executing SETUNDEF pass (replace undef values with defined constants).
+
+111. Executing HILOMAP pass (mapping to constant drivers).
+
+112. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+113. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decode_day..
+Removed 0 unused cells and 32 unused wires.
+<suppressed ~1 debug messages>
+
+114. Executing INSBUF pass (insert buffer cells for connected wires).
+Add decode_day/$auto$insbuf.cc:97:execute$266: \am_pm -> \hour_num [2]
+
+115. Executing CHECK pass (checking for obvious problems).
+Checking module decode_day...
+Found and reported 0 problems.
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/kien/openlane2/MARCO/decode_day/runs/RUN_2026-01-15_20-14-16/tmp/b0392572decc411bbe3386d205602871.lib ",
+   "modules": {
+      "\\decode_day": {
+         "num_wires":         9,
+         "num_wire_bits":     26,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 22,
+         "num_ports":         5,
+         "num_port_bits":     22,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         14,
+         "area":              86.332800,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a211oi_2": 1,
+            "sky130_fd_sc_hd__buf_2": 1,
+            "sky130_fd_sc_hd__conb_1": 6,
+            "sky130_fd_sc_hd__inv_2": 2,
+            "sky130_fd_sc_hd__mux2_1": 1,
+            "sky130_fd_sc_hd__nor3_2": 1,
+            "sky130_fd_sc_hd__or3_2": 1,
+            "sky130_fd_sc_hd__or4b_2": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         9,
+         "num_wire_bits":     26,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 22,
+         "num_ports":         5,
+         "num_port_bits":     22,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         14,
+         "area":              86.332800,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a211oi_2": 1,
+            "sky130_fd_sc_hd__buf_2": 1,
+            "sky130_fd_sc_hd__conb_1": 6,
+            "sky130_fd_sc_hd__inv_2": 2,
+            "sky130_fd_sc_hd__mux2_1": 1,
+            "sky130_fd_sc_hd__nor3_2": 1,
+            "sky130_fd_sc_hd__or3_2": 1,
+            "sky130_fd_sc_hd__or4b_2": 1
+         }
+      }
+}
+
+116. Printing statistics.
+
+=== decode_day ===
+
+   Number of wires:                  9
+   Number of wire bits:             26
+   Number of public wires:           5
+   Number of public wire bits:      22
+   Number of ports:                  5
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     sky130_fd_sc_hd__a211oi_2       1
+     sky130_fd_sc_hd__buf_2          1
+     sky130_fd_sc_hd__conb_1         6
+     sky130_fd_sc_hd__inv_2          2
+     sky130_fd_sc_hd__mux2_1         1
+     sky130_fd_sc_hd__nor3_2         1
+     sky130_fd_sc_hd__or3_2          1
+     sky130_fd_sc_hd__or4b_2         1
+
+   Chip area for module '\decode_day': 86.332800
+     of which used for sequential elements: 0.000000 (0.00%)
+
+117. Executing Verilog backend.
+Dumping module `\decode_day'.
+
+118. Executing JSON backend.

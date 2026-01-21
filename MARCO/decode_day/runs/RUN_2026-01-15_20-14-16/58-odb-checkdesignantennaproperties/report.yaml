@@ -1,0 +1,15 @@
+- cell: decode_day
+  inout: []
+  input:
+  - year[2]
+  - year[3]
+  - year[4]
+  - year[5]
+  - year[6]
+  output:
+  - day_num[2]
+  - day_num[3]
+  - day_num[4]
+  - hour_num[0]
+  - hour_num[1]
+  - hour_num[3]

@@ -1,0 +1,34 @@
+%Warning-WIDTHEXPAND: /home/kien/openlane2/MARCO/decode_all/hdl/decode_led.v:30:22: Operator ADD expects 5 bits on the LHS, but LHS's VARREF 'a_0' generates 1 bits.
+                                                                                  : ... note: In instance 'decode_all.decode_led_year_inst'
+   30 | assign sum_dvi = a_0 + a_1 + a_2 + a_3 + a_4 + a_5 + a_6;
+      |                      ^
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.018
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: /home/kien/openlane2/MARCO/decode_all/hdl/decode_led.v:30:22: Operator ADD expects 5 bits on the RHS, but RHS's VARREF 'a_1' generates 2 bits.
+                                                                                  : ... note: In instance 'decode_all.decode_led_year_inst'
+   30 | assign sum_dvi = a_0 + a_1 + a_2 + a_3 + a_4 + a_5 + a_6;
+      |                      ^
+%Warning-WIDTHEXPAND: /home/kien/openlane2/MARCO/decode_all/hdl/decode_led.v:30:28: Operator ADD expects 5 bits on the RHS, but RHS's VARREF 'a_2' generates 3 bits.
+                                                                                  : ... note: In instance 'decode_all.decode_led_year_inst'
+   30 | assign sum_dvi = a_0 + a_1 + a_2 + a_3 + a_4 + a_5 + a_6;
+      |                            ^
+%Warning-WIDTHEXPAND: /home/kien/openlane2/MARCO/decode_all/hdl/decode_led.v:30:40: Operator ADD expects 5 bits on the RHS, but RHS's VARREF 'a_4' generates 3 bits.
+                                                                                  : ... note: In instance 'decode_all.decode_led_year_inst'
+   30 | assign sum_dvi = a_0 + a_1 + a_2 + a_3 + a_4 + a_5 + a_6;
+      |                                        ^
+%Warning-WIDTHEXPAND: /home/kien/openlane2/MARCO/decode_all/hdl/decode_led.v:30:46: Operator ADD expects 5 bits on the RHS, but RHS's VARREF 'a_5' generates 2 bits.
+                                                                                  : ... note: In instance 'decode_all.decode_led_year_inst'
+   30 | assign sum_dvi = a_0 + a_1 + a_2 + a_3 + a_4 + a_5 + a_6;
+      |                                              ^
+%Warning-WIDTHEXPAND: /home/kien/openlane2/MARCO/decode_all/hdl/decode_led.v:30:52: Operator ADD expects 5 bits on the RHS, but RHS's VARREF 'a_6' generates 3 bits.
+                                                                                  : ... note: In instance 'decode_all.decode_led_year_inst'
+   30 | assign sum_dvi = a_0 + a_1 + a_2 + a_3 + a_4 + a_5 + a_6;
+      |                                                    ^
+%Warning-WIDTHTRUNC: /home/kien/openlane2/MARCO/decode_all/hdl/decode_led.v:32:14: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's COND generates 32 or 5 bits.
+                                                                                 : ... note: In instance 'decode_all.decode_led_year_inst'
+   32 | assign a_dvi = (sum_dvi >= 20 ) ? (sum_dvi - 20) : ((sum_dvi >= 10) ? (sum_dvi - 10) : sum_dvi);
+      |              ^
+%Warning-UNUSEDSIGNAL: /home/kien/openlane2/MARCO/decode_all/hdl/decode_led.v:17:12: Signal is not driven, nor used: 'nho_dvi'
+                                                                                   : ... note: In instance 'decode_all.decode_led_year_inst'
+   17 | wire [3:0] nho_dvi;
+      |            ^~~~~~~

@@ -1,0 +1,5 @@
+
+15. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\decode_input.\dec' from process `\decode_input.$proc$/home/kien/openlane2/MARCO/decode_input/hdl/decode_input.v:127$3'.
+No latch inferred for signal `\decode_input.\inc' from process `\decode_input.$proc$/home/kien/openlane2/MARCO/decode_input/hdl/decode_input.v:82$2'.
+No latch inferred for signal `\decode_input.\en' from process `\decode_input.$proc$/home/kien/openlane2/MARCO/decode_input/hdl/decode_input.v:52$1'.

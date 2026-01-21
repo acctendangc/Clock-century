@@ -1,0 +1,26 @@
+108. Printing statistics.
+
+=== alarm ===
+
+   Number of wires:                 28
+   Number of wire bits:             46
+   Number of public wires:           9
+   Number of public wire bits:      27
+   Number of ports:                  8
+   Number of port bits:             26
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 21
+     sky130_fd_sc_hd__a221o_2        1
+     sky130_fd_sc_hd__dfrtp_2        2
+     sky130_fd_sc_hd__nand2_2        2
+     sky130_fd_sc_hd__nor3_2         1
+     sky130_fd_sc_hd__o21a_2         1
+     sky130_fd_sc_hd__or2_2          2
+     sky130_fd_sc_hd__or4_2          2
+     sky130_fd_sc_hd__xor2_2        10
+
+   Chip area for module '\alarm': 287.776000
+     of which used for sequential elements: 52.550400 (18.26%)
+

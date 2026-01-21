@@ -1,0 +1,8 @@
+%Warning-PINCONNECTEMPTY: /home/kien/openlane2/MARCO/counter_all/hdl/counter_all.v:115:6: Cell pin connected by name with empty reference: 'done_inc'
+  115 |     .done_inc(),
+      |      ^~~~~~~~
+                          ... For warning description see https://verilator.org/warn/PINCONNECTEMPTY?v=5.018
+                          ... Use "/* verilator lint_off PINCONNECTEMPTY */" and lint_on around source to disable this message.
+%Warning-PINCONNECTEMPTY: /home/kien/openlane2/MARCO/counter_all/hdl/counter_all.v:116:6: Cell pin connected by name with empty reference: 'done_dec'
+  116 |     .done_dec()
+      |      ^~~~~~~~

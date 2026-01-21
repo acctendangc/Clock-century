@@ -1,0 +1,370 @@
+{
+  "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+  "modules": {
+    "alarm": {
+      "attributes": {
+        "hdlname": "alarm",
+        "top": "00000000000000000000000000000001",
+        "src": "/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:1.1-49.10"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rst_n": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "alarm_min": {
+          "direction": "input",
+          "bits": [ 4, 5, 6, 7, 8, 9 ]
+        },
+        "alarm_hour": {
+          "direction": "input",
+          "bits": [ 10, 11, 12, 13, 14 ]
+        },
+        "alarm_i": {
+          "direction": "input",
+          "bits": [ 15 ]
+        },
+        "minute": {
+          "direction": "input",
+          "bits": [ 16, 17, 18, 19, 20, 21 ]
+        },
+        "hour": {
+          "direction": "input",
+          "bits": [ 22, 23, 24, 25, 26 ]
+        },
+        "alarm_o": {
+          "direction": "output",
+          "bits": [ 27 ]
+        }
+      },
+      "cells": {
+        "$eq$/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:36$6": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000101",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000101",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:36.17-36.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10, 11, 12, 13, 14 ],
+            "B": [ 22, 23, 24, 25, 26 ],
+            "Y": [ 28 ]
+          }
+        },
+        "$eq$/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:36$7": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000110",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000110",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:36.39-36.58"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4, 5, 6, 7, 8, 9 ],
+            "B": [ 16, 17, 18, 19, 20, 21 ],
+            "Y": [ 29 ]
+          }
+        },
+        "$logic_and$/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:36$8": {
+          "hide_name": 1,
+          "type": "$logic_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:36.17-36.58"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 28 ],
+            "B": [ 29 ],
+            "Y": [ 30 ]
+          }
+        },
+        "$logic_not$/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:21$3": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:21.28-21.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31 ],
+            "Y": [ 32 ]
+          }
+        },
+        "$procdff$20": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:30.1-46.4"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 33 ],
+            "Q": [ 27 ]
+          }
+        },
+        "$procdff$25": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:15.1-26.4"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 34 ],
+            "Q": [ 31 ]
+          }
+        },
+        "$procmux$10": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:36.17-36.58|/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:36.13-40.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 27 ],
+            "B": [ "1" ],
+            "S": [ 30 ],
+            "Y": [ 35 ]
+          }
+        },
+        "$procmux$12": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:35.13-35.24|/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:35.9-44.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 35 ],
+            "S": [ 31 ],
+            "Y": [ 33 ]
+          }
+        },
+        "$procmux$14": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:20.13-20.20|/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:20.9-24.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31 ],
+            "B": [ 32 ],
+            "S": [ 15 ],
+            "Y": [ 34 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\alarm_o[0:0]": {
+          "hide_name": 1,
+          "bits": [ 33 ],
+          "attributes": {
+            "src": "/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:30.1-46.4"
+          }
+        },
+        "$0\\state_alarm[0:0]": {
+          "hide_name": 1,
+          "bits": [ 34 ],
+          "attributes": {
+            "src": "/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:15.1-26.4"
+          }
+        },
+        "$eq$/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:36$6_Y": {
+          "hide_name": 1,
+          "bits": [ 28 ],
+          "attributes": {
+            "src": "/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:36.17-36.35"
+          }
+        },
+        "$eq$/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:36$7_Y": {
+          "hide_name": 1,
+          "bits": [ 29 ],
+          "attributes": {
+            "src": "/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:36.39-36.58"
+          }
+        },
+        "$logic_and$/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:36$8_Y": {
+          "hide_name": 1,
+          "bits": [ 30 ],
+          "attributes": {
+            "src": "/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:36.17-36.58"
+          }
+        },
+        "$logic_not$/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:21$3_Y": {
+          "hide_name": 1,
+          "bits": [ 32 ],
+          "attributes": {
+            "src": "/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:21.28-21.40"
+          }
+        },
+        "$procmux$10_Y": {
+          "hide_name": 1,
+          "bits": [ 35 ],
+          "attributes": {
+          }
+        },
+        "alarm_hour": {
+          "hide_name": 0,
+          "bits": [ 10, 11, 12, 13, 14 ],
+          "attributes": {
+            "src": "/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:5.17-5.27"
+          }
+        },
+        "alarm_i": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:6.17-6.24"
+          }
+        },
+        "alarm_min": {
+          "hide_name": 0,
+          "bits": [ 4, 5, 6, 7, 8, 9 ],
+          "attributes": {
+            "src": "/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:4.17-4.26"
+          }
+        },
+        "alarm_o": {
+          "hide_name": 0,
+          "bits": [ 27 ],
+          "attributes": {
+            "src": "/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:9.17-9.24"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:2.17-2.20"
+          }
+        },
+        "hour": {
+          "hide_name": 0,
+          "bits": [ 22, 23, 24, 25, 26 ],
+          "attributes": {
+            "src": "/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:8.17-8.21"
+          }
+        },
+        "minute": {
+          "hide_name": 0,
+          "bits": [ 16, 17, 18, 19, 20, 21 ],
+          "attributes": {
+            "src": "/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:7.17-7.23"
+          }
+        },
+        "rst_n": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:3.17-3.22"
+          }
+        },
+        "state_alarm": {
+          "hide_name": 0,
+          "bits": [ 31 ],
+          "attributes": {
+            "src": "/home/kien/openlane2/MARCO/alarm/hdl/alarm.v:11.5-11.16"
+          }
+        }
+      }
+    }
+  }
+}

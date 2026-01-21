@@ -1,0 +1,5 @@
+`verilator_config
+lint_off -rule DECLFILENAME
+lint_off -rule EOFNEWLINE
+lint_off -rule UNDRIVEN -file "/home/kien/openlane2/MARCO/decode_input/runs/RUN_2026-01-16_19-22-56/tmp/61dc160335c344579784b676fa9a8bef.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/home/kien/openlane2/MARCO/decode_input/runs/RUN_2026-01-16_19-22-56/tmp/61dc160335c344579784b676fa9a8bef.bb.v"

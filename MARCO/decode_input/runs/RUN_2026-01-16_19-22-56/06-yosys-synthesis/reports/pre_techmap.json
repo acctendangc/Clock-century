@@ -1,0 +1,49 @@
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/kien/openlane2/MARCO/decode_input/runs/RUN_2026-01-16_19-22-56/tmp/1d3411ca071a4a9ca9de6439b9fffe33.lib ",
+   "modules": {
+      "\\decode_input": {
+         "num_wires":         16,
+         "num_wire_bits":     45,
+         "num_pub_wires":     9,
+         "num_pub_wire_bits": 38,
+         "num_ports":         9,
+         "num_port_bits":     38,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         25,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 2,
+            "$_AND_": 1,
+            "$_MUX_": 10,
+            "$_NOR_": 1,
+            "$_ORNOT_": 2,
+            "$_OR_": 8,
+            "$_XNOR_": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         16,
+         "num_wire_bits":     45,
+         "num_pub_wires":     9,
+         "num_pub_wire_bits": 38,
+         "num_ports":         9,
+         "num_port_bits":     38,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         25,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 2,
+            "$_AND_": 1,
+            "$_MUX_": 10,
+            "$_NOR_": 1,
+            "$_ORNOT_": 2,
+            "$_OR_": 8,
+            "$_XNOR_": 1
+         }
+      }
+}
+

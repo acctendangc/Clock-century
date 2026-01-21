@@ -1,0 +1,53 @@
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/kien/openlane2/MARCO/alarm/runs/RUN_2026-01-16_19-22-04/tmp/823a3cf7b7bb4bc1b7f381e4663fee7f.lib ",
+   "modules": {
+      "\\alarm": {
+         "num_wires":         28,
+         "num_wire_bits":     46,
+         "num_pub_wires":     9,
+         "num_pub_wire_bits": 27,
+         "num_ports":         8,
+         "num_port_bits":     26,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         21,
+         "area":              287.776000,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a221o_2": 1,
+            "sky130_fd_sc_hd__dfrtp_2": 2,
+            "sky130_fd_sc_hd__nand2_2": 2,
+            "sky130_fd_sc_hd__nor3_2": 1,
+            "sky130_fd_sc_hd__o21a_2": 1,
+            "sky130_fd_sc_hd__or2_2": 2,
+            "sky130_fd_sc_hd__or4_2": 2,
+            "sky130_fd_sc_hd__xor2_2": 10
+         }
+      }
+   },
+      "design": {
+         "num_wires":         28,
+         "num_wire_bits":     46,
+         "num_pub_wires":     9,
+         "num_pub_wire_bits": 27,
+         "num_ports":         8,
+         "num_port_bits":     26,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         21,
+         "area":              287.776000,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a221o_2": 1,
+            "sky130_fd_sc_hd__dfrtp_2": 2,
+            "sky130_fd_sc_hd__nand2_2": 2,
+            "sky130_fd_sc_hd__nor3_2": 1,
+            "sky130_fd_sc_hd__o21a_2": 1,
+            "sky130_fd_sc_hd__or2_2": 2,
+            "sky130_fd_sc_hd__or4_2": 2,
+            "sky130_fd_sc_hd__xor2_2": 10
+         }
+      }
+}
+

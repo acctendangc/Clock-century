@@ -1,0 +1,30 @@
+100. Printing statistics.
+
+=== decode_input ===
+
+   Number of wires:                 16
+   Number of wire bits:             45
+   Number of public wires:           9
+   Number of public wire bits:      38
+   Number of ports:                  9
+   Number of port bits:             38
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 25
+     $_ANDNOT_                       2
+     $_AND_                          1
+     $_MUX_                         10
+     $_NOR_                          1
+     $_ORNOT_                        2
+     $_OR_                           8
+     $_XNOR_                         1
+
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+

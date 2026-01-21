@@ -1,0 +1,6 @@
+%Warning-UNUSEDSIGNAL: /home/kien/openlane2/MARCO/decode_day/hdl/decode_day.v:7:32: Bits of signal are not used: 'year'[6:2]
+                                                                                  : ... note: In instance 'decode_day'
+    7 |     input        [6:0]         year,
+      |                                ^~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.018
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.

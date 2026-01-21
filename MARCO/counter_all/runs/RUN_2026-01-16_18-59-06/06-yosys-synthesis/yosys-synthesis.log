@@ -1,0 +1,1495 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2024  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)
+Loaded SDC plugin
+
+1. Executing Liberty frontend: /home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Imported 428 cell types from liberty file.
+[INFO] Using SDC file '/home/kien/openlane2/MARCO/counter_all/runs/RUN_2026-01-16_18-59-06/06-yosys-synthesis/synthesis.abc.sdc' for ABC…
+
+2. Executing Verilog-2005 frontend: /home/kien/openlane2/MARCO/counter_all/hdl/count.v
+Parsing SystemVerilog input from `/home/kien/openlane2/MARCO/counter_all/hdl/count.v' to AST representation.
+Storing AST representation for module `$abstract\count'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /home/kien/openlane2/MARCO/counter_all/hdl/counter_all.v
+Parsing SystemVerilog input from `/home/kien/openlane2/MARCO/counter_all/hdl/counter_all.v' to AST representation.
+Storing AST representation for module `$abstract\counter_all'.
+Successfully finished Verilog frontend.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+
+5. Executing AST frontend in derive mode using pre-parsed AST for module `\counter_all'.
+Generating RTLIL representation for module `\counter_all'.
+
+5.1. Analyzing design hierarchy..
+Top module:  \counter_all
+Parameter \NUM_BIT = 7
+Parameter \RESET_VALUE = 0
+
+5.2. Executing AST frontend in derive mode using pre-parsed AST for module `\count'.
+Parameter \NUM_BIT = 7
+Parameter \RESET_VALUE = 0
+Generating RTLIL representation for module `$paramod$68cce60caac29e78366021e7df70b5830dcfe5e8\count'.
+Parameter \NUM_BIT = 4
+Parameter \RESET_VALUE = 1
+
+5.3. Executing AST frontend in derive mode using pre-parsed AST for module `\count'.
+Parameter \NUM_BIT = 4
+Parameter \RESET_VALUE = 1
+Generating RTLIL representation for module `$paramod$abc6b65550ae0bb504ccfd54f00b89ea4a63e414\count'.
+Parameter \NUM_BIT = 5
+Parameter \RESET_VALUE = 1
+
+5.4. Executing AST frontend in derive mode using pre-parsed AST for module `\count'.
+Parameter \NUM_BIT = 5
+Parameter \RESET_VALUE = 1
+Generating RTLIL representation for module `$paramod$01b1a7df69abcbbd2be8113daf0a65846ad1d473\count'.
+Parameter \NUM_BIT = 5
+Parameter \RESET_VALUE = 0
+
+5.5. Executing AST frontend in derive mode using pre-parsed AST for module `\count'.
+Parameter \NUM_BIT = 5
+Parameter \RESET_VALUE = 0
+Generating RTLIL representation for module `$paramod$f34f10c89629e0c3cc15397bdc37cc3d05333fb4\count'.
+Parameter \NUM_BIT = 6
+Parameter \RESET_VALUE = 0
+
+5.6. Executing AST frontend in derive mode using pre-parsed AST for module `\count'.
+Parameter \NUM_BIT = 6
+Parameter \RESET_VALUE = 0
+Generating RTLIL representation for module `$paramod$21d8faa54596e1228e29e2e9e20ad1ec4961be9a\count'.
+Parameter \NUM_BIT = 6
+Parameter \RESET_VALUE = 0
+Found cached RTLIL representation for module `$paramod$21d8faa54596e1228e29e2e9e20ad1ec4961be9a\count'.
+
+5.7. Analyzing design hierarchy..
+Top module:  \counter_all
+Used module:     $paramod$68cce60caac29e78366021e7df70b5830dcfe5e8\count
+Used module:     $paramod$abc6b65550ae0bb504ccfd54f00b89ea4a63e414\count
+Used module:     $paramod$01b1a7df69abcbbd2be8113daf0a65846ad1d473\count
+Used module:     $paramod$f34f10c89629e0c3cc15397bdc37cc3d05333fb4\count
+Used module:     $paramod$21d8faa54596e1228e29e2e9e20ad1ec4961be9a\count
+
+5.8. Analyzing design hierarchy..
+Top module:  \counter_all
+Used module:     $paramod$68cce60caac29e78366021e7df70b5830dcfe5e8\count
+Used module:     $paramod$abc6b65550ae0bb504ccfd54f00b89ea4a63e414\count
+Used module:     $paramod$01b1a7df69abcbbd2be8113daf0a65846ad1d473\count
+Used module:     $paramod$f34f10c89629e0c3cc15397bdc37cc3d05333fb4\count
+Used module:     $paramod$21d8faa54596e1228e29e2e9e20ad1ec4961be9a\count
+Removing unused module `$abstract\counter_all'.
+Removing unused module `$abstract\count'.
+Removed 2 unused modules.
+Warning: Resizing cell port counter_all.year_inst.max_count from 32 bits to 7 bits.
+Warning: Resizing cell port counter_all.month_inst.max_count from 32 bits to 4 bits.
+Warning: Resizing cell port counter_all.minute_inst.max_count from 32 bits to 6 bits.
+Warning: Resizing cell port counter_all.second_inst.max_count from 32 bits to 6 bits.
+Renaming module counter_all to counter_all.
+
+6. Generating Graphviz representation of design.
+Writing dot description to `/home/kien/openlane2/MARCO/counter_all/runs/RUN_2026-01-16_18-59-06/06-yosys-synthesis/hierarchy.dot'.
+Dumping module counter_all to page 1.
+
+7. Executing TRIBUF pass.
+
+8. Executing HIERARCHY pass (managing design hierarchy).
+
+8.1. Analyzing design hierarchy..
+Top module:  \counter_all
+Used module:     $paramod$68cce60caac29e78366021e7df70b5830dcfe5e8\count
+Used module:     $paramod$abc6b65550ae0bb504ccfd54f00b89ea4a63e414\count
+Used module:     $paramod$01b1a7df69abcbbd2be8113daf0a65846ad1d473\count
+Used module:     $paramod$f34f10c89629e0c3cc15397bdc37cc3d05333fb4\count
+Used module:     $paramod$21d8faa54596e1228e29e2e9e20ad1ec4961be9a\count
+
+8.2. Analyzing design hierarchy..
+Top module:  \counter_all
+Used module:     $paramod$68cce60caac29e78366021e7df70b5830dcfe5e8\count
+Used module:     $paramod$abc6b65550ae0bb504ccfd54f00b89ea4a63e414\count
+Used module:     $paramod$01b1a7df69abcbbd2be8113daf0a65846ad1d473\count
+Used module:     $paramod$f34f10c89629e0c3cc15397bdc37cc3d05333fb4\count
+Used module:     $paramod$21d8faa54596e1228e29e2e9e20ad1ec4961be9a\count
+Removed 0 unused modules.
+
+9. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+10. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed 1 dead cases from process $proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$18 in module $paramod$abc6b65550ae0bb504ccfd54f00b89ea4a63e414\count.
+Marked 6 switch rules as full_case in process $proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$18 in module $paramod$abc6b65550ae0bb504ccfd54f00b89ea4a63e414\count.
+Removed 1 dead cases from process $proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$5 in module $paramod$68cce60caac29e78366021e7df70b5830dcfe5e8\count.
+Marked 6 switch rules as full_case in process $proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$5 in module $paramod$68cce60caac29e78366021e7df70b5830dcfe5e8\count.
+Removed 1 dead cases from process $proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$31 in module $paramod$01b1a7df69abcbbd2be8113daf0a65846ad1d473\count.
+Marked 6 switch rules as full_case in process $proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$31 in module $paramod$01b1a7df69abcbbd2be8113daf0a65846ad1d473\count.
+Removed 1 dead cases from process $proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$57 in module $paramod$21d8faa54596e1228e29e2e9e20ad1ec4961be9a\count.
+Marked 6 switch rules as full_case in process $proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$57 in module $paramod$21d8faa54596e1228e29e2e9e20ad1ec4961be9a\count.
+Removed 1 dead cases from process $proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$44 in module $paramod$f34f10c89629e0c3cc15397bdc37cc3d05333fb4\count.
+Marked 6 switch rules as full_case in process $proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$44 in module $paramod$f34f10c89629e0c3cc15397bdc37cc3d05333fb4\count.
+Removed a total of 5 dead cases.
+
+11. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 5 redundant assignments.
+Promoted 0 assignments to connections.
+
+12. Executing PROC_INIT pass (extract init attributes).
+
+13. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \reset_n in `$paramod$abc6b65550ae0bb504ccfd54f00b89ea4a63e414\count.$proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$18'.
+Found async reset \reset_n in `$paramod$68cce60caac29e78366021e7df70b5830dcfe5e8\count.$proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$5'.
+Found async reset \reset_n in `$paramod$01b1a7df69abcbbd2be8113daf0a65846ad1d473\count.$proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$31'.
+Found async reset \reset_n in `$paramod$21d8faa54596e1228e29e2e9e20ad1ec4961be9a\count.$proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$57'.
+Found async reset \reset_n in `$paramod$f34f10c89629e0c3cc15397bdc37cc3d05333fb4\count.$proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$44'.
+
+14. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~25 debug messages>
+
+15. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$abc6b65550ae0bb504ccfd54f00b89ea4a63e414\count.$proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$18'.
+     1/1: $0\count_o[3:0]
+Creating decoders for process `$paramod$68cce60caac29e78366021e7df70b5830dcfe5e8\count.$proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$5'.
+     1/1: $0\count_o[6:0]
+Creating decoders for process `$paramod$01b1a7df69abcbbd2be8113daf0a65846ad1d473\count.$proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$31'.
+     1/1: $0\count_o[4:0]
+Creating decoders for process `$paramod$21d8faa54596e1228e29e2e9e20ad1ec4961be9a\count.$proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$57'.
+     1/1: $0\count_o[5:0]
+Creating decoders for process `$paramod$f34f10c89629e0c3cc15397bdc37cc3d05333fb4\count.$proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$44'.
+     1/1: $0\count_o[4:0]
+
+16. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+17. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `$paramod$abc6b65550ae0bb504ccfd54f00b89ea4a63e414\count.\count_o' using process `$paramod$abc6b65550ae0bb504ccfd54f00b89ea4a63e414\count.$proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$18'.
+  created $adff cell `$procdff$159' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$68cce60caac29e78366021e7df70b5830dcfe5e8\count.\count_o' using process `$paramod$68cce60caac29e78366021e7df70b5830dcfe5e8\count.$proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$5'.
+  created $adff cell `$procdff$164' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$01b1a7df69abcbbd2be8113daf0a65846ad1d473\count.\count_o' using process `$paramod$01b1a7df69abcbbd2be8113daf0a65846ad1d473\count.$proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$31'.
+  created $adff cell `$procdff$169' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$21d8faa54596e1228e29e2e9e20ad1ec4961be9a\count.\count_o' using process `$paramod$21d8faa54596e1228e29e2e9e20ad1ec4961be9a\count.$proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$57'.
+  created $adff cell `$procdff$174' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$f34f10c89629e0c3cc15397bdc37cc3d05333fb4\count.\count_o' using process `$paramod$f34f10c89629e0c3cc15397bdc37cc3d05333fb4\count.$proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$44'.
+  created $adff cell `$procdff$179' with positive edge clock and positive level reset.
+
+18. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+19. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 5 empty switches in `$paramod$abc6b65550ae0bb504ccfd54f00b89ea4a63e414\count.$proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$18'.
+Removing empty process `$paramod$abc6b65550ae0bb504ccfd54f00b89ea4a63e414\count.$proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$18'.
+Found and cleaned up 5 empty switches in `$paramod$68cce60caac29e78366021e7df70b5830dcfe5e8\count.$proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$5'.
+Removing empty process `$paramod$68cce60caac29e78366021e7df70b5830dcfe5e8\count.$proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$5'.
+Found and cleaned up 5 empty switches in `$paramod$01b1a7df69abcbbd2be8113daf0a65846ad1d473\count.$proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$31'.
+Removing empty process `$paramod$01b1a7df69abcbbd2be8113daf0a65846ad1d473\count.$proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$31'.
+Found and cleaned up 5 empty switches in `$paramod$21d8faa54596e1228e29e2e9e20ad1ec4961be9a\count.$proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$57'.
+Removing empty process `$paramod$21d8faa54596e1228e29e2e9e20ad1ec4961be9a\count.$proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$57'.
+Found and cleaned up 5 empty switches in `$paramod$f34f10c89629e0c3cc15397bdc37cc3d05333fb4\count.$proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$44'.
+Removing empty process `$paramod$f34f10c89629e0c3cc15397bdc37cc3d05333fb4\count.$proc$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:15$44'.
+Cleaned up 25 empty switches.
+
+20. Executing CHECK pass (checking for obvious problems).
+Checking module counter_all...
+Checking module $paramod$abc6b65550ae0bb504ccfd54f00b89ea4a63e414\count...
+Checking module $paramod$68cce60caac29e78366021e7df70b5830dcfe5e8\count...
+Checking module $paramod$01b1a7df69abcbbd2be8113daf0a65846ad1d473\count...
+Checking module $paramod$21d8faa54596e1228e29e2e9e20ad1ec4961be9a\count...
+Checking module $paramod$f34f10c89629e0c3cc15397bdc37cc3d05333fb4\count...
+Found and reported 0 problems.
+
+21. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter_all.
+Optimizing module $paramod$abc6b65550ae0bb504ccfd54f00b89ea4a63e414\count.
+<suppressed ~4 debug messages>
+Optimizing module $paramod$68cce60caac29e78366021e7df70b5830dcfe5e8\count.
+<suppressed ~6 debug messages>
+Optimizing module $paramod$01b1a7df69abcbbd2be8113daf0a65846ad1d473\count.
+<suppressed ~4 debug messages>
+Optimizing module $paramod$21d8faa54596e1228e29e2e9e20ad1ec4961be9a\count.
+<suppressed ~6 debug messages>
+Optimizing module $paramod$f34f10c89629e0c3cc15397bdc37cc3d05333fb4\count.
+<suppressed ~6 debug messages>
+
+22. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod$abc6b65550ae0bb504ccfd54f00b89ea4a63e414\count.
+Deleting now unused module $paramod$68cce60caac29e78366021e7df70b5830dcfe5e8\count.
+Deleting now unused module $paramod$01b1a7df69abcbbd2be8113daf0a65846ad1d473\count.
+Deleting now unused module $paramod$21d8faa54596e1228e29e2e9e20ad1ec4961be9a\count.
+Deleting now unused module $paramod$f34f10c89629e0c3cc15397bdc37cc3d05333fb4\count.
+<suppressed ~6 debug messages>
+
+23. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter_all.
+<suppressed ~4 debug messages>
+
+24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter_all..
+Removed 22 unused cells and 78 unused wires.
+<suppressed ~25 debug messages>
+
+25. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter_all.
+
+26. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\counter_all'.
+<suppressed ~15 debug messages>
+Removed a total of 5 cells.
+
+27. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \counter_all..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~6 debug messages>
+
+28. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \counter_all.
+    New ctrl vector for $pmux cell $flatten\day_inst.$procmux$104: { $flatten\day_inst.$procmux$117_CMP $flatten\day_inst.$procmux$113_CMP $auto$opt_reduce.cc:134:opt_pmux$187 }
+    New ctrl vector for $pmux cell $flatten\hour_inst.$procmux$138: { $flatten\hour_inst.$procmux$151_CMP $flatten\hour_inst.$procmux$147_CMP $auto$opt_reduce.cc:134:opt_pmux$189 }
+    New ctrl vector for $pmux cell $flatten\minute_inst.$procmux$121: { $flatten\minute_inst.$procmux$134_CMP $flatten\minute_inst.$procmux$130_CMP $auto$opt_reduce.cc:134:opt_pmux$191 }
+    New ctrl vector for $pmux cell $flatten\month_inst.$procmux$70: { $flatten\month_inst.$procmux$83_CMP $flatten\month_inst.$procmux$79_CMP $auto$opt_reduce.cc:134:opt_pmux$193 }
+    New ctrl vector for $pmux cell $flatten\second_inst.$procmux$121: { $flatten\second_inst.$procmux$134_CMP $flatten\second_inst.$procmux$130_CMP $auto$opt_reduce.cc:134:opt_pmux$195 }
+    New ctrl vector for $pmux cell $flatten\year_inst.$procmux$87: { $flatten\year_inst.$procmux$100_CMP $flatten\year_inst.$procmux$96_CMP $auto$opt_reduce.cc:134:opt_pmux$197 }
+  Optimizing cells in module \counter_all.
+Performed a total of 6 changes.
+
+29. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\counter_all'.
+Removed a total of 0 cells.
+
+30. Executing OPT_DFF pass (perform DFF optimizations).
+
+31. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter_all..
+Removed 0 unused cells and 5 unused wires.
+<suppressed ~1 debug messages>
+
+32. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter_all.
+
+33. Rerunning OPT passes. (Maybe there is more to do…)
+
+34. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \counter_all..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~6 debug messages>
+
+35. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \counter_all.
+Performed a total of 0 changes.
+
+36. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\counter_all'.
+Removed a total of 0 cells.
+
+37. Executing OPT_DFF pass (perform DFF optimizations).
+
+38. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter_all..
+
+39. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter_all.
+
+40. Executing FSM pass (extract and optimize FSM).
+
+40.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+40.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+40.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+40.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter_all..
+
+40.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+40.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+40.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+40.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+41. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter_all.
+
+42. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\counter_all'.
+Removed a total of 0 cells.
+
+43. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \counter_all..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~6 debug messages>
+
+44. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \counter_all.
+Performed a total of 0 changes.
+
+45. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\counter_all'.
+Removed a total of 0 cells.
+
+46. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $flatten\year_inst.$procdff$164 ($adff) from module counter_all (D = $flatten\year_inst.$procmux$87_Y, Q = \year_inst.count_o).
+Adding EN signal on $flatten\second_inst.$procdff$174 ($adff) from module counter_all (D = $flatten\second_inst.$procmux$121_Y, Q = \second_inst.count_o).
+Adding EN signal on $flatten\month_inst.$procdff$159 ($adff) from module counter_all (D = $flatten\month_inst.$procmux$70_Y, Q = \month_inst.count_o).
+Adding EN signal on $flatten\minute_inst.$procdff$174 ($adff) from module counter_all (D = $flatten\minute_inst.$procmux$121_Y, Q = \minute_inst.count_o).
+Adding EN signal on $flatten\hour_inst.$procdff$179 ($adff) from module counter_all (D = $flatten\hour_inst.$procmux$138_Y, Q = \hour_inst.count_o).
+Adding EN signal on $flatten\day_inst.$procdff$169 ($adff) from module counter_all (D = $flatten\day_inst.$procmux$104_Y, Q = \day_inst.count_o).
+
+47. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter_all..
+Removed 6 unused cells and 6 unused wires.
+<suppressed ~7 debug messages>
+
+48. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter_all.
+<suppressed ~6 debug messages>
+
+49. Rerunning OPT passes. (Maybe there is more to do…)
+
+50. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \counter_all..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~6 debug messages>
+
+51. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \counter_all.
+    New ctrl vector for $pmux cell $flatten\day_inst.$procmux$104: { $flatten\day_inst.$procmux$117_CMP $flatten\day_inst.$procmux$113_CMP }
+    New ctrl vector for $pmux cell $flatten\hour_inst.$procmux$138: { $flatten\hour_inst.$procmux$151_CMP $flatten\hour_inst.$procmux$147_CMP }
+    New ctrl vector for $pmux cell $flatten\minute_inst.$procmux$121: { $flatten\minute_inst.$procmux$134_CMP $flatten\minute_inst.$procmux$130_CMP }
+    New ctrl vector for $pmux cell $flatten\month_inst.$procmux$70: { $flatten\month_inst.$procmux$83_CMP $flatten\month_inst.$procmux$79_CMP }
+    New ctrl vector for $pmux cell $flatten\second_inst.$procmux$121: { $flatten\second_inst.$procmux$134_CMP $flatten\second_inst.$procmux$130_CMP }
+    New ctrl vector for $pmux cell $flatten\year_inst.$procmux$87: { $flatten\year_inst.$procmux$100_CMP $flatten\year_inst.$procmux$96_CMP }
+  Optimizing cells in module \counter_all.
+Performed a total of 6 changes.
+
+52. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\counter_all'.
+Removed a total of 0 cells.
+
+53. Executing OPT_DFF pass (perform DFF optimizations).
+
+54. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter_all..
+
+55. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter_all.
+
+56. Rerunning OPT passes. (Maybe there is more to do…)
+
+57. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \counter_all..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~6 debug messages>
+
+58. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \counter_all.
+Performed a total of 0 changes.
+
+59. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\counter_all'.
+Removed a total of 0 cells.
+
+60. Executing OPT_DFF pass (perform DFF optimizations).
+
+61. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter_all..
+
+62. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter_all.
+
+63. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 2) from port B of cell counter_all.$flatten\second_inst.$procmux$130_CMP0 ($eq).
+Removed top 31 bits (of 32) from port B of cell counter_all.$flatten\second_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$65 ($sub).
+Removed top 26 bits (of 32) from port Y of cell counter_all.$flatten\second_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$65 ($sub).
+Removed top 31 bits (of 32) from port B of cell counter_all.$flatten\second_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$61 ($add).
+Removed top 26 bits (of 32) from port Y of cell counter_all.$flatten\second_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$61 ($add).
+Removed top 1 bits (of 2) from port B of cell counter_all.$flatten\minute_inst.$procmux$130_CMP0 ($eq).
+Removed top 31 bits (of 32) from port B of cell counter_all.$flatten\minute_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$65 ($sub).
+Removed top 26 bits (of 32) from port Y of cell counter_all.$flatten\minute_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$65 ($sub).
+Removed top 31 bits (of 32) from port B of cell counter_all.$flatten\minute_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$61 ($add).
+Removed top 26 bits (of 32) from port Y of cell counter_all.$flatten\minute_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$61 ($add).
+Removed top 1 bits (of 2) from port B of cell counter_all.$flatten\hour_inst.$procmux$147_CMP0 ($eq).
+Removed top 31 bits (of 32) from port B of cell counter_all.$flatten\hour_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$52 ($sub).
+Removed top 27 bits (of 32) from port Y of cell counter_all.$flatten\hour_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$52 ($sub).
+Removed top 31 bits (of 32) from port B of cell counter_all.$flatten\hour_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:35$50 ($sub).
+Removed top 27 bits (of 32) from port Y of cell counter_all.$flatten\hour_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:35$50 ($sub).
+Removed top 31 bits (of 32) from port B of cell counter_all.$flatten\hour_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$48 ($add).
+Removed top 27 bits (of 32) from port Y of cell counter_all.$flatten\hour_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$48 ($add).
+Removed top 1 bits (of 2) from port B of cell counter_all.$flatten\day_inst.$procmux$113_CMP0 ($eq).
+Removed top 31 bits (of 32) from port B of cell counter_all.$flatten\day_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$39 ($sub).
+Removed top 27 bits (of 32) from port Y of cell counter_all.$flatten\day_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$39 ($sub).
+Removed top 4 bits (of 5) from port B of cell counter_all.$flatten\day_inst.$eq$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:38$38 ($eq).
+Removed top 31 bits (of 32) from port B of cell counter_all.$flatten\day_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:35$37 ($sub).
+Removed top 27 bits (of 32) from port Y of cell counter_all.$flatten\day_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:35$37 ($sub).
+Removed top 31 bits (of 32) from port B of cell counter_all.$flatten\day_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$35 ($add).
+Removed top 27 bits (of 32) from port Y of cell counter_all.$flatten\day_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$35 ($add).
+Removed top 1 bits (of 2) from port B of cell counter_all.$flatten\month_inst.$procmux$79_CMP0 ($eq).
+Removed top 31 bits (of 32) from port B of cell counter_all.$flatten\month_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$26 ($sub).
+Removed top 28 bits (of 32) from port Y of cell counter_all.$flatten\month_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$26 ($sub).
+Removed top 3 bits (of 4) from port B of cell counter_all.$flatten\month_inst.$eq$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:38$25 ($eq).
+Removed top 31 bits (of 32) from port B of cell counter_all.$flatten\month_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$22 ($add).
+Removed top 28 bits (of 32) from port Y of cell counter_all.$flatten\month_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$22 ($add).
+Removed top 1 bits (of 2) from port B of cell counter_all.$flatten\year_inst.$procmux$96_CMP0 ($eq).
+Removed top 31 bits (of 32) from port B of cell counter_all.$flatten\year_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$13 ($sub).
+Removed top 25 bits (of 32) from port Y of cell counter_all.$flatten\year_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$13 ($sub).
+Removed top 31 bits (of 32) from port B of cell counter_all.$flatten\year_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$9 ($add).
+Removed top 25 bits (of 32) from port Y of cell counter_all.$flatten\year_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$9 ($add).
+Removed top 27 bits (of 32) from wire counter_all.$flatten\day_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$35_Y.
+Removed top 27 bits (of 32) from wire counter_all.$flatten\day_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:35$37_Y.
+Removed top 27 bits (of 32) from wire counter_all.$flatten\day_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$39_Y.
+Removed top 27 bits (of 32) from wire counter_all.$flatten\hour_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$48_Y.
+Removed top 27 bits (of 32) from wire counter_all.$flatten\hour_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:35$50_Y.
+Removed top 31 bits (of 32) from wire counter_all.$flatten\hour_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$52_Y.
+Removed top 26 bits (of 32) from wire counter_all.$flatten\minute_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$61_Y.
+Removed top 26 bits (of 32) from wire counter_all.$flatten\minute_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$65_Y.
+Removed top 28 bits (of 32) from wire counter_all.$flatten\month_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$22_Y.
+Removed top 28 bits (of 32) from wire counter_all.$flatten\month_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$26_Y.
+Removed top 26 bits (of 32) from wire counter_all.$flatten\second_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$61_Y.
+Removed top 26 bits (of 32) from wire counter_all.$flatten\second_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$65_Y.
+Removed top 25 bits (of 32) from wire counter_all.$flatten\year_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$9_Y.
+Removed top 25 bits (of 32) from wire counter_all.$flatten\year_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$13_Y.
+
+64. Executing PEEPOPT pass (run peephole optimizers).
+
+65. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter_all..
+Removed 0 unused cells and 14 unused wires.
+<suppressed ~1 debug messages>
+
+66. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module counter_all:
+  creating $macc model for $flatten\day_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$35 ($add).
+  creating $macc model for $flatten\day_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:35$37 ($sub).
+  creating $macc model for $flatten\day_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$39 ($sub).
+  creating $macc model for $flatten\hour_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$48 ($add).
+  creating $macc model for $flatten\hour_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:35$50 ($sub).
+  creating $macc model for $flatten\hour_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$52 ($sub).
+  creating $macc model for $flatten\minute_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$61 ($add).
+  creating $macc model for $flatten\minute_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$65 ($sub).
+  creating $macc model for $flatten\month_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$22 ($add).
+  creating $macc model for $flatten\month_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$26 ($sub).
+  creating $macc model for $flatten\second_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$61 ($add).
+  creating $macc model for $flatten\second_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$65 ($sub).
+  creating $macc model for $flatten\year_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$9 ($add).
+  creating $macc model for $flatten\year_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$13 ($sub).
+  creating $alu model for $macc $flatten\year_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$13.
+  creating $alu model for $macc $flatten\year_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$9.
+  creating $alu model for $macc $flatten\second_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$65.
+  creating $alu model for $macc $flatten\second_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$61.
+  creating $alu model for $macc $flatten\month_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$26.
+  creating $alu model for $macc $flatten\month_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$22.
+  creating $alu model for $macc $flatten\minute_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$65.
+  creating $alu model for $macc $flatten\minute_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$61.
+  creating $alu model for $macc $flatten\hour_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$52.
+  creating $alu model for $macc $flatten\hour_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:35$50.
+  creating $alu model for $macc $flatten\hour_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$48.
+  creating $alu model for $macc $flatten\day_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$39.
+  creating $alu model for $macc $flatten\day_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:35$37.
+  creating $alu model for $macc $flatten\day_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$35.
+  creating $alu model for $flatten\day_inst.$ge$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:26$34 ($ge): new $alu
+  creating $alu model for $flatten\day_inst.$gt$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:34$36 ($gt): merged with $flatten\day_inst.$ge$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:26$34.
+  creating $alu model for $flatten\hour_inst.$ge$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:26$47 ($ge): new $alu
+  creating $alu model for $flatten\hour_inst.$gt$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:34$49 ($gt): merged with $flatten\hour_inst.$ge$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:26$47.
+  creating $alu model for $flatten\minute_inst.$ge$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:26$60 ($ge): new $alu
+  creating $alu model for $flatten\minute_inst.$gt$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:34$62 ($gt): merged with $flatten\minute_inst.$ge$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:26$60.
+  creating $alu model for $flatten\month_inst.$ge$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:26$21 ($ge): new $alu
+  creating $alu model for $flatten\month_inst.$gt$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:34$23 ($gt): merged with $flatten\month_inst.$ge$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:26$21.
+  creating $alu model for $flatten\second_inst.$ge$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:26$60 ($ge): new $alu
+  creating $alu model for $flatten\second_inst.$gt$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:34$62 ($gt): merged with $flatten\second_inst.$ge$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:26$60.
+  creating $alu model for $flatten\year_inst.$ge$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:26$8 ($ge): new $alu
+  creating $alu model for $flatten\year_inst.$gt$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:34$10 ($gt): merged with $flatten\year_inst.$ge$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:26$8.
+  creating $alu model for $flatten\day_inst.$eq$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:60$40 ($eq): merged with $flatten\day_inst.$ge$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:26$34.
+  creating $alu model for $flatten\hour_inst.$eq$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:60$53 ($eq): merged with $flatten\hour_inst.$ge$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:26$47.
+  creating $alu model for $flatten\minute_inst.$eq$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:60$66 ($eq): merged with $flatten\minute_inst.$ge$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:26$60.
+  creating $alu model for $flatten\month_inst.$eq$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:60$27 ($eq): merged with $flatten\month_inst.$ge$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:26$21.
+  creating $alu model for $flatten\second_inst.$eq$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:60$66 ($eq): merged with $flatten\second_inst.$ge$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:26$60.
+  creating $alu cell for $flatten\year_inst.$ge$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:26$8, $flatten\year_inst.$gt$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:34$10: $auto$alumacc.cc:485:replace_alu$248
+  creating $alu cell for $flatten\second_inst.$ge$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:26$60, $flatten\second_inst.$gt$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:34$62, $flatten\second_inst.$eq$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:60$66: $auto$alumacc.cc:485:replace_alu$257
+  creating $alu cell for $flatten\month_inst.$ge$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:26$21, $flatten\month_inst.$gt$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:34$23, $flatten\month_inst.$eq$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:60$27: $auto$alumacc.cc:485:replace_alu$266
+  creating $alu cell for $flatten\minute_inst.$ge$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:26$60, $flatten\minute_inst.$gt$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:34$62, $flatten\minute_inst.$eq$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:60$66: $auto$alumacc.cc:485:replace_alu$279
+  creating $alu cell for $flatten\hour_inst.$ge$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:26$47, $flatten\hour_inst.$gt$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:34$49, $flatten\hour_inst.$eq$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:60$53: $auto$alumacc.cc:485:replace_alu$288
+  creating $alu cell for $flatten\day_inst.$ge$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:26$34, $flatten\day_inst.$gt$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:34$36, $flatten\day_inst.$eq$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:60$40: $auto$alumacc.cc:485:replace_alu$301
+  creating $alu cell for $flatten\day_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$35: $auto$alumacc.cc:485:replace_alu$314
+  creating $alu cell for $flatten\day_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:35$37: $auto$alumacc.cc:485:replace_alu$317
+  creating $alu cell for $flatten\day_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$39: $auto$alumacc.cc:485:replace_alu$320
+  creating $alu cell for $flatten\hour_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$48: $auto$alumacc.cc:485:replace_alu$323
+  creating $alu cell for $flatten\hour_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:35$50: $auto$alumacc.cc:485:replace_alu$326
+  creating $alu cell for $flatten\hour_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$52: $auto$alumacc.cc:485:replace_alu$329
+  creating $alu cell for $flatten\minute_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$61: $auto$alumacc.cc:485:replace_alu$332
+  creating $alu cell for $flatten\minute_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$65: $auto$alumacc.cc:485:replace_alu$335
+  creating $alu cell for $flatten\month_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$22: $auto$alumacc.cc:485:replace_alu$338
+  creating $alu cell for $flatten\month_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$26: $auto$alumacc.cc:485:replace_alu$341
+  creating $alu cell for $flatten\second_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$61: $auto$alumacc.cc:485:replace_alu$344
+  creating $alu cell for $flatten\second_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$65: $auto$alumacc.cc:485:replace_alu$347
+  creating $alu cell for $flatten\year_inst.$add$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:30$9: $auto$alumacc.cc:485:replace_alu$350
+  creating $alu cell for $flatten\year_inst.$sub$/home/kien/openlane2/MARCO/counter_all/hdl/count.v:42$13: $auto$alumacc.cc:485:replace_alu$353
+  created 20 $alu and 0 $macc cells.
+
+67. Executing SHARE pass (SAT-based resource sharing).
+
+68. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter_all.
+<suppressed ~6 debug messages>
+
+69. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\counter_all'.
+Removed a total of 0 cells.
+
+70. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \counter_all..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~6 debug messages>
+
+71. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \counter_all.
+Performed a total of 0 changes.
+
+72. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\counter_all'.
+Removed a total of 0 cells.
+
+73. Executing OPT_DFF pass (perform DFF optimizations).
+
+74. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter_all..
+Removed 0 unused cells and 17 unused wires.
+<suppressed ~1 debug messages>
+
+75. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter_all.
+
+76. Rerunning OPT passes. (Maybe there is more to do…)
+
+77. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \counter_all..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~6 debug messages>
+
+78. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \counter_all.
+Performed a total of 0 changes.
+
+79. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\counter_all'.
+Removed a total of 0 cells.
+
+80. Executing OPT_DFF pass (perform DFF optimizations).
+
+81. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter_all..
+
+82. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter_all.
+
+83. Executing MEMORY pass.
+
+83.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+83.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+83.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+83.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+83.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+83.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter_all..
+
+83.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+83.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+83.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter_all..
+
+83.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+84. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter_all..
+
+85. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter_all.
+<suppressed ~9 debug messages>
+
+86. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\counter_all'.
+Removed a total of 0 cells.
+
+87. Executing OPT_DFF pass (perform DFF optimizations).
+
+88. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter_all..
+Removed 10 unused cells and 12 unused wires.
+<suppressed ~11 debug messages>
+
+89. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+90. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter_all.
+
+91. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\counter_all'.
+Removed a total of 0 cells.
+
+92. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \counter_all..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~6 debug messages>
+
+93. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \counter_all.
+Performed a total of 0 changes.
+
+94. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\counter_all'.
+Removed a total of 0 cells.
+
+95. Executing OPT_SHARE pass.
+
+96. Executing OPT_DFF pass (perform DFF optimizations).
+
+97. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter_all..
+
+98. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter_all.
+
+99. Executing TECHMAP pass (map to technology primitives).
+
+99.1. Executing Verilog-2005 frontend: /nix/store/9r0bh7sp051dpm8km8bqlb028anpd3v3-yosys/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/nix/store/9r0bh7sp051dpm8km8bqlb028anpd3v3-yosys/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+99.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $reduce_and.
+Using extmapper simplemap for cells of type $adffe.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $logic_and.
+Using template $paramod$7e708ae28ab761f11d0fb59d3ffc72f6a4baf5d9\_90_alu for cells of type $alu.
+Using template $paramod$103b4016182df467cceab67bcf3e18e6361ec0fd\_90_alu for cells of type $alu.
+Using template $paramod$a04dd9d4d8b430140c4ff94b50470fb380fda2a0\_90_alu for cells of type $alu.
+Using template $paramod$b18e16801adf491a64caa0542270798e5d4ac6b6\_90_alu for cells of type $alu.
+Using template $paramod$32a7b7b86c07519b7537abc18e96f0331f97914d\_90_alu for cells of type $alu.
+Using template $paramod$dbcdc7e8aa1a4080cea2deda6fdc8772064f4d90\_90_alu for cells of type $alu.
+Using template $paramod$32efbfac1c4dc57230cf86180788fdfd12e3b511\_90_alu for cells of type $alu.
+Using template $paramod$dc04b7d98e503a7bab16fce2df70e6e2c5ca34d6\_90_alu for cells of type $alu.
+Using template $paramod$672a140277c71df8314410f22acc08d55222c3c7\_90_alu for cells of type $alu.
+Using template $paramod$740b056ede97228d3eae64ea2fdc81f0a33e0fe7\_90_alu for cells of type $alu.
+Using template $paramod$8742280fdebca84e1c87f2a86ed84f62d558f4cc\_90_alu for cells of type $alu.
+Using template $paramod$10ed987432f06055e5279101f9ec60a49861b43c\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000010 for cells of type $lcu.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $xor.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000111 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000110 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000101 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000100 for cells of type $lcu.
+No more expansions possible.
+<suppressed ~1422 debug messages>
+
+100. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter_all.
+<suppressed ~574 debug messages>
+
+101. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\counter_all'.
+<suppressed ~279 debug messages>
+Removed a total of 93 cells.
+
+102. Executing OPT_DFF pass (perform DFF optimizations).
+
+103. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter_all..
+Removed 72 unused cells and 744 unused wires.
+<suppressed ~73 debug messages>
+
+104. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter_all.
+
+105. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\counter_all'.
+Removed a total of 0 cells.
+
+106. Executing OPT_DFF pass (perform DFF optimizations).
+
+107. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter_all..
+
+108. Executing ABC pass (technology mapping using ABC).
+
+108.1. Extracting gate netlist of module `\counter_all' to `<abc-temp-dir>/input.blif'..
+Extracted 539 gates and 602 wires to a netlist network with 61 inputs and 49 outputs.
+
+108.1.1. Executing ABC.
+Running ABC command: "/nix/store/6l3aj1gi4lja8z5s4lan2k2cfz9mqkrz-yosys-abc/bin/abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 13 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+108.1.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:       21
+ABC RESULTS:             ORNOT cells:       17
+ABC RESULTS:              XNOR cells:       26
+ABC RESULTS:               NOT cells:       18
+ABC RESULTS:               NOR cells:       40
+ABC RESULTS:                OR cells:       52
+ABC RESULTS:              NAND cells:       22
+ABC RESULTS:               XOR cells:       50
+ABC RESULTS:            ANDNOT cells:      118
+ABC RESULTS:               MUX cells:       53
+ABC RESULTS:        internal signals:      492
+ABC RESULTS:           input signals:       61
+ABC RESULTS:          output signals:       49
+Removing temp directory.
+
+109. Executing OPT pass (performing simple optimizations).
+
+109.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter_all.
+
+109.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\counter_all'.
+<suppressed ~48 debug messages>
+Removed a total of 16 cells.
+
+109.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+109.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter_all..
+Removed 0 unused cells and 356 unused wires.
+<suppressed ~1 debug messages>
+
+109.5. Finished fast OPT passes.
+
+110. Executing HIERARCHY pass (managing design hierarchy).
+
+110.1. Analyzing design hierarchy..
+Top module:  \counter_all
+
+110.2. Analyzing design hierarchy..
+Top module:  \counter_all
+Removed 0 unused modules.
+
+111. Executing CHECK pass (checking for obvious problems).
+Checking module counter_all...
+Found and reported 0 problems.
+
+112. Printing statistics.
+
+=== counter_all ===
+
+   Number of wires:                458
+   Number of wire bits:            570
+   Number of public wires:          67
+   Number of public wire bits:     179
+   Number of ports:                 15
+   Number of port bits:             73
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                440
+     $_ANDNOT_                     118
+     $_AND_                         19
+     $_DFFE_PN0P_                   31
+     $_DFFE_PN1P_                    2
+     $_MUX_                         53
+     $_NAND_                        21
+     $_NOR_                         31
+     $_NOT_                         18
+     $_ORNOT_                       17
+     $_OR_                          52
+     $_XNOR_                        22
+     $_XOR_                         50
+     $scopeinfo                      6
+
+113. Generating Graphviz representation of design.
+Writing dot description to `/home/kien/openlane2/MARCO/counter_all/runs/RUN_2026-01-16_18-59-06/06-yosys-synthesis/primitive_techmap.dot'.
+Dumping module counter_all to page 1.
+
+114. Executing OPT pass (performing simple optimizations).
+
+114.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter_all.
+
+114.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\counter_all'.
+Removed a total of 0 cells.
+
+114.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \counter_all..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+114.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \counter_all.
+Performed a total of 0 changes.
+
+114.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\counter_all'.
+Removed a total of 0 cells.
+
+114.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+114.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter_all..
+
+114.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module counter_all.
+
+114.9. Finished OPT passes. (There is nothing left to do.)
+
+115. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter_all..
+Removed 6 unused cells and 42 unused wires.
+<suppressed ~48 debug messages>
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/kien/openlane2/MARCO/counter_all/runs/RUN_2026-01-16_18-59-06/tmp/b63910f2eb124bbc98a48d09e802fe2b.lib ",
+   "modules": {
+      "\\counter_all": {
+         "num_wires":         416,
+         "num_wire_bits":     474,
+         "num_pub_wires":     25,
+         "num_pub_wire_bits": 83,
+         "num_ports":         15,
+         "num_port_bits":     73,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         434,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 118,
+            "$_AND_": 19,
+            "$_DFFE_PN0P_": 31,
+            "$_DFFE_PN1P_": 2,
+            "$_MUX_": 53,
+            "$_NAND_": 21,
+            "$_NOR_": 31,
+            "$_NOT_": 18,
+            "$_ORNOT_": 17,
+            "$_OR_": 52,
+            "$_XNOR_": 22,
+            "$_XOR_": 50
+         }
+      }
+   },
+      "design": {
+         "num_wires":         416,
+         "num_wire_bits":     474,
+         "num_pub_wires":     25,
+         "num_pub_wire_bits": 83,
+         "num_ports":         15,
+         "num_port_bits":     73,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         434,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 118,
+            "$_AND_": 19,
+            "$_DFFE_PN0P_": 31,
+            "$_DFFE_PN1P_": 2,
+            "$_MUX_": 53,
+            "$_NAND_": 21,
+            "$_NOR_": 31,
+            "$_NOT_": 18,
+            "$_ORNOT_": 17,
+            "$_OR_": 52,
+            "$_XNOR_": 22,
+            "$_XOR_": 50
+         }
+      }
+}
+
+116. Printing statistics.
+
+=== counter_all ===
+
+   Number of wires:                416
+   Number of wire bits:            474
+   Number of public wires:          25
+   Number of public wire bits:      83
+   Number of ports:                 15
+   Number of port bits:             73
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                434
+     $_ANDNOT_                     118
+     $_AND_                         19
+     $_DFFE_PN0P_                   31
+     $_DFFE_PN1P_                    2
+     $_MUX_                         53
+     $_NAND_                        21
+     $_NOR_                         31
+     $_NOT_                         18
+     $_ORNOT_                       17
+     $_OR_                          52
+     $_XNOR_                        22
+     $_XOR_                         50
+
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_DFFE_PN0P_ is unknown!
+   Area for cell type $_DFFE_PN1P_ is unknown!
+
+[INFO] Applying tri-state buffer mapping from '/home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v'…
+
+117. Executing TECHMAP pass (map to technology primitives).
+
+117.1. Executing Verilog-2005 frontend: /home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v
+Parsing Verilog input from `/home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v' to AST representation.
+Generating RTLIL representation for module `\$_TBUF_'.
+Successfully finished Verilog frontend.
+
+117.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+118. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+[INFO] Applying latch mapping from '/home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v'…
+
+119. Executing TECHMAP pass (map to technology primitives).
+
+119.1. Executing Verilog-2005 frontend: /home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v
+Parsing Verilog input from `/home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DLATCH_P_'.
+Generating RTLIL representation for module `\$_DLATCH_N_'.
+Successfully finished Verilog frontend.
+
+119.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+120. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+121. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell sky130_fd_sc_hd__dfxtp_2 (noninv, pins=3, area=21.27) is a direct match for cell type $_DFF_P_.
+  cell sky130_fd_sc_hd__dfrtp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN0_.
+  cell sky130_fd_sc_hd__dfstp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN1_.
+  cell sky130_fd_sc_hd__dfbbn_2 (noninv, pins=6, area=35.03) is a direct match for cell type $_DFFSR_NNN_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    \sky130_fd_sc_hd__dfxtp_2 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \sky130_fd_sc_hd__dfrtp_2 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    \sky130_fd_sc_hd__dfstp_2 _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .SET_B( R));
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    \sky130_fd_sc_hd__dfbbn_2 _DFFSR_NNN_ (.CLK_N( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R), .SET_B( S));
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    unmapped dff cell: $_DFFSR_PNN_
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+121.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+Mapping DFF cells in module `\counter_all':
+  mapped 31 $_DFF_PN0_ cells to \sky130_fd_sc_hd__dfrtp_2 cells.
+  mapped 2 $_DFF_PN1_ cells to \sky130_fd_sc_hd__dfstp_2 cells.
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/kien/openlane2/MARCO/counter_all/runs/RUN_2026-01-16_18-59-06/tmp/b63910f2eb124bbc98a48d09e802fe2b.lib ",
+   "modules": {
+      "\\counter_all": {
+         "num_wires":         449,
+         "num_wire_bits":     507,
+         "num_pub_wires":     25,
+         "num_pub_wire_bits": 83,
+         "num_ports":         15,
+         "num_port_bits":     73,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         467,
+         "area":              867.081600,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 118,
+            "$_AND_": 19,
+            "$_MUX_": 86,
+            "$_NAND_": 21,
+            "$_NOR_": 31,
+            "$_NOT_": 18,
+            "$_ORNOT_": 17,
+            "$_OR_": 52,
+            "$_XNOR_": 22,
+            "$_XOR_": 50,
+            "sky130_fd_sc_hd__dfrtp_2": 31,
+            "sky130_fd_sc_hd__dfstp_2": 2
+         }
+      }
+   },
+      "design": {
+         "num_wires":         449,
+         "num_wire_bits":     507,
+         "num_pub_wires":     25,
+         "num_pub_wire_bits": 83,
+         "num_ports":         15,
+         "num_port_bits":     73,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         467,
+         "area":              867.081600,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 118,
+            "$_AND_": 19,
+            "$_MUX_": 86,
+            "$_NAND_": 21,
+            "$_NOR_": 31,
+            "$_NOT_": 18,
+            "$_ORNOT_": 17,
+            "$_OR_": 52,
+            "$_XNOR_": 22,
+            "$_XOR_": 50,
+            "sky130_fd_sc_hd__dfrtp_2": 31,
+            "sky130_fd_sc_hd__dfstp_2": 2
+         }
+      }
+}
+
+122. Printing statistics.
+
+=== counter_all ===
+
+   Number of wires:                449
+   Number of wire bits:            507
+   Number of public wires:          25
+   Number of public wire bits:      83
+   Number of ports:                 15
+   Number of port bits:             73
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                467
+     $_ANDNOT_                     118
+     $_AND_                         19
+     $_MUX_                         86
+     $_NAND_                        21
+     $_NOR_                         31
+     $_NOT_                         18
+     $_ORNOT_                       17
+     $_OR_                          52
+     $_XNOR_                        22
+     $_XOR_                         50
+     sky130_fd_sc_hd__dfrtp_2       31
+     sky130_fd_sc_hd__dfstp_2        2
+
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+
+   Chip area for module '\counter_all': 867.081600
+     of which used for sequential elements: 867.081600 (100.00%)
+
+[INFO] Using generated ABC script '/home/kien/openlane2/MARCO/counter_all/runs/RUN_2026-01-16_18-59-06/06-yosys-synthesis/AREA_0.abc'…
+
+123. Executing ABC pass (technology mapping using ABC).
+
+123.1. Extracting gate netlist of module `\counter_all' to `/tmp/yosys-abc-4a6eCX/input.blif'..
+Extracted 434 gates and 495 wires to a netlist network with 61 inputs and 43 outputs.
+
+123.1.1. Executing ABC.
+Running ABC command: "/nix/store/6l3aj1gi4lja8z5s4lan2k2cfz9mqkrz-yosys-abc/bin/abc" -s -f /tmp/yosys-abc-4a6eCX/abc.script 2>&1
+ABC: ABC command line: "source /tmp/yosys-abc-4a6eCX/abc.script".
+ABC: 
+ABC: + read_blif /tmp/yosys-abc-4a6eCX/input.blif 
+ABC: + read_lib -w /home/kien/openlane2/MARCO/counter_all/runs/RUN_2026-01-16_18-59-06/tmp/b63910f2eb124bbc98a48d09e802fe2b.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.03 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfsbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
+ABC: Library "sky130_fd_sc_hd__tt_025C_1v80" from "/home/kien/openlane2/MARCO/counter_all/runs/RUN_2026-01-16_18-59-06/tmp/b63910f2eb124bbc98a48d09e802fe2b.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.05 sec
+ABC: Memory =    9.54 MB. Time =     0.05 sec
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + read_constr -v /home/kien/openlane2/MARCO/counter_all/runs/RUN_2026-01-16_18-59-06/06-yosys-synthesis/synthesis.abc.sdc 
+ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_2/Y".
+ABC: Setting output load to be 33.442001.
+ABC: + source /home/kien/openlane2/MARCO/counter_all/runs/RUN_2026-01-16_18-59-06/06-yosys-synthesis/AREA_0.abc 
+ABC: Error: The network is combinational.
+ABC: Cannot find the default PI driving cell (sky130_fd_sc_hd__inv_2/Y) in the library.
+ABC: WireLoad = "none"  Gates =    316 (  5.4 %)   Cap = 10.6 ff (  4.8 %)   Area =     2781.42 ( 83.5 %)   Delay =  2133.92 ps  (  5.4 %)               
+ABC: Path  0 --      48 : 0    5 pi                        A =   0.00  Df =   0.0   -0.0 ps  S =   0.0 ps  Cin =  0.0 ff  Cout =  24.8 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --     154 : 2    2 sky130_fd_sc_hd__and2b_2  A =   8.76  Df = 188.7   -2.3 ps  S =  41.2 ps  Cin =  1.6 ff  Cout =   4.0 ff  Cmax = 310.4 ff  G =  233  
+ABC: Path  2 --     157 : 3    2 sky130_fd_sc_hd__or3b_2   A =   8.76  Df = 660.7 -314.3 ps  S =  88.0 ps  Cin =  1.5 ff  Cout =   6.1 ff  Cmax = 269.2 ff  G =  387  
+ABC: Path  3 --     166 : 3    7 sky130_fd_sc_hd__or3b_2   A =   8.76  Df =1208.5 -523.6 ps  S = 128.2 ps  Cin =  1.5 ff  Cout =  19.7 ff  Cmax = 269.2 ff  G = 1258  
+ABC: Path  4 --     285 : 4    1 sky130_fd_sc_hd__and4_2   A =  10.01  Df =1440.7 -284.6 ps  S =  49.5 ps  Cin =  1.5 ff  Cout =   2.4 ff  Cmax = 300.3 ff  G =  149  
+ABC: Path  5 --     288 : 5    1 sky130_fd_sc_hd__a311o_2  A =  11.26  Df =1773.5 -267.2 ps  S =  48.5 ps  Cin =  2.3 ff  Cout =   1.7 ff  Cmax = 298.5 ff  G =   72  
+ABC: Path  6 --     293 : 4    1 sky130_fd_sc_hd__o2bb2a_2 A =  11.26  Df =2133.9 -349.5 ps  S = 186.5 ps  Cin =  1.8 ff  Cout =  33.4 ff  Cmax = 294.8 ff  G = 1904  
+ABC: Start-point = pi47 (\day_num [3]).  End-point = po22 ($auto$rtlil.cc:2739:MuxGate$2508).
+ABC: netlist                       : i/o =   61/   43  lat =    0  nd =   316  edge =    890  area =2781.87  delay = 6.00  lev = 6
+ABC: + write_blif /tmp/yosys-abc-4a6eCX/output.blif 
+
+123.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__nor3_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__nand3b_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a2111o_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o21bai_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o31a_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__and4_2 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__a22oi_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a311o_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__o2bb2a_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__a41o_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a21boi_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o32a_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o211a_2 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__nand3_2 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__nand2b_2 cells:       17
+ABC RESULTS:   sky130_fd_sc_hd__a221o_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or3b_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__o311a_2 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__o21ba_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a211o_2 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__or4_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__a21bo_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__and2b_2 cells:       17
+ABC RESULTS:   sky130_fd_sc_hd__nor2_2 cells:       26
+ABC RESULTS:   sky130_fd_sc_hd__xor2_2 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__and4b_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__or2_2 cells:       11
+ABC RESULTS:   sky130_fd_sc_hd__and3_2 cells:       10
+ABC RESULTS:   sky130_fd_sc_hd__inv_2 cells:       17
+ABC RESULTS:   sky130_fd_sc_hd__a31o_2 cells:       13
+ABC RESULTS:   sky130_fd_sc_hd__nand2_2 cells:       19
+ABC RESULTS:   sky130_fd_sc_hd__and2_2 cells:       14
+ABC RESULTS:   sky130_fd_sc_hd__a2bb2o_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__mux2_1 cells:       18
+ABC RESULTS:   sky130_fd_sc_hd__o21ai_2 cells:       15
+ABC RESULTS:   sky130_fd_sc_hd__a21oi_2 cells:       12
+ABC RESULTS:   sky130_fd_sc_hd__xnor2_2 cells:        7
+ABC RESULTS:   sky130_fd_sc_hd__a21o_2 cells:       11
+ABC RESULTS:   sky130_fd_sc_hd__o22a_2 cells:        9
+ABC RESULTS:   sky130_fd_sc_hd__a32o_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__o21a_2 cells:       10
+ABC RESULTS:   sky130_fd_sc_hd__or3_2 cells:        7
+ABC RESULTS:   sky130_fd_sc_hd__a22o_2 cells:        7
+ABC RESULTS:        internal signals:      391
+ABC RESULTS:           input signals:       61
+ABC RESULTS:          output signals:       43
+Removing temp directory.
+
+124. Executing SETUNDEF pass (replace undef values with defined constants).
+
+125. Executing HILOMAP pass (mapping to constant drivers).
+
+126. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+127. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \counter_all..
+Removed 0 unused cells and 495 unused wires.
+<suppressed ~1 debug messages>
+
+128. Executing INSBUF pass (insert buffer cells for connected wires).
+Add counter_all/$auto$insbuf.cc:97:execute$2866: \second_inst.done_dec -> \done_dec [0]
+Add counter_all/$auto$insbuf.cc:97:execute$2867: \minute_inst.done_dec -> \done_dec [1]
+Add counter_all/$auto$insbuf.cc:97:execute$2868: \hour_inst.done_dec -> \done_dec [2]
+Add counter_all/$auto$insbuf.cc:97:execute$2869: \day_inst.done_dec -> \done_dec [3]
+Add counter_all/$auto$insbuf.cc:97:execute$2870: \month_inst.done_dec -> \done_dec [4]
+Add counter_all/$auto$insbuf.cc:97:execute$2871: \second_inst.done_inc -> \done_inc [0]
+Add counter_all/$auto$insbuf.cc:97:execute$2872: \minute_inst.done_inc -> \done_inc [1]
+Add counter_all/$auto$insbuf.cc:97:execute$2873: \hour_inst.done_inc -> \done_inc [2]
+Add counter_all/$auto$insbuf.cc:97:execute$2874: \day_inst.done_inc -> \done_inc [3]
+Add counter_all/$auto$insbuf.cc:97:execute$2875: \month_inst.done_inc -> \done_inc [4]
+
+129. Executing CHECK pass (checking for obvious problems).
+Checking module counter_all...
+Found and reported 0 problems.
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/kien/openlane2/MARCO/counter_all/runs/RUN_2026-01-16_18-59-06/tmp/b63910f2eb124bbc98a48d09e802fe2b.lib ",
+   "modules": {
+      "\\counter_all": {
+         "num_wires":         331,
+         "num_wire_bits":     389,
+         "num_pub_wires":     25,
+         "num_pub_wire_bits": 83,
+         "num_ports":         15,
+         "num_port_bits":     73,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         359,
+         "area":              3698.547200,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a2111o_2": 1,
+            "sky130_fd_sc_hd__a211o_2": 5,
+            "sky130_fd_sc_hd__a21bo_2": 4,
+            "sky130_fd_sc_hd__a21boi_2": 1,
+            "sky130_fd_sc_hd__a21o_2": 11,
+            "sky130_fd_sc_hd__a21oi_2": 12,
+            "sky130_fd_sc_hd__a221o_2": 1,
+            "sky130_fd_sc_hd__a22o_2": 7,
+            "sky130_fd_sc_hd__a22oi_2": 1,
+            "sky130_fd_sc_hd__a2bb2o_2": 1,
+            "sky130_fd_sc_hd__a311o_2": 3,
+            "sky130_fd_sc_hd__a31o_2": 13,
+            "sky130_fd_sc_hd__a32o_2": 2,
+            "sky130_fd_sc_hd__a41o_2": 2,
+            "sky130_fd_sc_hd__and2_2": 14,
+            "sky130_fd_sc_hd__and2b_2": 17,
+            "sky130_fd_sc_hd__and3_2": 10,
+            "sky130_fd_sc_hd__and4_2": 5,
+            "sky130_fd_sc_hd__and4b_2": 4,
+            "sky130_fd_sc_hd__buf_2": 10,
+            "sky130_fd_sc_hd__dfrtp_2": 31,
+            "sky130_fd_sc_hd__dfstp_2": 2,
+            "sky130_fd_sc_hd__inv_2": 17,
+            "sky130_fd_sc_hd__mux2_1": 18,
+            "sky130_fd_sc_hd__nand2_2": 19,
+            "sky130_fd_sc_hd__nand2b_2": 17,
+            "sky130_fd_sc_hd__nand3_2": 5,
+            "sky130_fd_sc_hd__nand3b_2": 1,
+            "sky130_fd_sc_hd__nor2_2": 26,
+            "sky130_fd_sc_hd__nor3_2": 3,
+            "sky130_fd_sc_hd__o211a_2": 6,
+            "sky130_fd_sc_hd__o21a_2": 10,
+            "sky130_fd_sc_hd__o21ai_2": 15,
+            "sky130_fd_sc_hd__o21ba_2": 2,
+            "sky130_fd_sc_hd__o21bai_2": 1,
+            "sky130_fd_sc_hd__o22a_2": 9,
+            "sky130_fd_sc_hd__o2bb2a_2": 4,
+            "sky130_fd_sc_hd__o311a_2": 5,
+            "sky130_fd_sc_hd__o31a_2": 4,
+            "sky130_fd_sc_hd__o32a_2": 1,
+            "sky130_fd_sc_hd__or2_2": 11,
+            "sky130_fd_sc_hd__or3_2": 7,
+            "sky130_fd_sc_hd__or3b_2": 4,
+            "sky130_fd_sc_hd__or4_2": 4,
+            "sky130_fd_sc_hd__xnor2_2": 7,
+            "sky130_fd_sc_hd__xor2_2": 6
+         }
+      }
+   },
+      "design": {
+         "num_wires":         331,
+         "num_wire_bits":     389,
+         "num_pub_wires":     25,
+         "num_pub_wire_bits": 83,
+         "num_ports":         15,
+         "num_port_bits":     73,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         359,
+         "area":              3698.547200,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a2111o_2": 1,
+            "sky130_fd_sc_hd__a211o_2": 5,
+            "sky130_fd_sc_hd__a21bo_2": 4,
+            "sky130_fd_sc_hd__a21boi_2": 1,
+            "sky130_fd_sc_hd__a21o_2": 11,
+            "sky130_fd_sc_hd__a21oi_2": 12,
+            "sky130_fd_sc_hd__a221o_2": 1,
+            "sky130_fd_sc_hd__a22o_2": 7,
+            "sky130_fd_sc_hd__a22oi_2": 1,
+            "sky130_fd_sc_hd__a2bb2o_2": 1,
+            "sky130_fd_sc_hd__a311o_2": 3,
+            "sky130_fd_sc_hd__a31o_2": 13,
+            "sky130_fd_sc_hd__a32o_2": 2,
+            "sky130_fd_sc_hd__a41o_2": 2,
+            "sky130_fd_sc_hd__and2_2": 14,
+            "sky130_fd_sc_hd__and2b_2": 17,
+            "sky130_fd_sc_hd__and3_2": 10,
+            "sky130_fd_sc_hd__and4_2": 5,
+            "sky130_fd_sc_hd__and4b_2": 4,
+            "sky130_fd_sc_hd__buf_2": 10,
+            "sky130_fd_sc_hd__dfrtp_2": 31,
+            "sky130_fd_sc_hd__dfstp_2": 2,
+            "sky130_fd_sc_hd__inv_2": 17,
+            "sky130_fd_sc_hd__mux2_1": 18,
+            "sky130_fd_sc_hd__nand2_2": 19,
+            "sky130_fd_sc_hd__nand2b_2": 17,
+            "sky130_fd_sc_hd__nand3_2": 5,
+            "sky130_fd_sc_hd__nand3b_2": 1,
+            "sky130_fd_sc_hd__nor2_2": 26,
+            "sky130_fd_sc_hd__nor3_2": 3,
+            "sky130_fd_sc_hd__o211a_2": 6,
+            "sky130_fd_sc_hd__o21a_2": 10,
+            "sky130_fd_sc_hd__o21ai_2": 15,
+            "sky130_fd_sc_hd__o21ba_2": 2,
+            "sky130_fd_sc_hd__o21bai_2": 1,
+            "sky130_fd_sc_hd__o22a_2": 9,
+            "sky130_fd_sc_hd__o2bb2a_2": 4,
+            "sky130_fd_sc_hd__o311a_2": 5,
+            "sky130_fd_sc_hd__o31a_2": 4,
+            "sky130_fd_sc_hd__o32a_2": 1,
+            "sky130_fd_sc_hd__or2_2": 11,
+            "sky130_fd_sc_hd__or3_2": 7,
+            "sky130_fd_sc_hd__or3b_2": 4,
+            "sky130_fd_sc_hd__or4_2": 4,
+            "sky130_fd_sc_hd__xnor2_2": 7,
+            "sky130_fd_sc_hd__xor2_2": 6
+         }
+      }
+}
+
+130. Printing statistics.
+
+=== counter_all ===
+
+   Number of wires:                331
+   Number of wire bits:            389
+   Number of public wires:          25
+   Number of public wire bits:      83
+   Number of ports:                 15
+   Number of port bits:             73
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                359
+     sky130_fd_sc_hd__a2111o_2       1
+     sky130_fd_sc_hd__a211o_2        5
+     sky130_fd_sc_hd__a21bo_2        4
+     sky130_fd_sc_hd__a21boi_2       1
+     sky130_fd_sc_hd__a21o_2        11
+     sky130_fd_sc_hd__a21oi_2       12
+     sky130_fd_sc_hd__a221o_2        1
+     sky130_fd_sc_hd__a22o_2         7
+     sky130_fd_sc_hd__a22oi_2        1
+     sky130_fd_sc_hd__a2bb2o_2       1
+     sky130_fd_sc_hd__a311o_2        3
+     sky130_fd_sc_hd__a31o_2        13
+     sky130_fd_sc_hd__a32o_2         2
+     sky130_fd_sc_hd__a41o_2         2
+     sky130_fd_sc_hd__and2_2        14
+     sky130_fd_sc_hd__and2b_2       17
+     sky130_fd_sc_hd__and3_2        10
+     sky130_fd_sc_hd__and4_2         5
+     sky130_fd_sc_hd__and4b_2        4
+     sky130_fd_sc_hd__buf_2         10
+     sky130_fd_sc_hd__dfrtp_2       31
+     sky130_fd_sc_hd__dfstp_2        2
+     sky130_fd_sc_hd__inv_2         17
+     sky130_fd_sc_hd__mux2_1        18
+     sky130_fd_sc_hd__nand2_2       19
+     sky130_fd_sc_hd__nand2b_2      17
+     sky130_fd_sc_hd__nand3_2        5
+     sky130_fd_sc_hd__nand3b_2       1
+     sky130_fd_sc_hd__nor2_2        26
+     sky130_fd_sc_hd__nor3_2         3
+     sky130_fd_sc_hd__o211a_2        6
+     sky130_fd_sc_hd__o21a_2        10
+     sky130_fd_sc_hd__o21ai_2       15
+     sky130_fd_sc_hd__o21ba_2        2
+     sky130_fd_sc_hd__o21bai_2       1
+     sky130_fd_sc_hd__o22a_2         9
+     sky130_fd_sc_hd__o2bb2a_2       4
+     sky130_fd_sc_hd__o311a_2        5
+     sky130_fd_sc_hd__o31a_2         4
+     sky130_fd_sc_hd__o32a_2         1
+     sky130_fd_sc_hd__or2_2         11
+     sky130_fd_sc_hd__or3_2          7
+     sky130_fd_sc_hd__or3b_2         4
+     sky130_fd_sc_hd__or4_2          4
+     sky130_fd_sc_hd__xnor2_2        7
+     sky130_fd_sc_hd__xor2_2         6
+
+   Chip area for module '\counter_all': 3698.547200
+     of which used for sequential elements: 867.081600 (23.44%)
+
+131. Executing Verilog backend.
+Dumping module `\counter_all'.
+
+132. Executing JSON backend.

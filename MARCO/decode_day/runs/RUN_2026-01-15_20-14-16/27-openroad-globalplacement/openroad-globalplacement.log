@@ -1,0 +1,85 @@
+Reading OpenROAD database at '/home/kien/openlane2/MARCO/decode_day/runs/RUN_2026-01-15_20-14-16/25-odb-customioplacement/decode_day.odb'…
+Reading library file at '/home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading design constraints file at '/nix/store/4pyixb03xfwwy77zxxplrggxrmm9f57y-python3-3.11.9-env/lib/python3.11/site-packages/openlane/scripts/base.sdc'…
+[WARNING STA-0366] port '__VIRTUAL_CLK__' not found.
+[INFO] Using clock __VIRTUAL_CLK__…
+[INFO] Setting output delay to: 2
+[INFO] Setting input delay to: 2
+[WARNING STA-0366] port '__VIRTUAL_CLK__' not found.
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[WARNING STA-0419] transition time can not be specified for virtual clocks.
+[INFO] Setting timing derate to: 5%
+[WARNING STA-0450] virtual clock __VIRTUAL_CLK__ can not be propagated.
+[INFO] Setting RC values…
+[INFO] Setting signal min routing layer to: met1 and clock min routing layer to met1. 
+[INFO] Setting signal max routing layer to: met5 and clock max routing layer to met5. 
++ global_placement -density 0.85 -timing_driven -routability_driven -pad_right 0 -pad_left 0 -init_wirelength_coef 0.25
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.460  2.720 ) um
+[INFO GPL-0004] CoreBBox: (  5.520 10.880 ) ( 44.160 38.080 ) um
+[INFO GPL-0006] NumInstances:                46
+[INFO GPL-0007] NumPlaceInstances:           14
+[INFO GPL-0008] NumFixedInstances:           32
+[INFO GPL-0009] NumDummyInstances:            0
+[INFO GPL-0010] NumNets:                     26
+[INFO GPL-0011] NumPins:                     56
+[INFO GPL-0012] DieBBox:  (  0.000  0.000 ) ( 50.000 50.000 ) um
+[INFO GPL-0013] CoreBBox: (  5.520 10.880 ) ( 44.160 38.080 ) um
+[INFO GPL-0016] CoreArea:              1051.008 um^2
+[INFO GPL-0017] NonPlaceInstsArea:       90.086 um^2
+[INFO GPL-0018] PlaceInstsArea:          86.333 um^2
+[INFO GPL-0019] Util:                     8.984 %
+[INFO GPL-0020] StdInstsArea:            86.333 um^2
+[INFO GPL-0021] MacroInstsArea:           0.000 um^2
+[InitialPlace]  Iter: 1 CG residual: 0.00000003 HPWL: 777137
+[InitialPlace]  Iter: 2 CG residual: 0.00000001 HPWL: 539713
+[InitialPlace]  Iter: 3 CG residual: 0.00000003 HPWL: 499459
+[InitialPlace]  Iter: 4 CG residual: 0.00000001 HPWL: 479514
+[InitialPlace]  Iter: 5 CG residual: 0.00000000 HPWL: 472934
+[INFO GPL-0031] FillerInit:NumGCells:       142
+[INFO GPL-0032] FillerInit:NumGNets:         26
+[INFO GPL-0033] FillerInit:NumGPins:         56
+[INFO GPL-0023] TargetDensity:            0.850
+[INFO GPL-0024] AvrgPlaceInstArea:        6.167 um^2
+[INFO GPL-0025] IdealBinArea:             7.255 um^2
+[INFO GPL-0026] IdealBinCnt:                144
+[INFO GPL-0027] TotalBinArea:          1051.008 um^2
+[INFO GPL-0028] BinCnt:         8      8
+[INFO GPL-0029] BinSize: (  4.830  3.400 )
+[INFO GPL-0030] NumBins: 64
+[NesterovSolve] Iter:    1 overflow: 0.026 HPWL: 445421
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack 4.71e-09
+[INFO GPL-0103] Timing-driven: weighted 1 nets.
+[NesterovSolve] Snapshot saved at iter = 0
+[INFO GPL-0075] Routability numCall: 1 inflationIterCnt: 1 bloatIterCnt: 0
+[INFO GPL-0036] TileBBox: (    0    0 ) ( 6900 6900 ) DBU
+[INFO GPL-0038] TileCnt:       7    7
+[INFO GPL-0040] NumTiles: 49
+[INFO GPL-0081] TotalRouteOverflow: 0
+[INFO GPL-0082] OverflowTileCnt: 0
+[INFO GPL-0083] 0.5%RC: 0.5240294933319092
+[INFO GPL-0084] 1.0%RC: 0.5240294933319092
+[INFO GPL-0085] 2.0%RC: 0.5240294933319092
+[INFO GPL-0086] 5.0%RC: 0.5059133172035217
+[INFO GPL-0087] FinalRC: 0.5240295
+[INFO GPL-0077] FinalRC lower than targetRC(1.01), routability not needed.
+[NesterovSolve] Finished with Overflow: 0.025844
+[INFO] Setting RC values…
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                                20      75.07
+  Tap cell                                 12      15.01
+  Buffer                                    1       5.00
+  Inverter                                  2       7.51
+  Multi-Input combinational cell           11      73.82
+  Total                                    46     176.42
+Writing OpenROAD database to '/home/kien/openlane2/MARCO/decode_day/runs/RUN_2026-01-15_20-14-16/27-openroad-globalplacement/decode_day.odb'…
+Writing netlist to '/home/kien/openlane2/MARCO/decode_day/runs/RUN_2026-01-15_20-14-16/27-openroad-globalplacement/decode_day.nl.v'…
+Writing powered netlist to '/home/kien/openlane2/MARCO/decode_day/runs/RUN_2026-01-15_20-14-16/27-openroad-globalplacement/decode_day.pnl.v'…
+Writing layout to '/home/kien/openlane2/MARCO/decode_day/runs/RUN_2026-01-15_20-14-16/27-openroad-globalplacement/decode_day.def'…
+Writing timing constraints to '/home/kien/openlane2/MARCO/decode_day/runs/RUN_2026-01-15_20-14-16/27-openroad-globalplacement/decode_day.sdc'…

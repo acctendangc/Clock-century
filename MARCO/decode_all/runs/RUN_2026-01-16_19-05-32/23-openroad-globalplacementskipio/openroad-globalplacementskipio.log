@@ -1,0 +1,101 @@
+Reading OpenROAD database at '/home/kien/openlane2/MARCO/decode_all/runs/RUN_2026-01-16_19-05-32/20-openroad-generatepdn/decode_all.odb'…
+Reading library file at '/home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading design constraints file at '/nix/store/4pyixb03xfwwy77zxxplrggxrmm9f57y-python3-3.11.9-env/lib/python3.11/site-packages/openlane/scripts/base.sdc'…
+[WARNING STA-0366] port 'clk' not found.
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 20000000
+[INFO] Setting input delay to: 20000000
+[WARNING STA-0366] port 'clk' not found.
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[WARNING STA-0419] transition time can not be specified for virtual clocks.
+[INFO] Setting timing derate to: 5%
+[WARNING STA-0450] virtual clock clk can not be propagated.
++ global_placement -density 0.85 -skip_io -pad_right 0 -pad_left 0 -init_wirelength_coef 0.25
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.460  2.720 ) um
+[INFO GPL-0004] CoreBBox: (  5.520 10.880 ) ( 154.100 48.960 ) um
+[INFO GPL-0006] NumInstances:               398
+[INFO GPL-0007] NumPlaceInstances:          282
+[INFO GPL-0008] NumFixedInstances:          116
+[INFO GPL-0009] NumDummyInstances:            0
+[INFO GPL-0010] NumNets:                    315
+[INFO GPL-0011] NumPins:                   1007
+[INFO GPL-0012] DieBBox:  (  0.000  0.000 ) ( 160.000 60.000 ) um
+[INFO GPL-0013] CoreBBox: (  5.520 10.880 ) ( 154.100 48.960 ) um
+[INFO GPL-0016] CoreArea:              5657.926 um^2
+[INFO GPL-0017] NonPlaceInstsArea:      215.206 um^2
+[INFO GPL-0018] PlaceInstsArea:        2469.869 um^2
+[INFO GPL-0019] Util:                    45.379 %
+[INFO GPL-0020] StdInstsArea:          2469.869 um^2
+[INFO GPL-0021] MacroInstsArea:           0.000 um^2
+[INFO GPL-0031] FillerInit:NumGCells:       533
+[INFO GPL-0032] FillerInit:NumGNets:        315
+[INFO GPL-0033] FillerInit:NumGPins:       1007
+[INFO GPL-0023] TargetDensity:            0.850
+[INFO GPL-0024] AvrgPlaceInstArea:        8.758 um^2
+[INFO GPL-0025] IdealBinArea:            10.304 um^2
+[INFO GPL-0026] IdealBinCnt:                549
+[INFO GPL-0027] TotalBinArea:          5657.926 um^2
+[INFO GPL-0028] BinCnt:        32     16
+[INFO GPL-0029] BinSize: (  4.644  2.380 )
+[INFO GPL-0030] NumBins: 512
+[NesterovSolve] Iter:    1 overflow: 0.984 HPWL: 529222
+[NesterovSolve] Iter:   10 overflow: 0.983 HPWL: 418490
+[NesterovSolve] Iter:   20 overflow: 0.982 HPWL: 417071
+[NesterovSolve] Iter:   30 overflow: 0.982 HPWL: 417166
+[NesterovSolve] Iter:   40 overflow: 0.982 HPWL: 417174
+[NesterovSolve] Iter:   50 overflow: 0.982 HPWL: 417282
+[NesterovSolve] Iter:   60 overflow: 0.982 HPWL: 417462
+[NesterovSolve] Iter:   70 overflow: 0.981 HPWL: 417835
+[NesterovSolve] Iter:   80 overflow: 0.981 HPWL: 418461
+[NesterovSolve] Iter:   90 overflow: 0.979 HPWL: 419710
+[NesterovSolve] Iter:  100 overflow: 0.974 HPWL: 421863
+[NesterovSolve] Iter:  110 overflow: 0.963 HPWL: 425186
+[NesterovSolve] Iter:  120 overflow: 0.954 HPWL: 430104
+[NesterovSolve] Iter:  130 overflow: 0.923 HPWL: 435108
+[NesterovSolve] Iter:  140 overflow: 0.893 HPWL: 438607
+[NesterovSolve] Iter:  150 overflow: 0.876 HPWL: 447514
+[NesterovSolve] Iter:  160 overflow: 0.885 HPWL: 451864
+[NesterovSolve] Iter:  170 overflow: 0.878 HPWL: 472961
+[NesterovSolve] Iter:  180 overflow: 0.851 HPWL: 482580
+[NesterovSolve] Iter:  190 overflow: 0.830 HPWL: 497834
+[NesterovSolve] Iter:  200 overflow: 0.777 HPWL: 565052
+[NesterovSolve] Iter:  210 overflow: 0.778 HPWL: 583074
+[NesterovSolve] Iter:  220 overflow: 0.775 HPWL: 637795
+[NesterovSolve] Iter:  230 overflow: 0.737 HPWL: 662339
+[NesterovSolve] Iter:  240 overflow: 0.702 HPWL: 750953
+[NesterovSolve] Iter:  250 overflow: 0.670 HPWL: 807036
+[NesterovSolve] Iter:  260 overflow: 0.638 HPWL: 883887
+[NesterovSolve] Iter:  270 overflow: 0.599 HPWL: 957787
+[NesterovSolve] Iter:  280 overflow: 0.569 HPWL: 1066070
+[NesterovSolve] Iter:  290 overflow: 0.528 HPWL: 1166056
+[NesterovSolve] Iter:  300 overflow: 0.476 HPWL: 1271557
+[NesterovSolve] Iter:  310 overflow: 0.432 HPWL: 1372480
+[NesterovSolve] Iter:  320 overflow: 0.385 HPWL: 1501556
+[NesterovSolve] Iter:  330 overflow: 0.337 HPWL: 1629531
+[NesterovSolve] Iter:  340 overflow: 0.303 HPWL: 1742796
+[NesterovSolve] Iter:  350 overflow: 0.268 HPWL: 1855037
+[NesterovSolve] Iter:  360 overflow: 0.228 HPWL: 1966373
+[NesterovSolve] Iter:  370 overflow: 0.195 HPWL: 2079778
+[NesterovSolve] Iter:  380 overflow: 0.165 HPWL: 2195358
+[NesterovSolve] Iter:  390 overflow: 0.135 HPWL: 2297867
+[NesterovSolve] Iter:  400 overflow: 0.113 HPWL: 2370494
+[NesterovSolve] Finished with Overflow: 0.099434
+[INFO] Setting RC values…
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                                28     105.10
+  Tap cell                                 88     110.11
+  Buffer                                    3      15.01
+  Inverter                                 20      75.07
+  Multi-Input combinational cell          259    2379.78
+  Total                                   398    2685.08
+Writing OpenROAD database to '/home/kien/openlane2/MARCO/decode_all/runs/RUN_2026-01-16_19-05-32/23-openroad-globalplacementskipio/decode_all.odb'…
+Writing netlist to '/home/kien/openlane2/MARCO/decode_all/runs/RUN_2026-01-16_19-05-32/23-openroad-globalplacementskipio/decode_all.nl.v'…
+Writing powered netlist to '/home/kien/openlane2/MARCO/decode_all/runs/RUN_2026-01-16_19-05-32/23-openroad-globalplacementskipio/decode_all.pnl.v'…
+Writing layout to '/home/kien/openlane2/MARCO/decode_all/runs/RUN_2026-01-16_19-05-32/23-openroad-globalplacementskipio/decode_all.def'…
+Writing timing constraints to '/home/kien/openlane2/MARCO/decode_all/runs/RUN_2026-01-16_19-05-32/23-openroad-globalplacementskipio/decode_all.sdc'…

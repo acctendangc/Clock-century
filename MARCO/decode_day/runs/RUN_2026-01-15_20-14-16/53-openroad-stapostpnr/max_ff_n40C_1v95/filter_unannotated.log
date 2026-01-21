@@ -1,0 +1,33 @@
+[WARNING ORD-0039] .openroad ignored with -python
+Unannotated report:
+['report_parasitic_annotation -report_unannotated\n',
+ '============================================================================\n',
+ 'Found 11 unannotated drivers.\n',
+ ' year[2]\n',
+ ' year[3]\n',
+ ' year[4]\n',
+ ' year[5]\n',
+ ' year[6]\n',
+ ' decode_day_12/HI\n',
+ ' decode_day_13/HI\n',
+ ' decode_day_14/LO\n',
+ ' decode_day_15/LO\n',
+ ' decode_day_16/LO\n',
+ ' decode_day_17/LO\n',
+ 'Found 0 partially unannotated drivers.\n',
+ '\n']
+Reported nets:
+['year[2]',
+ 'year[3]',
+ 'year[4]',
+ 'year[5]',
+ 'year[6]',
+ 'decode_day_12/HI',
+ 'decode_day_13/HI',
+ 'decode_day_14/LO',
+ 'decode_day_15/LO',
+ 'decode_day_16/LO',
+ 'decode_day_17/LO']
+Filtered nets:
+[]
+done

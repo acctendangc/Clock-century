@@ -1,15 +1,13 @@
-runs/
-results/
-reports/
-tmp/
-log/
-*.log
-*.rpt
-*.vcd
-*.out
-*.vvp
-sim_top
-work/
-build/
-.vscode/
-.DS_Store
+# Ignore all runs by default
+**/runs/
+
+# Allow runs for 5 macros (inside MARCO/)
+!MARCO/alarm/runs/
+!MARCO/counter_all/runs/
+!MARCO/decode_all/runs/
+!MARCO/decode_day/runs/
+!MARCO/decode_input/runs/
+
+# Still ignore the top-level runs under MARCO/
+MARCO/runs/
+

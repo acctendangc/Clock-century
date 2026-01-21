@@ -1,0 +1,9 @@
+- cell: decode_all
+  inout: []
+  input: []
+  output:
+  - led_day[8]
+  - led_hour[8]
+  - led_month[13]
+  - led_month[8]
+  - led_month[9]

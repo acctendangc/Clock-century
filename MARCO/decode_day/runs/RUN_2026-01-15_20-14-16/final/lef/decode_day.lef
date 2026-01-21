@@ -1,0 +1,253 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO decode_day
+  CLASS BLOCK ;
+  FOREIGN decode_day ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 50.000 BY 50.000 ;
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 24.340 10.640 25.940 38.320 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 21.040 10.640 22.640 38.320 ;
+    END
+  END VPWR
+  PIN am_pm
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met2 ;
+        RECT 2.000 46.000 2.140 51.000 ;
+    END
+  END am_pm
+  PIN day_num[0]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met2 ;
+        RECT 4.300 -1.000 4.440 11.260 ;
+    END
+  END day_num[0]
+  PIN day_num[1]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met2 ;
+        RECT 8.900 -1.000 9.040 11.260 ;
+    END
+  END day_num[1]
+  PIN day_num[2]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 13.500 -1.000 13.640 11.260 ;
+    END
+  END day_num[2]
+  PIN day_num[3]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 18.100 -1.000 18.240 11.260 ;
+    END
+  END day_num[3]
+  PIN day_num[4]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 22.700 -1.000 22.840 11.260 ;
+    END
+  END day_num[4]
+  PIN hour_num[0]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 27.300 -1.000 27.440 11.940 ;
+    END
+  END hour_num[0]
+  PIN hour_num[1]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 31.900 -1.000 32.040 11.940 ;
+    END
+  END hour_num[1]
+  PIN hour_num[2]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met2 ;
+        RECT 36.500 -1.000 36.640 11.260 ;
+    END
+  END hour_num[2]
+  PIN hour_num[3]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 41.100 -1.000 41.240 14.660 ;
+    END
+  END hour_num[3]
+  PIN hour_num[4]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met2 ;
+        RECT 45.700 -1.000 45.840 11.260 ;
+    END
+  END hour_num[4]
+  PIN month[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met2 ;
+        RECT 35.120 46.000 35.260 51.000 ;
+    END
+  END month[0]
+  PIN month[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met2 ;
+        RECT 39.260 46.000 39.400 51.000 ;
+    END
+  END month[1]
+  PIN month[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met2 ;
+        RECT 43.400 46.000 43.540 51.000 ;
+    END
+  END month[2]
+  PIN month[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met2 ;
+        RECT 47.540 46.000 47.680 51.000 ;
+    END
+  END month[3]
+  PIN year[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met2 ;
+        RECT 6.140 46.000 6.280 51.000 ;
+    END
+  END year[0]
+  PIN year[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met2 ;
+        RECT 10.280 46.000 10.420 51.000 ;
+    END
+  END year[1]
+  PIN year[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 14.420 46.000 14.560 51.000 ;
+    END
+  END year[2]
+  PIN year[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 18.560 46.000 18.700 51.000 ;
+    END
+  END year[3]
+  PIN year[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 22.700 46.000 22.840 51.000 ;
+    END
+  END year[4]
+  PIN year[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 26.840 46.000 26.980 51.000 ;
+    END
+  END year[5]
+  PIN year[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 30.980 46.000 31.120 51.000 ;
+    END
+  END year[6]
+  OBS
+      LAYER nwell ;
+        RECT 5.330 10.795 44.350 38.165 ;
+      LAYER li1 ;
+        RECT 5.520 10.795 44.160 38.165 ;
+      LAYER met1 ;
+        RECT 3.290 10.640 46.390 38.320 ;
+      LAYER met2 ;
+        RECT 2.420 45.720 5.860 46.650 ;
+        RECT 6.560 45.720 10.000 46.650 ;
+        RECT 10.700 45.720 14.140 46.650 ;
+        RECT 14.840 45.720 18.280 46.650 ;
+        RECT 18.980 45.720 22.420 46.650 ;
+        RECT 23.120 45.720 26.560 46.650 ;
+        RECT 27.260 45.720 30.700 46.650 ;
+        RECT 31.400 45.720 34.840 46.650 ;
+        RECT 35.540 45.720 38.980 46.650 ;
+        RECT 39.680 45.720 43.120 46.650 ;
+        RECT 43.820 45.720 47.260 46.650 ;
+        RECT 2.140 14.940 47.540 45.720 ;
+        RECT 2.140 12.220 40.820 14.940 ;
+        RECT 2.140 11.540 27.020 12.220 ;
+        RECT 2.140 10.695 4.020 11.540 ;
+        RECT 4.720 10.695 8.620 11.540 ;
+        RECT 9.320 10.695 13.220 11.540 ;
+        RECT 13.920 10.695 17.820 11.540 ;
+        RECT 18.520 10.695 22.420 11.540 ;
+        RECT 23.120 10.695 27.020 11.540 ;
+        RECT 27.720 10.695 31.620 12.220 ;
+        RECT 32.320 11.540 40.820 12.220 ;
+        RECT 32.320 10.695 36.220 11.540 ;
+        RECT 36.920 10.695 40.820 11.540 ;
+        RECT 41.520 11.540 47.540 14.940 ;
+        RECT 41.520 10.695 45.420 11.540 ;
+        RECT 46.120 10.695 47.540 11.540 ;
+      LAYER met3 ;
+        RECT 21.050 10.715 25.930 38.245 ;
+  END
+END decode_day
+END LIBRARY
+

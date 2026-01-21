@@ -1,0 +1,107 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN decode_day ;
+UNITS DISTANCE MICRONS 1000 ;
+DIEAREA ( 0 0 ) ( 50000 50000 ) ;
+ROW ROW_0 unithd 5520 10880 N DO 84 BY 1 STEP 460 0 ;
+ROW ROW_1 unithd 5520 13600 FS DO 84 BY 1 STEP 460 0 ;
+ROW ROW_2 unithd 5520 16320 N DO 84 BY 1 STEP 460 0 ;
+ROW ROW_3 unithd 5520 19040 FS DO 84 BY 1 STEP 460 0 ;
+ROW ROW_4 unithd 5520 21760 N DO 84 BY 1 STEP 460 0 ;
+ROW ROW_5 unithd 5520 24480 FS DO 84 BY 1 STEP 460 0 ;
+ROW ROW_6 unithd 5520 27200 N DO 84 BY 1 STEP 460 0 ;
+ROW ROW_7 unithd 5520 29920 FS DO 84 BY 1 STEP 460 0 ;
+ROW ROW_8 unithd 5520 32640 N DO 84 BY 1 STEP 460 0 ;
+ROW ROW_9 unithd 5520 35360 FS DO 84 BY 1 STEP 460 0 ;
+TRACKS X 230 DO 109 STEP 460 LAYER li1 ;
+TRACKS Y 170 DO 147 STEP 340 LAYER li1 ;
+TRACKS X 170 DO 147 STEP 340 LAYER met1 ;
+TRACKS Y 170 DO 147 STEP 340 LAYER met1 ;
+TRACKS X 230 DO 109 STEP 460 LAYER met2 ;
+TRACKS Y 230 DO 109 STEP 460 LAYER met2 ;
+TRACKS X 340 DO 73 STEP 680 LAYER met3 ;
+TRACKS Y 340 DO 73 STEP 680 LAYER met3 ;
+TRACKS X 460 DO 54 STEP 920 LAYER met4 ;
+TRACKS Y 460 DO 54 STEP 920 LAYER met4 ;
+TRACKS X 1700 DO 14 STEP 3400 LAYER met5 ;
+TRACKS Y 1700 DO 14 STEP 3400 LAYER met5 ;
+COMPONENTS 14 ;
+    - _04_ sky130_fd_sc_hd__inv_2 ;
+    - _05_ sky130_fd_sc_hd__inv_2 ;
+    - _06_ sky130_fd_sc_hd__or4b_2 ;
+    - _07_ sky130_fd_sc_hd__nor3_2 ;
+    - _08_ sky130_fd_sc_hd__a211oi_2 ;
+    - _09_ sky130_fd_sc_hd__mux2_1 ;
+    - _10_ sky130_fd_sc_hd__or3_2 ;
+    - _11_ sky130_fd_sc_hd__conb_1 ;
+    - _12_ sky130_fd_sc_hd__conb_1 ;
+    - _13_ sky130_fd_sc_hd__conb_1 ;
+    - _14_ sky130_fd_sc_hd__conb_1 ;
+    - _15_ sky130_fd_sc_hd__conb_1 ;
+    - _16_ sky130_fd_sc_hd__conb_1 ;
+    - _17_ sky130_fd_sc_hd__buf_2 ;
+END COMPONENTS
+PINS 22 ;
+    - am_pm + NET am_pm + DIRECTION INPUT + USE SIGNAL ;
+    - day_num[0] + NET day_num[0] + DIRECTION OUTPUT + USE SIGNAL ;
+    - day_num[1] + NET day_num[1] + DIRECTION OUTPUT + USE SIGNAL ;
+    - day_num[2] + NET day_num[2] + DIRECTION OUTPUT + USE SIGNAL ;
+    - day_num[3] + NET day_num[3] + DIRECTION OUTPUT + USE SIGNAL ;
+    - day_num[4] + NET day_num[4] + DIRECTION OUTPUT + USE SIGNAL ;
+    - hour_num[0] + NET hour_num[0] + DIRECTION OUTPUT + USE SIGNAL ;
+    - hour_num[1] + NET hour_num[1] + DIRECTION OUTPUT + USE SIGNAL ;
+    - hour_num[2] + NET hour_num[2] + DIRECTION OUTPUT + USE SIGNAL ;
+    - hour_num[3] + NET hour_num[3] + DIRECTION OUTPUT + USE SIGNAL ;
+    - hour_num[4] + NET hour_num[4] + DIRECTION OUTPUT + USE SIGNAL ;
+    - month[0] + NET month[0] + DIRECTION INPUT + USE SIGNAL ;
+    - month[1] + NET month[1] + DIRECTION INPUT + USE SIGNAL ;
+    - month[2] + NET month[2] + DIRECTION INPUT + USE SIGNAL ;
+    - month[3] + NET month[3] + DIRECTION INPUT + USE SIGNAL ;
+    - year[0] + NET year[0] + DIRECTION INPUT + USE SIGNAL ;
+    - year[1] + NET year[1] + DIRECTION INPUT + USE SIGNAL ;
+    - year[2] + NET year[2] + DIRECTION INPUT + USE SIGNAL ;
+    - year[3] + NET year[3] + DIRECTION INPUT + USE SIGNAL ;
+    - year[4] + NET year[4] + DIRECTION INPUT + USE SIGNAL ;
+    - year[5] + NET year[5] + DIRECTION INPUT + USE SIGNAL ;
+    - year[6] + NET year[6] + DIRECTION INPUT + USE SIGNAL ;
+END PINS
+SPECIALNETS 2 ;
+    - VGND ( _17_ VNB ) ( _16_ VNB ) ( _15_ VNB ) ( _14_ VNB ) ( _13_ VNB ) ( _12_ VNB ) ( _11_ VNB )
+      ( _10_ VNB ) ( _09_ VNB ) ( _08_ VNB ) ( _07_ VNB ) ( _06_ VNB ) ( _05_ VNB ) ( _04_ VNB ) ( _17_ VGND )
+      ( _16_ VGND ) ( _15_ VGND ) ( _14_ VGND ) ( _13_ VGND ) ( _12_ VGND ) ( _11_ VGND ) ( _10_ VGND ) ( _09_ VGND )
+      ( _08_ VGND ) ( _07_ VGND ) ( _06_ VGND ) ( _05_ VGND ) ( _04_ VGND ) + USE GROUND ;
+    - VPWR ( _17_ VPB ) ( _16_ VPB ) ( _15_ VPB ) ( _14_ VPB ) ( _13_ VPB ) ( _12_ VPB ) ( _11_ VPB )
+      ( _10_ VPB ) ( _09_ VPB ) ( _08_ VPB ) ( _07_ VPB ) ( _06_ VPB ) ( _05_ VPB ) ( _04_ VPB ) ( _17_ VPWR )
+      ( _16_ VPWR ) ( _15_ VPWR ) ( _14_ VPWR ) ( _13_ VPWR ) ( _12_ VPWR ) ( _11_ VPWR ) ( _10_ VPWR ) ( _09_ VPWR )
+      ( _08_ VPWR ) ( _07_ VPWR ) ( _06_ VPWR ) ( _05_ VPWR ) ( _04_ VPWR ) + USE POWER ;
+END SPECIALNETS
+NETS 26 ;
+    - _00_ ( _08_ A2 ) ( _05_ Y ) + USE SIGNAL ;
+    - _01_ ( _10_ A ) ( _07_ Y ) + USE SIGNAL ;
+    - _02_ ( _10_ B ) ( _08_ Y ) + USE SIGNAL ;
+    - _03_ ( _10_ C ) ( _09_ X ) + USE SIGNAL ;
+    - am_pm ( PIN am_pm ) ( _17_ A ) ( _04_ A ) + USE SIGNAL ;
+    - day_num[0] ( PIN day_num[0] ) ( _10_ X ) + USE SIGNAL ;
+    - day_num[1] ( PIN day_num[1] ) ( _07_ C ) ( _06_ X ) + USE SIGNAL ;
+    - day_num[2] ( PIN day_num[2] ) ( _11_ HI ) + USE SIGNAL ;
+    - day_num[3] ( PIN day_num[3] ) ( _12_ HI ) + USE SIGNAL ;
+    - day_num[4] ( PIN day_num[4] ) ( _13_ HI ) + USE SIGNAL ;
+    - hour_num[0] ( PIN hour_num[0] ) ( _15_ LO ) + USE SIGNAL ;
+    - hour_num[1] ( PIN hour_num[1] ) ( _16_ LO ) + USE SIGNAL ;
+    - hour_num[2] ( PIN hour_num[2] ) ( _17_ X ) + USE SIGNAL ;
+    - hour_num[3] ( PIN hour_num[3] ) ( _14_ HI ) + USE SIGNAL ;
+    - hour_num[4] ( PIN hour_num[4] ) ( _04_ Y ) + USE SIGNAL ;
+    - month[0] ( PIN month[0] ) ( _09_ S ) ( _06_ A ) ( _05_ A ) + USE SIGNAL ;
+    - month[1] ( PIN month[1] ) ( _08_ A1 ) ( _06_ D_N ) + USE SIGNAL ;
+    - month[2] ( PIN month[2] ) ( _09_ A1 ) ( _08_ B1 ) ( _06_ B ) + USE SIGNAL ;
+    - month[3] ( PIN month[3] ) ( _09_ A0 ) ( _08_ C1 ) ( _06_ C ) + USE SIGNAL ;
+    - year[0] ( PIN year[0] ) ( _07_ B ) + USE SIGNAL ;
+    - year[1] ( PIN year[1] ) ( _07_ A ) + USE SIGNAL ;
+    - year[2] ( PIN year[2] ) + USE SIGNAL ;
+    - year[3] ( PIN year[3] ) + USE SIGNAL ;
+    - year[4] ( PIN year[4] ) + USE SIGNAL ;
+    - year[5] ( PIN year[5] ) + USE SIGNAL ;
+    - year[6] ( PIN year[6] ) + USE SIGNAL ;
+END NETS
+END DESIGN

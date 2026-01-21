@@ -1,0 +1,104 @@
+Reading timing models for corner nom_tt_025C_1v80…
+Reading timing library for the 'nom_tt_025C_1v80' corner at '/home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading timing models for corner nom_ff_n40C_1v95…
+Reading timing library for the 'nom_ff_n40C_1v95' corner at '/home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib'…
+Reading timing models for corner nom_ss_100C_1v60…
+Reading timing library for the 'nom_ss_100C_1v60' corner at '/home/kien/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib'…
+Reading OpenROAD database at '/home/kien/openlane2/MARCO/counter_all/runs/RUN_2026-01-16_18-59-06/27-openroad-globalplacement/counter_all.odb'…
+Reading design constraints file at '/nix/store/4pyixb03xfwwy77zxxplrggxrmm9f57y-python3-3.11.9-env/lib/python3.11/site-packages/openlane/scripts/base.sdc'…
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 20000000
+[INFO] Setting input delay to: 20000000
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[INFO] Setting timing derate to: 5%
+[INFO] Setting RC values…
+[INFO RSZ-0027] Inserted 29 input buffers.
+[INFO RSZ-0028] Inserted 43 output buffers.
+[INFO RSZ-0058] Using max wire length 6335um.
+Iteration | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------
+        0 |       0 |       0 |             0 |       461
+       10 |       5 |       0 |             0 |       451
+       20 |      11 |       0 |             0 |       441
+       30 |      21 |       0 |             0 |       431
+       40 |      31 |       0 |             0 |       421
+       50 |      40 |       0 |             0 |       411
+       60 |      50 |       0 |             0 |       401
+       70 |      60 |       0 |             0 |       391
+       80 |      70 |       0 |             0 |       381
+       90 |      79 |       0 |             0 |       371
+      100 |      89 |       0 |             0 |       361
+      110 |      97 |       0 |             0 |       351
+      120 |     103 |       0 |             0 |       341
+      130 |     112 |       0 |             0 |       331
+      140 |     120 |       0 |             0 |       321
+      150 |     129 |       0 |             0 |       311
+      160 |     137 |       0 |             0 |       301
+      170 |     145 |       0 |             0 |       291
+      180 |     154 |       0 |             0 |       281
+      190 |     163 |       0 |             0 |       271
+      200 |     171 |       0 |             0 |       261
+      210 |     181 |       0 |             0 |       251
+      220 |     190 |       0 |             0 |       241
+      230 |     198 |       0 |             0 |       231
+      240 |     205 |       0 |             0 |       221
+      250 |     212 |       0 |             0 |       211
+      260 |     222 |       0 |             0 |       201
+      270 |     231 |       0 |             0 |       191
+      280 |     239 |       0 |             0 |       181
+      290 |     247 |       0 |             0 |       171
+      300 |     257 |       0 |             0 |       161
+      310 |     267 |       0 |             0 |       151
+      320 |     273 |       0 |             0 |       141
+      330 |     283 |       0 |             0 |       131
+      340 |     293 |       0 |             0 |       121
+      350 |     303 |       0 |             0 |       111
+      360 |     309 |       0 |             0 |       101
+      370 |     313 |       0 |             0 |        91
+      380 |     323 |       2 |             2 |        81
+      390 |     331 |       3 |             3 |        71
+      400 |     337 |       3 |             3 |        61
+      410 |     340 |       3 |             3 |        51
+      420 |     348 |       7 |             4 |        41
+      430 |     353 |       7 |             4 |        31
+      440 |     354 |       7 |             4 |        21
+      450 |     354 |       7 |             4 |        11
+      460 |     354 |       7 |             4 |         1
+    final |     354 |       7 |             4 |         0
+---------------------------------------------------------
+[INFO RSZ-0035] Found 4 fanout violations.
+[INFO RSZ-0038] Inserted 7 buffers in 4 nets.
+[INFO RSZ-0039] Resized 354 instances.
+Placement Analysis
+---------------------------------
+total displacement       2058.7 u
+average displacement        3.6 u
+max displacement           45.3 u
+original HPWL            6614.6 u
+legalized HPWL           8321.0 u
+delta HPWL                   26 %
+
+[INFO DPL-0020] Mirrored 170 instances
+[INFO DPL-0021] HPWL before            8321.0 u
+[INFO DPL-0022] HPWL after             8122.8 u
+[INFO DPL-0023] HPWL delta               -2.4 %
+[INFO] Setting RC values…
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                                54     202.69
+  Tap cell                                 72      90.09
+  Buffer                                   10      37.54
+  Timing Repair Buffer                     79     396.63
+  Inverter                                 17      63.81
+  Sequential cell                          33     888.35
+  Multi-Input combinational cell          299    2248.41
+  Total                                   564    3927.52
+Writing OpenROAD database to '/home/kien/openlane2/MARCO/counter_all/runs/RUN_2026-01-16_18-59-06/31-openroad-repairdesignpostgpl/counter_all.odb'…
+Writing netlist to '/home/kien/openlane2/MARCO/counter_all/runs/RUN_2026-01-16_18-59-06/31-openroad-repairdesignpostgpl/counter_all.nl.v'…
+Writing powered netlist to '/home/kien/openlane2/MARCO/counter_all/runs/RUN_2026-01-16_18-59-06/31-openroad-repairdesignpostgpl/counter_all.pnl.v'…
+Writing layout to '/home/kien/openlane2/MARCO/counter_all/runs/RUN_2026-01-16_18-59-06/31-openroad-repairdesignpostgpl/counter_all.def'…
+Writing timing constraints to '/home/kien/openlane2/MARCO/counter_all/runs/RUN_2026-01-16_18-59-06/31-openroad-repairdesignpostgpl/counter_all.sdc'…
