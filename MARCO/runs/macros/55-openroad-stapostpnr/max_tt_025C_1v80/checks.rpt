@@ -1,0 +1,101 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= max_tt_025C_1v80 Corner ===================================
+
+Startpoint: alarm_inst (rising edge-triggered flip-flop clocked by clk)
+Endpoint: alarm_o (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock source latency
+     2    0.035613    0.165736    0.118139    0.118139 ^ clk (in)
+                                                         clk (net)
+                      0.166273    0.000000    0.118139 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+     5    0.044125    0.064406    0.185706    0.303846 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+                                                         clknet_0_clk (net)
+                      0.064550    0.002595    0.306441 ^ clkbuf_1_1__f_clk/A (sky130_fd_sc_hd__clkbuf_16)
+     5    0.035238    0.055347    0.144173    0.450614 ^ clkbuf_1_1__f_clk/X (sky130_fd_sc_hd__clkbuf_16)
+                                                         clknet_1_1__leaf_clk (net)
+                      0.056026    0.004699    0.455313 ^ alarm_inst/clk (alarm)
+     1    0.011194    0.102186    1.570844    2.026157 ^ alarm_inst/alarm_o (alarm)
+                                                         net25 (net)
+                      0.102186    0.000475    2.026632 ^ output25/A (sky130_fd_sc_hd__buf_2)
+     1    0.034394    0.171230    0.218923    2.245555 ^ output25/X (sky130_fd_sc_hd__buf_2)
+                                                         alarm_o (net)
+                      0.171302    0.001597    2.247151 ^ alarm_o (out)
+                                              2.247151   data arrival time
+
+                               1000000000.000000 1000000000.000000   clock clk (rise edge)
+                                  0.000000 1000000000.000000   clock network delay (propagated)
+                                 -0.250000 1000000000.000000   clock uncertainty
+                                  0.000000 1000000000.000000   clock reconvergence pessimism
+                               -200000000.000000 800000064.000000   output external delay
+                                           800000064.000000   data required time
+---------------------------------------------------------------------------------------------
+                                           800000064.000000   data required time
+                                             -2.247151   data arrival time
+---------------------------------------------------------------------------------------------
+                                           800000064.000000   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= max_tt_025C_1v80 Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= max_tt_025C_1v80 Corner ===================================
+
+max slew
+
+Pin                                        Limit        Slew       Slack
+------------------------------------------------------------------------
+decode_all_inst/year[4]                 0.750000    0.768220   -0.018220 (VIOLATED)
+ANTENNA_decode_all_inst_year[4]/DIODE    0.750000    0.768218   -0.018218 (VIOLATED)
+ANTENNA_decode_day_inst_year[4]/DIODE    0.750000    0.768204   -0.018204 (VIOLATED)
+decode_day_inst/year[4]                 0.750000    0.768204   -0.018204 (VIOLATED)
+ANTENNA_counter_all_inst_year[4]/DIODE    0.750000    0.768193   -0.018193 (VIOLATED)
+counter_all_inst/year[4]                0.750000    0.768193   -0.018193 (VIOLATED)
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 1 unannotated drivers.
+ clkload0/Y
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 6
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 11 unconstrained endpoints.
+  led_day[8]
+  led_hour[8]
+  led_month[13]
+  led_month[8]
+  led_month[9]
+  counter_all_inst/day_num[2]
+  counter_all_inst/day_num[3]
+  counter_all_inst/day_num[4]
+  counter_all_inst/hour_num[0]
+  counter_all_inst/hour_num[1]
+  counter_all_inst/hour_num[3]

@@ -1,0 +1,90 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+Startpoint: alarm_inst (rising edge-triggered flip-flop clocked by clk)
+Endpoint: alarm_o (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock source latency
+     2    0.033876    0.157145    0.111555    0.111555 ^ clk (in)
+                                                         clk (net)
+                      0.157428    0.000000    0.111555 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+     5    0.042774    0.062921    0.182502    0.294056 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+                                                         clknet_0_clk (net)
+                      0.062968    0.001522    0.295578 ^ clkbuf_1_1__f_clk/A (sky130_fd_sc_hd__clkbuf_16)
+     5    0.034493    0.054815    0.143711    0.439289 ^ clkbuf_1_1__f_clk/X (sky130_fd_sc_hd__clkbuf_16)
+                                                         clknet_1_1__leaf_clk (net)
+                      0.055092    0.002881    0.442170 ^ alarm_inst/clk (alarm)
+     1    0.010500    0.097337    1.566954    2.009124 ^ alarm_inst/alarm_o (alarm)
+                                                         net25 (net)
+                      0.097337    0.000345    2.009469 ^ output25/A (sky130_fd_sc_hd__buf_2)
+     1    0.034334    0.170774    0.217540    2.227008 ^ output25/X (sky130_fd_sc_hd__buf_2)
+                                                         alarm_o (net)
+                      0.170775    0.000733    2.227742 ^ alarm_o (out)
+                                              2.227742   data arrival time
+
+                               1000000000.000000 1000000000.000000   clock clk (rise edge)
+                                  0.000000 1000000000.000000   clock network delay (propagated)
+                                 -0.250000 1000000000.000000   clock uncertainty
+                                  0.000000 1000000000.000000   clock reconvergence pessimism
+                               -200000000.000000 800000064.000000   output external delay
+                                           800000064.000000   data required time
+---------------------------------------------------------------------------------------------
+                                           800000064.000000   data required time
+                                             -2.227742   data arrival time
+---------------------------------------------------------------------------------------------
+                                           800000064.000000   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 1 unannotated drivers.
+ clkload0/Y
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 11 unconstrained endpoints.
+  led_day[8]
+  led_hour[8]
+  led_month[13]
+  led_month[8]
+  led_month[9]
+  counter_all_inst/day_num[2]
+  counter_all_inst/day_num[3]
+  counter_all_inst/day_num[4]
+  counter_all_inst/hour_num[0]
+  counter_all_inst/hour_num[1]
+  counter_all_inst/hour_num[3]

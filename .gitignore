@@ -7,7 +7,5 @@
 !MARCO/decode_all/runs/
 !MARCO/decode_day/runs/
 !MARCO/decode_input/runs/
-
-# Still ignore the top-level runs under MARCO/
-MARCO/runs/
+!MARCO/runs/
 

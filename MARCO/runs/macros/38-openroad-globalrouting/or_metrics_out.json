@@ -1,0 +1,23 @@
+{
+	"antenna__violating__nets": 12,
+	"antenna__violating__pins": 12,
+	"design__io": 112,
+	"design__die__area": 120000,
+	"design__core__area": 107841,
+	"design__instance__count": 1085,
+	"design__instance__area": 27340.8,
+	"design__instance__count__stdcell": 1080,
+	"design__instance__area__stdcell": 1836.76,
+	"design__instance__count__macros": 5,
+	"design__instance__area__macros": 25504,
+	"design__instance__utilization": 0.253529,
+	"design__instance__utilization__stdcell": 0.0223079,
+	"design__instance__count__class:macro": 5,
+	"design__instance__count__class:fill_cell": 508,
+	"design__instance__count__class:tap_cell": 966,
+	"design__instance__count__class:clock_buffer": 3,
+	"design__instance__count__class:timing_repair_buffer": 110,
+	"design__instance__count__class:clock_inverter": 1,
+	"flow__warnings__count": 115,
+	"flow__errors__count": 0
+}

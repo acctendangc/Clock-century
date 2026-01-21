@@ -1,0 +1,83 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+Startpoint: alarm_inst (rising edge-triggered flip-flop clocked by clk)
+Endpoint: alarm_o (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock source latency
+     2    0.067076    0.305446    0.212497    0.212497 ^ clk (in)
+                                                         clk (net)
+                      0.305511    0.000000    0.212497 ^ alarm_inst/clk (alarm)
+     1    0.039319    0.309803    1.722132    1.934629 ^ alarm_inst/alarm_o (alarm)
+                                                         alarm_o (net)
+                      0.309803    0.000949    1.935578 ^ alarm_o (out)
+                                              1.935578   data arrival time
+
+                               1000000000.000000 1000000000.000000   clock clk (rise edge)
+                                  0.000000 1000000000.000000   clock network delay (propagated)
+                                 -0.250000 1000000000.000000   clock uncertainty
+                                  0.000000 1000000000.000000   clock reconvergence pessimism
+                               -200000000.000000 800000064.000000   output external delay
+                                           800000064.000000   data required time
+---------------------------------------------------------------------------------------------
+                                           800000064.000000   data required time
+                                             -1.935578   data arrival time
+---------------------------------------------------------------------------------------------
+                                           800000064.000000   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 0 unannotated drivers.
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+Writing metric design__max_slew_violation__count__corner:nom_tt_025C_1v80: 0
+max fanout violation count 0
+Writing metric design__max_fanout_violation__count__corner:nom_tt_025C_1v80: 0
+max cap violation count 0
+Writing metric design__max_cap_violation__count__corner:nom_tt_025C_1v80: 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 11 unconstrained endpoints.
+  led_day[8]
+  led_hour[8]
+  led_month[13]
+  led_month[8]
+  led_month[9]
+  counter_all_inst/day_num[2]
+  counter_all_inst/day_num[3]
+  counter_all_inst/day_num[4]
+  counter_all_inst/hour_num[0]
+  counter_all_inst/hour_num[1]
+  counter_all_inst/hour_num[3]

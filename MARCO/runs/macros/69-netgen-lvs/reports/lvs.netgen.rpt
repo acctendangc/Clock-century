@@ -1,0 +1,1039 @@
+
+Cell sky130_ef_sc_hd__decap_12 (0) disconnected node: VPWR
+Cell sky130_ef_sc_hd__decap_12 (0) disconnected node: VGND
+Cell sky130_ef_sc_hd__decap_12 (0) disconnected node: VPB
+Cell sky130_ef_sc_hd__decap_12 (0) disconnected node: VNB
+
+Subcircuit pins:
+Circuit 1: sky130_ef_sc_hd__decap_12       |Circuit 2: sky130_ef_sc_hd__decap_12       
+-------------------------------------------|-------------------------------------------
+VPWR                                       |VPWR                                       
+VGND                                       |VGND                                       
+VPB                                        |VPB                                        
+VNB                                        |VNB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_ef_sc_hd__decap_12 and sky130_ef_sc_hd__decap_12 are equivalent.
+
+Cell sky130_fd_sc_hd__tapvpwrvgnd_1 (0) disconnected node: VGND
+Cell sky130_fd_sc_hd__tapvpwrvgnd_1 (0) disconnected node: VPWR
+Cell sky130_fd_sc_hd__tapvpwrvgnd_1 (1) disconnected node: VGND
+Cell sky130_fd_sc_hd__tapvpwrvgnd_1 (1) disconnected node: VPWR
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__tapvpwrvgnd_1  |Circuit 2: sky130_fd_sc_hd__tapvpwrvgnd_1  
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__tapvpwrvgnd_1 and sky130_fd_sc_hd__tapvpwrvgnd_1 are equivalent.
+
+Cell sky130_fd_sc_hd__decap_6 (0) disconnected node: VGND
+Cell sky130_fd_sc_hd__decap_6 (0) disconnected node: VNB
+Cell sky130_fd_sc_hd__decap_6 (0) disconnected node: VPB
+Cell sky130_fd_sc_hd__decap_6 (0) disconnected node: VPWR
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_6        |Circuit 2: sky130_fd_sc_hd__decap_6        
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_6 and sky130_fd_sc_hd__decap_6 are equivalent.
+
+Cell sky130_fd_sc_hd__decap_3 (0) disconnected node: VGND
+Cell sky130_fd_sc_hd__decap_3 (0) disconnected node: VNB
+Cell sky130_fd_sc_hd__decap_3 (0) disconnected node: VPB
+Cell sky130_fd_sc_hd__decap_3 (0) disconnected node: VPWR
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_3        |Circuit 2: sky130_fd_sc_hd__decap_3        
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_3 and sky130_fd_sc_hd__decap_3 are equivalent.
+
+Cell sky130_fd_sc_hd__decap_8 (0) disconnected node: VGND
+Cell sky130_fd_sc_hd__decap_8 (0) disconnected node: VNB
+Cell sky130_fd_sc_hd__decap_8 (0) disconnected node: VPB
+Cell sky130_fd_sc_hd__decap_8 (0) disconnected node: VPWR
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_8        |Circuit 2: sky130_fd_sc_hd__decap_8        
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_8 and sky130_fd_sc_hd__decap_8 are equivalent.
+
+Cell sky130_fd_sc_hd__diode_2 (0) disconnected node: DIODE
+Cell sky130_fd_sc_hd__diode_2 (0) disconnected node: VGND
+Cell sky130_fd_sc_hd__diode_2 (0) disconnected node: VNB
+Cell sky130_fd_sc_hd__diode_2 (0) disconnected node: VPB
+Cell sky130_fd_sc_hd__diode_2 (0) disconnected node: VPWR
+Cell sky130_fd_sc_hd__diode_2 (1) disconnected node: VGND
+Cell sky130_fd_sc_hd__diode_2 (1) disconnected node: VPB
+Cell sky130_fd_sc_hd__diode_2 (1) disconnected node: VPWR
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__diode_2        |Circuit 2: sky130_fd_sc_hd__diode_2        
+-------------------------------------------|-------------------------------------------
+DIODE                                      |DIODE                                      
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__diode_2 and sky130_fd_sc_hd__diode_2 are equivalent.
+
+Cell sky130_fd_sc_hd__decap_4 (0) disconnected node: VGND
+Cell sky130_fd_sc_hd__decap_4 (0) disconnected node: VNB
+Cell sky130_fd_sc_hd__decap_4 (0) disconnected node: VPB
+Cell sky130_fd_sc_hd__decap_4 (0) disconnected node: VPWR
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_4        |Circuit 2: sky130_fd_sc_hd__decap_4        
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_4 and sky130_fd_sc_hd__decap_4 are equivalent.
+
+Cell sky130_fd_sc_hd__fill_1 (0) disconnected node: VGND
+Cell sky130_fd_sc_hd__fill_1 (0) disconnected node: VNB
+Cell sky130_fd_sc_hd__fill_1 (0) disconnected node: VPB
+Cell sky130_fd_sc_hd__fill_1 (0) disconnected node: VPWR
+Cell sky130_fd_sc_hd__fill_1 (1) disconnected node: VGND
+Cell sky130_fd_sc_hd__fill_1 (1) disconnected node: VNB
+Cell sky130_fd_sc_hd__fill_1 (1) disconnected node: VPB
+Cell sky130_fd_sc_hd__fill_1 (1) disconnected node: VPWR
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__fill_1         |Circuit 2: sky130_fd_sc_hd__fill_1         
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__fill_1 and sky130_fd_sc_hd__fill_1 are equivalent.
+
+Cell sky130_fd_sc_hd__fill_2 (0) disconnected node: VGND
+Cell sky130_fd_sc_hd__fill_2 (0) disconnected node: VNB
+Cell sky130_fd_sc_hd__fill_2 (0) disconnected node: VPB
+Cell sky130_fd_sc_hd__fill_2 (0) disconnected node: VPWR
+Cell sky130_fd_sc_hd__fill_2 (1) disconnected node: VGND
+Cell sky130_fd_sc_hd__fill_2 (1) disconnected node: VNB
+Cell sky130_fd_sc_hd__fill_2 (1) disconnected node: VPB
+Cell sky130_fd_sc_hd__fill_2 (1) disconnected node: VPWR
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__fill_2         |Circuit 2: sky130_fd_sc_hd__fill_2         
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__fill_2 and sky130_fd_sc_hd__fill_2 are equivalent.
+
+Cell sky130_fd_sc_hd__buf_2 (0) disconnected node: A
+Cell sky130_fd_sc_hd__buf_2 (0) disconnected node: VGND
+Cell sky130_fd_sc_hd__buf_2 (0) disconnected node: VNB
+Cell sky130_fd_sc_hd__buf_2 (0) disconnected node: VPB
+Cell sky130_fd_sc_hd__buf_2 (0) disconnected node: VPWR
+Cell sky130_fd_sc_hd__buf_2 (0) disconnected node: X
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__buf_2          |Circuit 2: sky130_fd_sc_hd__buf_2          
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__buf_2 and sky130_fd_sc_hd__buf_2 are equivalent.
+
+Cell sky130_fd_sc_hd__bufinv_16 (0) disconnected node: A
+Cell sky130_fd_sc_hd__bufinv_16 (0) disconnected node: VGND
+Cell sky130_fd_sc_hd__bufinv_16 (0) disconnected node: VNB
+Cell sky130_fd_sc_hd__bufinv_16 (0) disconnected node: VPB
+Cell sky130_fd_sc_hd__bufinv_16 (0) disconnected node: VPWR
+Cell sky130_fd_sc_hd__bufinv_16 (0) disconnected node: Y
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__bufinv_16      |Circuit 2: sky130_fd_sc_hd__bufinv_16      
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+Y                                          |Y                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__bufinv_16 and sky130_fd_sc_hd__bufinv_16 are equivalent.
+
+Cell decode_day (0) disconnected node: VGND
+Cell decode_day (0) disconnected node: VPWR
+Cell decode_day (0) disconnected node: am_pm
+Cell decode_day (0) disconnected node: day_num[0]
+Cell decode_day (0) disconnected node: day_num[1]
+Cell decode_day (0) disconnected node: day_num[2]
+Cell decode_day (0) disconnected node: day_num[3]
+Cell decode_day (0) disconnected node: day_num[4]
+Cell decode_day (0) disconnected node: hour_num[0]
+Cell decode_day (0) disconnected node: hour_num[1]
+Cell decode_day (0) disconnected node: hour_num[2]
+Cell decode_day (0) disconnected node: hour_num[3]
+Cell decode_day (0) disconnected node: hour_num[4]
+Cell decode_day (0) disconnected node: month[0]
+Cell decode_day (0) disconnected node: month[1]
+Cell decode_day (0) disconnected node: month[2]
+Cell decode_day (0) disconnected node: month[3]
+Cell decode_day (0) disconnected node: year[0]
+Cell decode_day (0) disconnected node: year[1]
+Cell decode_day (0) disconnected node: year[2]
+Cell decode_day (0) disconnected node: year[3]
+Cell decode_day (0) disconnected node: year[4]
+Cell decode_day (0) disconnected node: year[5]
+Cell decode_day (0) disconnected node: year[6]
+
+Subcircuit pins:
+Circuit 1: decode_day                      |Circuit 2: decode_day                      
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+am_pm                                      |am_pm                                      
+day_num[0]                                 |day_num[0]                                 
+day_num[1]                                 |day_num[1]                                 
+day_num[2]                                 |day_num[2]                                 
+day_num[3]                                 |day_num[3]                                 
+day_num[4]                                 |day_num[4]                                 
+hour_num[0]                                |hour_num[0]                                
+hour_num[1]                                |hour_num[1]                                
+hour_num[2]                                |hour_num[2]                                
+hour_num[3]                                |hour_num[3]                                
+hour_num[4]                                |hour_num[4]                                
+month[0]                                   |month[0]                                   
+month[1]                                   |month[1]                                   
+month[2]                                   |month[2]                                   
+month[3]                                   |month[3]                                   
+year[0]                                    |year[0]                                    
+year[1]                                    |year[1]                                    
+year[2]                                    |year[2]                                    
+year[3]                                    |year[3]                                    
+year[4]                                    |year[4]                                    
+year[5]                                    |year[5]                                    
+year[6]                                    |year[6]                                    
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes decode_day and decode_day are equivalent.
+
+Cell sky130_fd_sc_hd__clkbuf_16 (0) disconnected node: A
+Cell sky130_fd_sc_hd__clkbuf_16 (0) disconnected node: VGND
+Cell sky130_fd_sc_hd__clkbuf_16 (0) disconnected node: VNB
+Cell sky130_fd_sc_hd__clkbuf_16 (0) disconnected node: VPB
+Cell sky130_fd_sc_hd__clkbuf_16 (0) disconnected node: VPWR
+Cell sky130_fd_sc_hd__clkbuf_16 (0) disconnected node: X
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__clkbuf_16      |Circuit 2: sky130_fd_sc_hd__clkbuf_16      
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__clkbuf_16 and sky130_fd_sc_hd__clkbuf_16 are equivalent.
+
+Cell decode_all (0) disconnected node: VGND
+Cell decode_all (0) disconnected node: VPWR
+Cell decode_all (0) disconnected node: day[0]
+Cell decode_all (0) disconnected node: day[1]
+Cell decode_all (0) disconnected node: day[2]
+Cell decode_all (0) disconnected node: day[3]
+Cell decode_all (0) disconnected node: day[4]
+Cell decode_all (0) disconnected node: hour[0]
+Cell decode_all (0) disconnected node: hour[1]
+Cell decode_all (0) disconnected node: hour[2]
+Cell decode_all (0) disconnected node: hour[3]
+Cell decode_all (0) disconnected node: hour[4]
+Cell decode_all (0) disconnected node: led_day[0]
+Cell decode_all (0) disconnected node: led_day[10]
+Cell decode_all (0) disconnected node: led_day[11]
+Cell decode_all (0) disconnected node: led_day[12]
+Cell decode_all (0) disconnected node: led_day[13]
+Cell decode_all (0) disconnected node: led_day[1]
+Cell decode_all (0) disconnected node: led_day[2]
+Cell decode_all (0) disconnected node: led_day[3]
+Cell decode_all (0) disconnected node: led_day[4]
+Cell decode_all (0) disconnected node: led_day[5]
+Cell decode_all (0) disconnected node: led_day[6]
+Cell decode_all (0) disconnected node: led_day[7]
+Cell decode_all (0) disconnected node: led_day[8]
+Cell decode_all (0) disconnected node: led_day[9]
+Cell decode_all (0) disconnected node: led_hour[0]
+Cell decode_all (0) disconnected node: led_hour[10]
+Cell decode_all (0) disconnected node: led_hour[11]
+Cell decode_all (0) disconnected node: led_hour[12]
+Cell decode_all (0) disconnected node: led_hour[13]
+Cell decode_all (0) disconnected node: led_hour[1]
+Cell decode_all (0) disconnected node: led_hour[2]
+Cell decode_all (0) disconnected node: led_hour[3]
+Cell decode_all (0) disconnected node: led_hour[4]
+Cell decode_all (0) disconnected node: led_hour[5]
+Cell decode_all (0) disconnected node: led_hour[6]
+Cell decode_all (0) disconnected node: led_hour[7]
+Cell decode_all (0) disconnected node: led_hour[8]
+Cell decode_all (0) disconnected node: led_hour[9]
+Cell decode_all (0) disconnected node: led_min[0]
+Cell decode_all (0) disconnected node: led_min[10]
+Cell decode_all (0) disconnected node: led_min[11]
+Cell decode_all (0) disconnected node: led_min[12]
+Cell decode_all (0) disconnected node: led_min[13]
+Cell decode_all (0) disconnected node: led_min[1]
+Cell decode_all (0) disconnected node: led_min[2]
+Cell decode_all (0) disconnected node: led_min[3]
+Cell decode_all (0) disconnected node: led_min[4]
+Cell decode_all (0) disconnected node: led_min[5]
+Cell decode_all (0) disconnected node: led_min[6]
+Cell decode_all (0) disconnected node: led_min[7]
+Cell decode_all (0) disconnected node: led_min[8]
+Cell decode_all (0) disconnected node: led_min[9]
+Cell decode_all (0) disconnected node: led_month[0]
+Cell decode_all (0) disconnected node: led_month[10]
+Cell decode_all (0) disconnected node: led_month[11]
+Cell decode_all (0) disconnected node: led_month[12]
+Cell decode_all (0) disconnected node: led_month[13]
+Cell decode_all (0) disconnected node: led_month[1]
+Cell decode_all (0) disconnected node: led_month[2]
+Cell decode_all (0) disconnected node: led_month[3]
+Cell decode_all (0) disconnected node: led_month[4]
+Cell decode_all (0) disconnected node: led_month[5]
+Cell decode_all (0) disconnected node: led_month[6]
+Cell decode_all (0) disconnected node: led_month[7]
+Cell decode_all (0) disconnected node: led_month[8]
+Cell decode_all (0) disconnected node: led_month[9]
+Cell decode_all (0) disconnected node: led_sec[0]
+Cell decode_all (0) disconnected node: led_sec[10]
+Cell decode_all (0) disconnected node: led_sec[11]
+Cell decode_all (0) disconnected node: led_sec[12]
+Cell decode_all (0) disconnected node: led_sec[13]
+Cell decode_all (0) disconnected node: led_sec[1]
+Cell decode_all (0) disconnected node: led_sec[2]
+Cell decode_all (0) disconnected node: led_sec[3]
+Cell decode_all (0) disconnected node: led_sec[4]
+Cell decode_all (0) disconnected node: led_sec[5]
+Cell decode_all (0) disconnected node: led_sec[6]
+Cell decode_all (0) disconnected node: led_sec[7]
+Cell decode_all (0) disconnected node: led_sec[8]
+Cell decode_all (0) disconnected node: led_sec[9]
+Cell decode_all (0) disconnected node: led_year[0]
+Cell decode_all (0) disconnected node: led_year[10]
+Cell decode_all (0) disconnected node: led_year[11]
+Cell decode_all (0) disconnected node: led_year[12]
+Cell decode_all (0) disconnected node: led_year[13]
+Cell decode_all (0) disconnected node: led_year[1]
+Cell decode_all (0) disconnected node: led_year[2]
+Cell decode_all (0) disconnected node: led_year[3]
+Cell decode_all (0) disconnected node: led_year[4]
+Cell decode_all (0) disconnected node: led_year[5]
+Cell decode_all (0) disconnected node: led_year[6]
+Cell decode_all (0) disconnected node: led_year[7]
+Cell decode_all (0) disconnected node: led_year[8]
+Cell decode_all (0) disconnected node: led_year[9]
+Cell decode_all (0) disconnected node: minute[0]
+Cell decode_all (0) disconnected node: minute[1]
+Cell decode_all (0) disconnected node: minute[2]
+Cell decode_all (0) disconnected node: minute[3]
+Cell decode_all (0) disconnected node: minute[4]
+Cell decode_all (0) disconnected node: minute[5]
+Cell decode_all (0) disconnected node: month[0]
+Cell decode_all (0) disconnected node: month[1]
+Cell decode_all (0) disconnected node: month[2]
+Cell decode_all (0) disconnected node: month[3]
+Cell decode_all (0) disconnected node: second[0]
+Cell decode_all (0) disconnected node: second[1]
+Cell decode_all (0) disconnected node: second[2]
+Cell decode_all (0) disconnected node: second[3]
+Cell decode_all (0) disconnected node: second[4]
+Cell decode_all (0) disconnected node: second[5]
+Cell decode_all (0) disconnected node: year[0]
+Cell decode_all (0) disconnected node: year[1]
+Cell decode_all (0) disconnected node: year[2]
+Cell decode_all (0) disconnected node: year[3]
+Cell decode_all (0) disconnected node: year[4]
+Cell decode_all (0) disconnected node: year[5]
+Cell decode_all (0) disconnected node: year[6]
+
+Subcircuit pins:
+Circuit 1: decode_all                      |Circuit 2: decode_all                      
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+day[0]                                     |day[0]                                     
+day[1]                                     |day[1]                                     
+day[2]                                     |day[2]                                     
+day[3]                                     |day[3]                                     
+day[4]                                     |day[4]                                     
+hour[0]                                    |hour[0]                                    
+hour[1]                                    |hour[1]                                    
+hour[2]                                    |hour[2]                                    
+hour[3]                                    |hour[3]                                    
+hour[4]                                    |hour[4]                                    
+led_day[0]                                 |led_day[0]                                 
+led_day[10]                                |led_day[10]                                
+led_day[11]                                |led_day[11]                                
+led_day[12]                                |led_day[12]                                
+led_day[13]                                |led_day[13]                                
+led_day[1]                                 |led_day[1]                                 
+led_day[2]                                 |led_day[2]                                 
+led_day[3]                                 |led_day[3]                                 
+led_day[4]                                 |led_day[4]                                 
+led_day[5]                                 |led_day[5]                                 
+led_day[6]                                 |led_day[6]                                 
+led_day[7]                                 |led_day[7]                                 
+led_day[8]                                 |led_day[8]                                 
+led_day[9]                                 |led_day[9]                                 
+led_hour[0]                                |led_hour[0]                                
+led_hour[10]                               |led_hour[10]                               
+led_hour[11]                               |led_hour[11]                               
+led_hour[12]                               |led_hour[12]                               
+led_hour[13]                               |led_hour[13]                               
+led_hour[1]                                |led_hour[1]                                
+led_hour[2]                                |led_hour[2]                                
+led_hour[3]                                |led_hour[3]                                
+led_hour[4]                                |led_hour[4]                                
+led_hour[5]                                |led_hour[5]                                
+led_hour[6]                                |led_hour[6]                                
+led_hour[7]                                |led_hour[7]                                
+led_hour[8]                                |led_hour[8]                                
+led_hour[9]                                |led_hour[9]                                
+led_min[0]                                 |led_min[0]                                 
+led_min[10]                                |led_min[10]                                
+led_min[11]                                |led_min[11]                                
+led_min[12]                                |led_min[12]                                
+led_min[13]                                |led_min[13]                                
+led_min[1]                                 |led_min[1]                                 
+led_min[2]                                 |led_min[2]                                 
+led_min[3]                                 |led_min[3]                                 
+led_min[4]                                 |led_min[4]                                 
+led_min[5]                                 |led_min[5]                                 
+led_min[6]                                 |led_min[6]                                 
+led_min[7]                                 |led_min[7]                                 
+led_min[8]                                 |led_min[8]                                 
+led_min[9]                                 |led_min[9]                                 
+led_month[0]                               |led_month[0]                               
+led_month[10]                              |led_month[10]                              
+led_month[11]                              |led_month[11]                              
+led_month[12]                              |led_month[12]                              
+led_month[13]                              |led_month[13]                              
+led_month[1]                               |led_month[1]                               
+led_month[2]                               |led_month[2]                               
+led_month[3]                               |led_month[3]                               
+led_month[4]                               |led_month[4]                               
+led_month[5]                               |led_month[5]                               
+led_month[6]                               |led_month[6]                               
+led_month[7]                               |led_month[7]                               
+led_month[8]                               |led_month[8]                               
+led_month[9]                               |led_month[9]                               
+led_sec[0]                                 |led_sec[0]                                 
+led_sec[10]                                |led_sec[10]                                
+led_sec[11]                                |led_sec[11]                                
+led_sec[12]                                |led_sec[12]                                
+led_sec[13]                                |led_sec[13]                                
+led_sec[1]                                 |led_sec[1]                                 
+led_sec[2]                                 |led_sec[2]                                 
+led_sec[3]                                 |led_sec[3]                                 
+led_sec[4]                                 |led_sec[4]                                 
+led_sec[5]                                 |led_sec[5]                                 
+led_sec[6]                                 |led_sec[6]                                 
+led_sec[7]                                 |led_sec[7]                                 
+led_sec[8]                                 |led_sec[8]                                 
+led_sec[9]                                 |led_sec[9]                                 
+led_year[0]                                |led_year[0]                                
+led_year[10]                               |led_year[10]                               
+led_year[11]                               |led_year[11]                               
+led_year[12]                               |led_year[12]                               
+led_year[13]                               |led_year[13]                               
+led_year[1]                                |led_year[1]                                
+led_year[2]                                |led_year[2]                                
+led_year[3]                                |led_year[3]                                
+led_year[4]                                |led_year[4]                                
+led_year[5]                                |led_year[5]                                
+led_year[6]                                |led_year[6]                                
+led_year[7]                                |led_year[7]                                
+led_year[8]                                |led_year[8]                                
+led_year[9]                                |led_year[9]                                
+minute[0]                                  |minute[0]                                  
+minute[1]                                  |minute[1]                                  
+minute[2]                                  |minute[2]                                  
+minute[3]                                  |minute[3]                                  
+minute[4]                                  |minute[4]                                  
+minute[5]                                  |minute[5]                                  
+month[0]                                   |month[0]                                   
+month[1]                                   |month[1]                                   
+month[2]                                   |month[2]                                   
+month[3]                                   |month[3]                                   
+second[0]                                  |second[0]                                  
+second[1]                                  |second[1]                                  
+second[2]                                  |second[2]                                  
+second[3]                                  |second[3]                                  
+second[4]                                  |second[4]                                  
+second[5]                                  |second[5]                                  
+year[0]                                    |year[0]                                    
+year[1]                                    |year[1]                                    
+year[2]                                    |year[2]                                    
+year[3]                                    |year[3]                                    
+year[4]                                    |year[4]                                    
+year[5]                                    |year[5]                                    
+year[6]                                    |year[6]                                    
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes decode_all and decode_all are equivalent.
+
+Cell counter_all (0) disconnected node: VGND
+Cell counter_all (0) disconnected node: VPWR
+Cell counter_all (0) disconnected node: clk
+Cell counter_all (0) disconnected node: day[0]
+Cell counter_all (0) disconnected node: day[1]
+Cell counter_all (0) disconnected node: day[2]
+Cell counter_all (0) disconnected node: day[3]
+Cell counter_all (0) disconnected node: day[4]
+Cell counter_all (0) disconnected node: day_num[0]
+Cell counter_all (0) disconnected node: day_num[1]
+Cell counter_all (0) disconnected node: day_num[2]
+Cell counter_all (0) disconnected node: day_num[3]
+Cell counter_all (0) disconnected node: day_num[4]
+Cell counter_all (0) disconnected node: dec[0]
+Cell counter_all (0) disconnected node: dec[1]
+Cell counter_all (0) disconnected node: dec[2]
+Cell counter_all (0) disconnected node: dec[3]
+Cell counter_all (0) disconnected node: dec[4]
+Cell counter_all (0) disconnected node: dec[5]
+Cell counter_all (0) disconnected node: done_dec[0]
+Cell counter_all (0) disconnected node: done_dec[1]
+Cell counter_all (0) disconnected node: done_dec[2]
+Cell counter_all (0) disconnected node: done_dec[3]
+Cell counter_all (0) disconnected node: done_dec[4]
+Cell counter_all (0) disconnected node: done_inc[0]
+Cell counter_all (0) disconnected node: done_inc[1]
+Cell counter_all (0) disconnected node: done_inc[2]
+Cell counter_all (0) disconnected node: done_inc[3]
+Cell counter_all (0) disconnected node: done_inc[4]
+Cell counter_all (0) disconnected node: en[0]
+Cell counter_all (0) disconnected node: en[1]
+Cell counter_all (0) disconnected node: en[2]
+Cell counter_all (0) disconnected node: en[3]
+Cell counter_all (0) disconnected node: en[4]
+Cell counter_all (0) disconnected node: en[5]
+Cell counter_all (0) disconnected node: hour[0]
+Cell counter_all (0) disconnected node: hour[1]
+Cell counter_all (0) disconnected node: hour[2]
+Cell counter_all (0) disconnected node: hour[3]
+Cell counter_all (0) disconnected node: hour[4]
+Cell counter_all (0) disconnected node: hour_num[0]
+Cell counter_all (0) disconnected node: hour_num[1]
+Cell counter_all (0) disconnected node: hour_num[2]
+Cell counter_all (0) disconnected node: hour_num[3]
+Cell counter_all (0) disconnected node: hour_num[4]
+Cell counter_all (0) disconnected node: inc[0]
+Cell counter_all (0) disconnected node: inc[1]
+Cell counter_all (0) disconnected node: inc[2]
+Cell counter_all (0) disconnected node: inc[3]
+Cell counter_all (0) disconnected node: inc[4]
+Cell counter_all (0) disconnected node: inc[5]
+Cell counter_all (0) disconnected node: minute[0]
+Cell counter_all (0) disconnected node: minute[1]
+Cell counter_all (0) disconnected node: minute[2]
+Cell counter_all (0) disconnected node: minute[3]
+Cell counter_all (0) disconnected node: minute[4]
+Cell counter_all (0) disconnected node: minute[5]
+Cell counter_all (0) disconnected node: month[0]
+Cell counter_all (0) disconnected node: month[1]
+Cell counter_all (0) disconnected node: month[2]
+Cell counter_all (0) disconnected node: month[3]
+Cell counter_all (0) disconnected node: reset_n
+Cell counter_all (0) disconnected node: second[0]
+Cell counter_all (0) disconnected node: second[1]
+Cell counter_all (0) disconnected node: second[2]
+Cell counter_all (0) disconnected node: second[3]
+Cell counter_all (0) disconnected node: second[4]
+Cell counter_all (0) disconnected node: second[5]
+Cell counter_all (0) disconnected node: year[0]
+Cell counter_all (0) disconnected node: year[1]
+Cell counter_all (0) disconnected node: year[2]
+Cell counter_all (0) disconnected node: year[3]
+Cell counter_all (0) disconnected node: year[4]
+Cell counter_all (0) disconnected node: year[5]
+Cell counter_all (0) disconnected node: year[6]
+
+Subcircuit pins:
+Circuit 1: counter_all                     |Circuit 2: counter_all                     
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+clk                                        |clk                                        
+day[0]                                     |day[0]                                     
+day[1]                                     |day[1]                                     
+day[2]                                     |day[2]                                     
+day[3]                                     |day[3]                                     
+day[4]                                     |day[4]                                     
+day_num[0]                                 |day_num[0]                                 
+day_num[1]                                 |day_num[1]                                 
+day_num[2]                                 |day_num[2]                                 
+day_num[3]                                 |day_num[3]                                 
+day_num[4]                                 |day_num[4]                                 
+dec[0]                                     |dec[0]                                     
+dec[1]                                     |dec[1]                                     
+dec[2]                                     |dec[2]                                     
+dec[3]                                     |dec[3]                                     
+dec[4]                                     |dec[4]                                     
+dec[5]                                     |dec[5]                                     
+done_dec[0]                                |done_dec[0]                                
+done_dec[1]                                |done_dec[1]                                
+done_dec[2]                                |done_dec[2]                                
+done_dec[3]                                |done_dec[3]                                
+done_dec[4]                                |done_dec[4]                                
+done_inc[0]                                |done_inc[0]                                
+done_inc[1]                                |done_inc[1]                                
+done_inc[2]                                |done_inc[2]                                
+done_inc[3]                                |done_inc[3]                                
+done_inc[4]                                |done_inc[4]                                
+en[0]                                      |en[0]                                      
+en[1]                                      |en[1]                                      
+en[2]                                      |en[2]                                      
+en[3]                                      |en[3]                                      
+en[4]                                      |en[4]                                      
+en[5]                                      |en[5]                                      
+hour[0]                                    |hour[0]                                    
+hour[1]                                    |hour[1]                                    
+hour[2]                                    |hour[2]                                    
+hour[3]                                    |hour[3]                                    
+hour[4]                                    |hour[4]                                    
+hour_num[0]                                |hour_num[0]                                
+hour_num[1]                                |hour_num[1]                                
+hour_num[2]                                |hour_num[2]                                
+hour_num[3]                                |hour_num[3]                                
+hour_num[4]                                |hour_num[4]                                
+inc[0]                                     |inc[0]                                     
+inc[1]                                     |inc[1]                                     
+inc[2]                                     |inc[2]                                     
+inc[3]                                     |inc[3]                                     
+inc[4]                                     |inc[4]                                     
+inc[5]                                     |inc[5]                                     
+minute[0]                                  |minute[0]                                  
+minute[1]                                  |minute[1]                                  
+minute[2]                                  |minute[2]                                  
+minute[3]                                  |minute[3]                                  
+minute[4]                                  |minute[4]                                  
+minute[5]                                  |minute[5]                                  
+month[0]                                   |month[0]                                   
+month[1]                                   |month[1]                                   
+month[2]                                   |month[2]                                   
+month[3]                                   |month[3]                                   
+reset_n                                    |reset_n                                    
+second[0]                                  |second[0]                                  
+second[1]                                  |second[1]                                  
+second[2]                                  |second[2]                                  
+second[3]                                  |second[3]                                  
+second[4]                                  |second[4]                                  
+second[5]                                  |second[5]                                  
+year[0]                                    |year[0]                                    
+year[1]                                    |year[1]                                    
+year[2]                                    |year[2]                                    
+year[3]                                    |year[3]                                    
+year[4]                                    |year[4]                                    
+year[5]                                    |year[5]                                    
+year[6]                                    |year[6]                                    
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes counter_all and counter_all are equivalent.
+
+Cell sky130_fd_sc_hd__buf_1 (0) disconnected node: A
+Cell sky130_fd_sc_hd__buf_1 (0) disconnected node: VGND
+Cell sky130_fd_sc_hd__buf_1 (0) disconnected node: VNB
+Cell sky130_fd_sc_hd__buf_1 (0) disconnected node: VPB
+Cell sky130_fd_sc_hd__buf_1 (0) disconnected node: VPWR
+Cell sky130_fd_sc_hd__buf_1 (0) disconnected node: X
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__buf_1          |Circuit 2: sky130_fd_sc_hd__buf_1          
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__buf_1 and sky130_fd_sc_hd__buf_1 are equivalent.
+
+Cell sky130_fd_sc_hd__clkbuf_1 (0) disconnected node: A
+Cell sky130_fd_sc_hd__clkbuf_1 (0) disconnected node: VGND
+Cell sky130_fd_sc_hd__clkbuf_1 (0) disconnected node: VNB
+Cell sky130_fd_sc_hd__clkbuf_1 (0) disconnected node: VPB
+Cell sky130_fd_sc_hd__clkbuf_1 (0) disconnected node: VPWR
+Cell sky130_fd_sc_hd__clkbuf_1 (0) disconnected node: X
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__clkbuf_1       |Circuit 2: sky130_fd_sc_hd__clkbuf_1       
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__clkbuf_1 and sky130_fd_sc_hd__clkbuf_1 are equivalent.
+
+Cell alarm (0) disconnected node: VGND
+Cell alarm (0) disconnected node: VPWR
+Cell alarm (0) disconnected node: alarm_hour[0]
+Cell alarm (0) disconnected node: alarm_hour[1]
+Cell alarm (0) disconnected node: alarm_hour[2]
+Cell alarm (0) disconnected node: alarm_hour[3]
+Cell alarm (0) disconnected node: alarm_hour[4]
+Cell alarm (0) disconnected node: alarm_i
+Cell alarm (0) disconnected node: alarm_min[0]
+Cell alarm (0) disconnected node: alarm_min[1]
+Cell alarm (0) disconnected node: alarm_min[2]
+Cell alarm (0) disconnected node: alarm_min[3]
+Cell alarm (0) disconnected node: alarm_min[4]
+Cell alarm (0) disconnected node: alarm_min[5]
+Cell alarm (0) disconnected node: alarm_o
+Cell alarm (0) disconnected node: clk
+Cell alarm (0) disconnected node: hour[0]
+Cell alarm (0) disconnected node: hour[1]
+Cell alarm (0) disconnected node: hour[2]
+Cell alarm (0) disconnected node: hour[3]
+Cell alarm (0) disconnected node: hour[4]
+Cell alarm (0) disconnected node: minute[0]
+Cell alarm (0) disconnected node: minute[1]
+Cell alarm (0) disconnected node: minute[2]
+Cell alarm (0) disconnected node: minute[3]
+Cell alarm (0) disconnected node: minute[4]
+Cell alarm (0) disconnected node: minute[5]
+Cell alarm (0) disconnected node: rst_n
+
+Subcircuit pins:
+Circuit 1: alarm                           |Circuit 2: alarm                           
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+alarm_hour[0]                              |alarm_hour[0]                              
+alarm_hour[1]                              |alarm_hour[1]                              
+alarm_hour[2]                              |alarm_hour[2]                              
+alarm_hour[3]                              |alarm_hour[3]                              
+alarm_hour[4]                              |alarm_hour[4]                              
+alarm_i                                    |alarm_i                                    
+alarm_min[0]                               |alarm_min[0]                               
+alarm_min[1]                               |alarm_min[1]                               
+alarm_min[2]                               |alarm_min[2]                               
+alarm_min[3]                               |alarm_min[3]                               
+alarm_min[4]                               |alarm_min[4]                               
+alarm_min[5]                               |alarm_min[5]                               
+alarm_o                                    |alarm_o                                    
+clk                                        |clk                                        
+hour[0]                                    |hour[0]                                    
+hour[1]                                    |hour[1]                                    
+hour[2]                                    |hour[2]                                    
+hour[3]                                    |hour[3]                                    
+hour[4]                                    |hour[4]                                    
+minute[0]                                  |minute[0]                                  
+minute[1]                                  |minute[1]                                  
+minute[2]                                  |minute[2]                                  
+minute[3]                                  |minute[3]                                  
+minute[4]                                  |minute[4]                                  
+minute[5]                                  |minute[5]                                  
+rst_n                                      |rst_n                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes alarm and alarm are equivalent.
+
+Cell decode_input (0) disconnected node: VGND
+Cell decode_input (0) disconnected node: VPWR
+Cell decode_input (0) disconnected node: button_dec
+Cell decode_input (0) disconnected node: button_inc
+Cell decode_input (0) disconnected node: dec[0]
+Cell decode_input (0) disconnected node: dec[1]
+Cell decode_input (0) disconnected node: dec[2]
+Cell decode_input (0) disconnected node: dec[3]
+Cell decode_input (0) disconnected node: dec[4]
+Cell decode_input (0) disconnected node: dec[5]
+Cell decode_input (0) disconnected node: done_dec[0]
+Cell decode_input (0) disconnected node: done_dec[1]
+Cell decode_input (0) disconnected node: done_dec[2]
+Cell decode_input (0) disconnected node: done_dec[3]
+Cell decode_input (0) disconnected node: done_dec[4]
+Cell decode_input (0) disconnected node: done_inc[0]
+Cell decode_input (0) disconnected node: done_inc[1]
+Cell decode_input (0) disconnected node: done_inc[2]
+Cell decode_input (0) disconnected node: done_inc[3]
+Cell decode_input (0) disconnected node: done_inc[4]
+Cell decode_input (0) disconnected node: en[0]
+Cell decode_input (0) disconnected node: en[1]
+Cell decode_input (0) disconnected node: en[2]
+Cell decode_input (0) disconnected node: en[3]
+Cell decode_input (0) disconnected node: en[4]
+Cell decode_input (0) disconnected node: en[5]
+Cell decode_input (0) disconnected node: inc[0]
+Cell decode_input (0) disconnected node: inc[1]
+Cell decode_input (0) disconnected node: inc[2]
+Cell decode_input (0) disconnected node: inc[3]
+Cell decode_input (0) disconnected node: inc[4]
+Cell decode_input (0) disconnected node: inc[5]
+Cell decode_input (0) disconnected node: mode[0]
+Cell decode_input (0) disconnected node: mode[1]
+Cell decode_input (0) disconnected node: select[0]
+Cell decode_input (0) disconnected node: select[1]
+Cell decode_input (0) disconnected node: select[2]
+Cell decode_input (0) disconnected node: select[3]
+Cell decode_input (0) disconnected node: select[4]
+Cell decode_input (0) disconnected node: select[5]
+
+Subcircuit pins:
+Circuit 1: decode_input                    |Circuit 2: decode_input                    
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+button_dec                                 |button_dec                                 
+button_inc                                 |button_inc                                 
+dec[0]                                     |dec[0]                                     
+dec[1]                                     |dec[1]                                     
+dec[2]                                     |dec[2]                                     
+dec[3]                                     |dec[3]                                     
+dec[4]                                     |dec[4]                                     
+dec[5]                                     |dec[5]                                     
+done_dec[0]                                |done_dec[0]                                
+done_dec[1]                                |done_dec[1]                                
+done_dec[2]                                |done_dec[2]                                
+done_dec[3]                                |done_dec[3]                                
+done_dec[4]                                |done_dec[4]                                
+done_inc[0]                                |done_inc[0]                                
+done_inc[1]                                |done_inc[1]                                
+done_inc[2]                                |done_inc[2]                                
+done_inc[3]                                |done_inc[3]                                
+done_inc[4]                                |done_inc[4]                                
+en[0]                                      |en[0]                                      
+en[1]                                      |en[1]                                      
+en[2]                                      |en[2]                                      
+en[3]                                      |en[3]                                      
+en[4]                                      |en[4]                                      
+en[5]                                      |en[5]                                      
+inc[0]                                     |inc[0]                                     
+inc[1]                                     |inc[1]                                     
+inc[2]                                     |inc[2]                                     
+inc[3]                                     |inc[3]                                     
+inc[4]                                     |inc[4]                                     
+inc[5]                                     |inc[5]                                     
+mode[0]                                    |mode[0]                                    
+mode[1]                                    |mode[1]                                    
+select[0]                                  |select[0]                                  
+select[1]                                  |select[1]                                  
+select[2]                                  |select[2]                                  
+select[3]                                  |select[3]                                  
+select[4]                                  |select[4]                                  
+select[5]                                  |select[5]                                  
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes decode_input and decode_input are equivalent.
+
+Cell sky130_fd_sc_hd__clkbuf_4 (0) disconnected node: A
+Cell sky130_fd_sc_hd__clkbuf_4 (0) disconnected node: VGND
+Cell sky130_fd_sc_hd__clkbuf_4 (0) disconnected node: VNB
+Cell sky130_fd_sc_hd__clkbuf_4 (0) disconnected node: VPB
+Cell sky130_fd_sc_hd__clkbuf_4 (0) disconnected node: VPWR
+Cell sky130_fd_sc_hd__clkbuf_4 (0) disconnected node: X
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__clkbuf_4       |Circuit 2: sky130_fd_sc_hd__clkbuf_4       
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__clkbuf_4 and sky130_fd_sc_hd__clkbuf_4 are equivalent.
+
+Class clock_century (0):  Merged 7201 parallel devices.
+Class clock_century (1):  Merged 7201 parallel devices.
+Subcircuit summary:
+Circuit 1: clock_century                   |Circuit 2: clock_century                   
+-------------------------------------------|-------------------------------------------
+sky130_ef_sc_hd__decap_12 (3451->1)        |sky130_ef_sc_hd__decap_12 (3451->1)        
+sky130_fd_sc_hd__tapvpwrvgnd_1 (966->1)    |sky130_fd_sc_hd__tapvpwrvgnd_1 (966->1)    
+sky130_fd_sc_hd__decap_6 (598->1)          |sky130_fd_sc_hd__decap_6 (598->1)          
+sky130_fd_sc_hd__decap_3 (759->1)          |sky130_fd_sc_hd__decap_3 (759->1)          
+sky130_fd_sc_hd__decap_8 (165->1)          |sky130_fd_sc_hd__decap_8 (165->1)          
+sky130_fd_sc_hd__diode_2 (276->138)        |sky130_fd_sc_hd__diode_2 (276->138)        
+sky130_fd_sc_hd__decap_4 (153->1)          |sky130_fd_sc_hd__decap_4 (153->1)          
+sky130_fd_sc_hd__fill_1 (925->1)           |sky130_fd_sc_hd__fill_1 (925->1)           
+sky130_fd_sc_hd__fill_2 (54->1)            |sky130_fd_sc_hd__fill_2 (54->1)            
+sky130_fd_sc_hd__buf_2 (85)                |sky130_fd_sc_hd__buf_2 (85)                
+sky130_fd_sc_hd__bufinv_16 (1)             |sky130_fd_sc_hd__bufinv_16 (1)             
+decode_day (1)                             |decode_day (1)                             
+sky130_fd_sc_hd__clkbuf_16 (3)             |sky130_fd_sc_hd__clkbuf_16 (3)             
+decode_all (1)                             |decode_all (1)                             
+counter_all (1)                            |counter_all (1)                            
+sky130_fd_sc_hd__buf_1 (13)                |sky130_fd_sc_hd__buf_1 (13)                
+sky130_fd_sc_hd__clkbuf_1 (11)             |sky130_fd_sc_hd__clkbuf_1 (11)             
+alarm (1)                                  |alarm (1)                                  
+decode_input (1)                           |decode_input (1)                           
+sky130_fd_sc_hd__clkbuf_4 (1)              |sky130_fd_sc_hd__clkbuf_4 (1)              
+Number of devices: 265                     |Number of devices: 265                     
+Number of nets: 297                        |Number of nets: 297                        
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: clock_century                   |Circuit 2: clock_century                   
+-------------------------------------------|-------------------------------------------
+led_min[5]                                 |led_min[5]                                 
+led_day[13]                                |led_day[13]                                
+led_hour[10]                               |led_hour[10]                               
+led_min[4]                                 |led_min[4]                                 
+led_sec[11]                                |led_sec[11]                                
+led_hour[0]                                |led_hour[0]                                
+led_hour[6]                                |led_hour[6]                                
+led_min[3]                                 |led_min[3]                                 
+led_sec[7]                                 |led_sec[7]                                 
+led_sec[0]                                 |led_sec[0]                                 
+led_min[2]                                 |led_min[2]                                 
+led_sec[4]                                 |led_sec[4]                                 
+led_year[6]                                |led_year[6]                                
+led_year[4]                                |led_year[4]                                
+led_year[2]                                |led_year[2]                                
+led_day[11]                                |led_day[11]                                
+led_day[8]                                 |led_day[8]                                 
+led_day[7]                                 |led_day[7]                                 
+led_day[0]                                 |led_day[0]                                 
+led_hour[4]                                |led_hour[4]                                
+led_month[10]                              |led_month[10]                              
+led_month[7]                               |led_month[7]                               
+led_day[5]                                 |led_day[5]                                 
+led_min[12]                                |led_min[12]                                
+led_hour[2]                                |led_hour[2]                                
+led_sec[3]                                 |led_sec[3]                                 
+led_min[9]                                 |led_min[9]                                 
+led_min[11]                                |led_min[11]                                
+led_month[5]                               |led_month[5]                               
+led_min[8]                                 |led_min[8]                                 
+led_min[10]                                |led_min[10]                                
+led_sec[1]                                 |led_sec[1]                                 
+led_year[11]                               |led_year[11]                               
+led_min[7]                                 |led_min[7]                                 
+led_day[2]                                 |led_day[2]                                 
+led_year[10]                               |led_year[10]                               
+led_month[3]                               |led_month[3]                               
+led_min[6]                                 |led_min[6]                                 
+led_year[0]                                |led_year[0]                                
+led_month[2]                               |led_month[2]                               
+led_sec[12]                                |led_sec[12]                                
+led_hour[8]                                |led_hour[8]                                
+led_sec[9]                                 |led_sec[9]                                 
+led_month[1]                               |led_month[1]                               
+led_hour[7]                                |led_hour[7]                                
+led_month[13]                              |led_month[13]                              
+led_sec[8]                                 |led_sec[8]                                 
+led_sec[10]                                |led_sec[10]                                
+led_month[12]                              |led_month[12]                              
+led_sec[6]                                 |led_sec[6]                                 
+led_month[9]                               |led_month[9]                               
+led_month[11]                              |led_month[11]                              
+led_month[8]                               |led_month[8]                               
+led_sec[5]                                 |led_sec[5]                                 
+led_year[9]                                |led_year[9]                                
+led_year[8]                                |led_year[8]                                
+led_year[7]                                |led_year[7]                                
+led_year[5]                                |led_year[5]                                
+led_year[3]                                |led_year[3]                                
+led_year[1]                                |led_year[1]                                
+led_year[13]                               |led_year[13]                               
+led_day[12]                                |led_day[12]                                
+led_day[9]                                 |led_day[9]                                 
+led_day[10]                                |led_day[10]                                
+led_hour[5]                                |led_hour[5]                                
+led_min[1]                                 |led_min[1]                                 
+led_day[6]                                 |led_day[6]                                 
+led_hour[3]                                |led_hour[3]                                
+led_min[13]                                |led_min[13]                                
+alarm_o                                    |alarm_o                                    
+led_month[0]                               |led_month[0]                               
+led_month[6]                               |led_month[6]                               
+led_hour[1]                                |led_hour[1]                                
+led_day[4]                                 |led_day[4]                                 
+led_year[12]                               |led_year[12]                               
+led_sec[2]                                 |led_sec[2]                                 
+led_hour[13]                               |led_hour[13]                               
+led_day[3]                                 |led_day[3]                                 
+led_month[4]                               |led_month[4]                               
+led_min[0]                                 |led_min[0]                                 
+led_hour[12]                               |led_hour[12]                               
+led_sec[13]                                |led_sec[13]                                
+led_hour[9]                                |led_hour[9]                                
+led_day[1]                                 |led_day[1]                                 
+led_hour[11]                               |led_hour[11]                               
+am_pm                                      |am_pm                                      
+alarm_min[2]                               |alarm_min[2]                               
+alarm_min[4]                               |alarm_min[4]                               
+alarm_min[0]                               |alarm_min[0]                               
+alarm_hour[4]                              |alarm_hour[4]                              
+alarm_hour[2]                              |alarm_hour[2]                              
+alarm_hour[1]                              |alarm_hour[1]                              
+alarm_min[3]                               |alarm_min[3]                               
+alarm_hour[0]                              |alarm_hour[0]                              
+alarm_hour[3]                              |alarm_hour[3]                              
+alarm_min[5]                               |alarm_min[5]                               
+alarm_i                                    |alarm_i                                    
+alarm_min[1]                               |alarm_min[1]                               
+button_inc                                 |button_inc                                 
+mode[1]                                    |mode[1]                                    
+select[3]                                  |select[3]                                  
+select[5]                                  |select[5]                                  
+select[1]                                  |select[1]                                  
+select[0]                                  |select[0]                                  
+button_dec                                 |button_dec                                 
+select[2]                                  |select[2]                                  
+mode[0]                                    |mode[0]                                    
+select[4]                                  |select[4]                                  
+reset_n                                    |reset_n                                    
+clk                                        |clk                                        
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes clock_century and clock_century are equivalent.
+
+Final result: Circuits match uniquely.
+.

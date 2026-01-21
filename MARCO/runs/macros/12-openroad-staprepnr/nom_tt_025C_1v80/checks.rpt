@@ -1,0 +1,259 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+Startpoint: alarm_inst (rising edge-triggered flip-flop clocked by clk)
+Endpoint: alarm_o (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.150000    0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.150000    0.000000    0.000000 ^ alarm_inst/clk (alarm)
+     1    0.035042    0.281915    1.700053    1.700053 ^ alarm_inst/alarm_o (alarm)
+                                                         alarm_o (net)
+                      0.281915    0.000000    1.700053 ^ alarm_o (out)
+                                              1.700053   data arrival time
+
+                      0.150000 1000000000.000000 1000000000.000000   clock clk (rise edge)
+                                  0.000000 1000000000.000000   clock network delay (ideal)
+                                 -0.250000 1000000000.000000   clock uncertainty
+                                  0.000000 1000000000.000000   clock reconvergence pessimism
+                               -200000000.000000 800000064.000000   output external delay
+                                           800000064.000000   data required time
+---------------------------------------------------------------------------------------------
+                                           800000064.000000   data required time
+                                             -1.700053   data arrival time
+---------------------------------------------------------------------------------------------
+                                           800000064.000000   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_tt_025C_1v80 Corner ===================================
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 181 unannotated drivers.
+ alarm_hour[0]
+ alarm_hour[1]
+ alarm_hour[2]
+ alarm_hour[3]
+ alarm_hour[4]
+ alarm_i
+ alarm_min[0]
+ alarm_min[1]
+ alarm_min[2]
+ alarm_min[3]
+ alarm_min[4]
+ alarm_min[5]
+ am_pm
+ button_dec
+ button_inc
+ clk
+ mode[0]
+ mode[1]
+ reset_n
+ select[0]
+ select[1]
+ select[2]
+ select[3]
+ select[4]
+ select[5]
+ alarm_inst/alarm_o
+ counter_all_inst/day[0]
+ counter_all_inst/day[1]
+ counter_all_inst/day[2]
+ counter_all_inst/day[3]
+ counter_all_inst/day[4]
+ counter_all_inst/done_dec[0]
+ counter_all_inst/done_dec[1]
+ counter_all_inst/done_dec[2]
+ counter_all_inst/done_dec[3]
+ counter_all_inst/done_dec[4]
+ counter_all_inst/done_inc[0]
+ counter_all_inst/done_inc[1]
+ counter_all_inst/done_inc[2]
+ counter_all_inst/done_inc[3]
+ counter_all_inst/done_inc[4]
+ counter_all_inst/hour[0]
+ counter_all_inst/hour[1]
+ counter_all_inst/hour[2]
+ counter_all_inst/hour[3]
+ counter_all_inst/hour[4]
+ counter_all_inst/minute[0]
+ counter_all_inst/minute[1]
+ counter_all_inst/minute[2]
+ counter_all_inst/minute[3]
+ counter_all_inst/minute[4]
+ counter_all_inst/minute[5]
+ counter_all_inst/month[0]
+ counter_all_inst/month[1]
+ counter_all_inst/month[2]
+ counter_all_inst/month[3]
+ counter_all_inst/second[0]
+ counter_all_inst/second[1]
+ counter_all_inst/second[2]
+ counter_all_inst/second[3]
+ counter_all_inst/second[4]
+ counter_all_inst/second[5]
+ counter_all_inst/year[0]
+ counter_all_inst/year[1]
+ counter_all_inst/year[2]
+ counter_all_inst/year[3]
+ counter_all_inst/year[4]
+ counter_all_inst/year[5]
+ counter_all_inst/year[6]
+ decode_all_inst/led_day[0]
+ decode_all_inst/led_day[10]
+ decode_all_inst/led_day[11]
+ decode_all_inst/led_day[12]
+ decode_all_inst/led_day[13]
+ decode_all_inst/led_day[1]
+ decode_all_inst/led_day[2]
+ decode_all_inst/led_day[3]
+ decode_all_inst/led_day[4]
+ decode_all_inst/led_day[5]
+ decode_all_inst/led_day[6]
+ decode_all_inst/led_day[7]
+ decode_all_inst/led_day[8]
+ decode_all_inst/led_day[9]
+ decode_all_inst/led_hour[0]
+ decode_all_inst/led_hour[10]
+ decode_all_inst/led_hour[11]
+ decode_all_inst/led_hour[12]
+ decode_all_inst/led_hour[13]
+ decode_all_inst/led_hour[1]
+ decode_all_inst/led_hour[2]
+ decode_all_inst/led_hour[3]
+ decode_all_inst/led_hour[4]
+ decode_all_inst/led_hour[5]
+ decode_all_inst/led_hour[6]
+ decode_all_inst/led_hour[7]
+ decode_all_inst/led_hour[8]
+ decode_all_inst/led_hour[9]
+ decode_all_inst/led_min[0]
+ decode_all_inst/led_min[10]
+ decode_all_inst/led_min[11]
+ decode_all_inst/led_min[12]
+ decode_all_inst/led_min[13]
+ decode_all_inst/led_min[1]
+ decode_all_inst/led_min[2]
+ decode_all_inst/led_min[3]
+ decode_all_inst/led_min[4]
+ decode_all_inst/led_min[5]
+ decode_all_inst/led_min[6]
+ decode_all_inst/led_min[7]
+ decode_all_inst/led_min[8]
+ decode_all_inst/led_min[9]
+ decode_all_inst/led_month[0]
+ decode_all_inst/led_month[10]
+ decode_all_inst/led_month[11]
+ decode_all_inst/led_month[12]
+ decode_all_inst/led_month[13]
+ decode_all_inst/led_month[1]
+ decode_all_inst/led_month[2]
+ decode_all_inst/led_month[3]
+ decode_all_inst/led_month[4]
+ decode_all_inst/led_month[5]
+ decode_all_inst/led_month[6]
+ decode_all_inst/led_month[7]
+ decode_all_inst/led_month[8]
+ decode_all_inst/led_month[9]
+ decode_all_inst/led_sec[0]
+ decode_all_inst/led_sec[10]
+ decode_all_inst/led_sec[11]
+ decode_all_inst/led_sec[12]
+ decode_all_inst/led_sec[13]
+ decode_all_inst/led_sec[1]
+ decode_all_inst/led_sec[2]
+ decode_all_inst/led_sec[3]
+ decode_all_inst/led_sec[4]
+ decode_all_inst/led_sec[5]
+ decode_all_inst/led_sec[6]
+ decode_all_inst/led_sec[7]
+ decode_all_inst/led_sec[8]
+ decode_all_inst/led_sec[9]
+ decode_all_inst/led_year[0]
+ decode_all_inst/led_year[10]
+ decode_all_inst/led_year[11]
+ decode_all_inst/led_year[12]
+ decode_all_inst/led_year[13]
+ decode_all_inst/led_year[1]
+ decode_all_inst/led_year[2]
+ decode_all_inst/led_year[3]
+ decode_all_inst/led_year[4]
+ decode_all_inst/led_year[5]
+ decode_all_inst/led_year[6]
+ decode_all_inst/led_year[7]
+ decode_all_inst/led_year[8]
+ decode_all_inst/led_year[9]
+ decode_day_inst/day_num[0]
+ decode_day_inst/day_num[1]
+ decode_day_inst/day_num[2]
+ decode_day_inst/day_num[3]
+ decode_day_inst/day_num[4]
+ decode_day_inst/hour_num[0]
+ decode_day_inst/hour_num[1]
+ decode_day_inst/hour_num[2]
+ decode_day_inst/hour_num[3]
+ decode_day_inst/hour_num[4]
+ decode_input_inst/dec[0]
+ decode_input_inst/dec[1]
+ decode_input_inst/dec[2]
+ decode_input_inst/dec[3]
+ decode_input_inst/dec[4]
+ decode_input_inst/dec[5]
+ decode_input_inst/en[0]
+ decode_input_inst/en[1]
+ decode_input_inst/en[2]
+ decode_input_inst/en[3]
+ decode_input_inst/en[4]
+ decode_input_inst/en[5]
+ decode_input_inst/inc[0]
+ decode_input_inst/inc[1]
+ decode_input_inst/inc[2]
+ decode_input_inst/inc[3]
+ decode_input_inst/inc[4]
+ decode_input_inst/inc[5]
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 11 unconstrained endpoints.
+  led_day[8]
+  led_hour[8]
+  led_month[13]
+  led_month[8]
+  led_month[9]
+  counter_all_inst/day_num[2]
+  counter_all_inst/day_num[3]
+  counter_all_inst/day_num[4]
+  counter_all_inst/hour_num[0]
+  counter_all_inst/hour_num[1]
+  counter_all_inst/hour_num[3]

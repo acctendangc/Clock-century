@@ -1,0 +1,676 @@
+Reading OpenROAD database at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/runs/macros/42-openroad-resizertimingpostgrt/clock_century.odb'…
+Reading library file at '/home/lroot/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading library file at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/counter_all__max_ss_100C_1v60.lib'…
+Reading library file at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/alarm__max_ss_100C_1v60.lib'…
+Reading library file at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_all__max_ss_100C_1v60.lib'…
+Reading library file at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_day__max_ss_100C_1v60.lib'…
+Reading library file at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_input__max_ss_100C_1v60.lib'…
+Reading macro library file at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/counter_all__max_ss_100C_1v60.lib'…
+[WARNING STA-1140] /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/counter_all__max_ss_100C_1v60.lib line 1, library counter_all already exists.
+Reading macro library file at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/alarm__max_ss_100C_1v60.lib'…
+[WARNING STA-1140] /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/alarm__max_ss_100C_1v60.lib line 1, library alarm already exists.
+Reading macro library file at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_all__max_ss_100C_1v60.lib'…
+[WARNING STA-1140] /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_all__max_ss_100C_1v60.lib line 1, library decode_all already exists.
+Reading macro library file at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_day__max_ss_100C_1v60.lib'…
+[WARNING STA-1140] /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_day__max_ss_100C_1v60.lib line 1, library decode_day already exists.
+Reading macro library file at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_input__max_ss_100C_1v60.lib'…
+[WARNING STA-1140] /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_input__max_ss_100C_1v60.lib line 1, library decode_input already exists.
+Reading design constraints file at '/nix/store/ss2cw3sxbrwwx9jl0rrppbw4kgcmgi2n-python3-3.11.9-env/lib/python3.11/site-packages/openlane/scripts/base.sdc'…
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 200000000
+[INFO] Setting input delay to: 200000000
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[INFO] Setting timing derate to: 5%
+[INFO ORD-0030] Using 16 thread(s).
+[INFO DRT-0149] Reading tech and libs.
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer mcon
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer mcon
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via3
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via3
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via4
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via4
+
+Units:                1000
+Number of layers:     13
+Number of macros:     446
+Number of vias:       29
+Number of viarulegen: 25
+
+[INFO DRT-0150] Reading design.
+
+Design:                   clock_century
+Die area:                 ( 0 0 ) ( 400000 300000 )
+Number of track patterns: 12
+Number of DEF vias:       0
+Number of components:     1869
+Number of terminals:      112
+Number of snets:          2
+Number of nets:           294
+
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/alarm_hour[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/alarm_hour[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/alarm_hour[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/alarm_hour[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/alarm_hour[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/alarm_i
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/alarm_min[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/alarm_min[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/alarm_min[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/alarm_min[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/alarm_min[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/alarm_min[5]
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/alarm_o
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/clk
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/hour[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/hour[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/hour[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/hour[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/hour[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/minute[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/minute[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/minute[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/minute[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/minute[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/minute[5]
+[WARNING DRT-0419] No routing tracks pass through the center of Term alarm_inst/rst_n
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/clk
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/day[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/day[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/day[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/day[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/day[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/day_num[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/day_num[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/day_num[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/day_num[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/day_num[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/dec[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/dec[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/dec[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/dec[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/dec[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/dec[5]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/done_dec[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/done_dec[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/done_dec[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/done_dec[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/done_dec[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/done_inc[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/done_inc[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/done_inc[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/done_inc[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/done_inc[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/en[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/en[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/en[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/en[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/en[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/en[5]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/hour[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/hour[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/hour[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/hour[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/hour_num[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/hour_num[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/hour_num[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/hour_num[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/hour_num[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/inc[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/inc[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/inc[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/inc[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/inc[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/inc[5]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/minute[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/minute[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/minute[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/minute[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/minute[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/minute[5]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/month[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/month[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/month[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/month[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/reset_n
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/second[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/second[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/second[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/second[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/second[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/second[5]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/year[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/year[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/year[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/year[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/year[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/year[5]
+[WARNING DRT-0419] No routing tracks pass through the center of Term counter_all_inst/year[6]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/day[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/day[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/day[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/day[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/day[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/hour[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/hour[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/hour[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/hour[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/hour[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_day[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_day[10]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_day[11]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_day[12]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_day[13]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_day[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_day[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_day[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_day[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_day[5]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_day[6]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_day[7]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_day[8]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_day[9]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_hour[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_hour[10]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_hour[11]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_hour[12]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_hour[13]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_hour[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_hour[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_hour[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_hour[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_hour[5]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_hour[6]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_hour[7]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_hour[8]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_hour[9]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_min[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_min[10]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_min[11]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_min[12]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_min[13]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_min[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_min[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_min[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_min[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_min[5]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_min[6]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_min[7]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_min[8]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_min[9]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_month[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_month[10]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_month[11]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_month[12]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_month[13]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_month[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_month[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_month[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_month[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_month[5]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_month[6]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_month[7]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_month[8]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_month[9]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_sec[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_sec[10]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_sec[11]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_sec[12]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_sec[13]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_sec[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_sec[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_sec[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_sec[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_sec[5]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_sec[6]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_sec[7]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_sec[8]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_sec[9]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_year[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_year[10]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_year[11]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_year[12]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_year[13]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_year[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_year[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_year[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_year[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_year[5]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_year[6]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_year[7]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_year[8]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/led_year[9]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/minute[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/minute[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/minute[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/minute[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/minute[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/minute[5]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/month[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/month[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/month[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/month[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/second[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/second[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/second[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/second[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/second[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/second[5]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/year[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/year[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/year[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/year[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/year[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/year[5]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_all_inst/year[6]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_day_inst/am_pm
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_day_inst/day_num[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_day_inst/day_num[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_day_inst/day_num[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_day_inst/day_num[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_day_inst/day_num[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_day_inst/hour_num[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_day_inst/hour_num[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_day_inst/hour_num[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_day_inst/hour_num[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_day_inst/hour_num[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_day_inst/month[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_day_inst/month[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_day_inst/month[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_day_inst/month[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_day_inst/year[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_day_inst/year[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_day_inst/year[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_day_inst/year[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_day_inst/year[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_day_inst/year[5]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_day_inst/year[6]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/button_dec
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/button_inc
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/dec[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/dec[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/dec[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/dec[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/dec[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/dec[5]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/done_dec[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/done_dec[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/done_dec[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/done_dec[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/done_dec[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/done_inc[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/done_inc[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/done_inc[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/done_inc[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/done_inc[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/en[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/en[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/en[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/en[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/en[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/en[5]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/inc[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/inc[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/inc[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/inc[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/inc[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/inc[5]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/mode[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/mode[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/select[0]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/select[1]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/select[2]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/select[3]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/select[4]
+[WARNING DRT-0419] No routing tracks pass through the center of Term decode_input_inst/select[5]
+[INFO DRT-0167] List of default vias:
+  Layer via
+    default via: M1M2_PR
+  Layer via2
+    default via: M2M3_PR
+  Layer via3
+    default via: M3M4_PR
+  Layer via4
+    default via: M4M5_PR
+[INFO DRT-0162] Library cell analysis.
+[INFO DRT-0163] Instance analysis.
+[INFO DRT-0164] Number of unique instances = 30.
+[INFO DRT-0168] Init region query.
+[INFO DRT-0024]   Complete FR_MASTERSLICE.
+[INFO DRT-0024]   Complete licon.
+[INFO DRT-0024]   Complete li1.
+[INFO DRT-0024]   Complete mcon.
+[INFO DRT-0024]   Complete met1.
+[INFO DRT-0024]   Complete via.
+[INFO DRT-0024]   Complete met2.
+[INFO DRT-0024]   Complete via2.
+[INFO DRT-0024]   Complete met3.
+[INFO DRT-0024]   Complete via3.
+[INFO DRT-0024]   Complete met4.
+[INFO DRT-0024]   Complete via4.
+[INFO DRT-0024]   Complete met5.
+[INFO DRT-0033] FR_MASTERSLICE shape region query size = 0.
+[INFO DRT-0033] licon shape region query size = 0.
+[INFO DRT-0033] li1 shape region query size = 9684.
+[INFO DRT-0033] mcon shape region query size = 0.
+[INFO DRT-0033] met1 shape region query size = 4623.
+[INFO DRT-0033] via shape region query size = 3200.
+[INFO DRT-0033] met2 shape region query size = 2464.
+[INFO DRT-0033] via2 shape region query size = 2560.
+[INFO DRT-0033] met3 shape region query size = 2245.
+[INFO DRT-0033] via3 shape region query size = 2560.
+[INFO DRT-0033] met4 shape region query size = 975.
+[INFO DRT-0033] via4 shape region query size = 255.
+[INFO DRT-0033] met5 shape region query size = 305.
+[INFO DRT-0165] Start pin access.
+[INFO DRT-0078]   Complete 309 pins.
+[INFO DRT-0081]   Complete 19 unique inst patterns.
+[INFO DRT-0084]   Complete 291 groups.
+#scanned instances     = 1869
+#unique  instances     = 30
+#stdCellGenAp          = 399
+#stdCellValidPlanarAp  = 0
+#stdCellValidViaAp     = 239
+#stdCellPinNoAp        = 0
+#stdCellPinCnt         = 227
+#instTermValidViaApCnt = 0
+#macroGenAp            = 4210
+#macroValidPlanarAp    = 4210
+#macroValidViaAp       = 2509
+#macroNoAp             = 0
+[INFO DRT-0166] Complete pin access.
+[INFO DRT-0267] cpu time = 00:00:10, elapsed time = 00:00:02, memory = 146.27 (MB), peak = 146.27 (MB)
+
+[INFO DRT-0157] Number of guides:     2319
+
+[INFO DRT-0169] Post process guides.
+[INFO DRT-0176] GCELLGRID X 0 DO 57 STEP 6900 ;
+[INFO DRT-0177] GCELLGRID Y 0 DO 43 STEP 6900 ;
+[INFO DRT-0028]   Complete FR_MASTERSLICE.
+[INFO DRT-0028]   Complete licon.
+[INFO DRT-0028]   Complete li1.
+[INFO DRT-0028]   Complete mcon.
+[INFO DRT-0028]   Complete met1.
+[INFO DRT-0028]   Complete via.
+[INFO DRT-0028]   Complete met2.
+[INFO DRT-0028]   Complete via2.
+[INFO DRT-0028]   Complete met3.
+[INFO DRT-0028]   Complete via3.
+[INFO DRT-0028]   Complete met4.
+[INFO DRT-0028]   Complete via4.
+[INFO DRT-0028]   Complete met5.
+[INFO DRT-0178] Init guide query.
+[INFO DRT-0035]   Complete FR_MASTERSLICE (guide).
+[INFO DRT-0035]   Complete licon (guide).
+[INFO DRT-0035]   Complete li1 (guide).
+[INFO DRT-0035]   Complete mcon (guide).
+[INFO DRT-0035]   Complete met1 (guide).
+[INFO DRT-0035]   Complete via (guide).
+[INFO DRT-0035]   Complete met2 (guide).
+[INFO DRT-0035]   Complete via2 (guide).
+[INFO DRT-0035]   Complete met3 (guide).
+[INFO DRT-0035]   Complete via3 (guide).
+[INFO DRT-0035]   Complete met4 (guide).
+[INFO DRT-0035]   Complete via4 (guide).
+[INFO DRT-0035]   Complete met5 (guide).
+[INFO DRT-0036] FR_MASTERSLICE guide region query size = 0.
+[INFO DRT-0036] licon guide region query size = 0.
+[INFO DRT-0036] li1 guide region query size = 438.
+[INFO DRT-0036] mcon guide region query size = 0.
+[INFO DRT-0036] met1 guide region query size = 527.
+[INFO DRT-0036] via guide region query size = 0.
+[INFO DRT-0036] met2 guide region query size = 542.
+[INFO DRT-0036] via2 guide region query size = 0.
+[INFO DRT-0036] met3 guide region query size = 177.
+[INFO DRT-0036] via3 guide region query size = 0.
+[INFO DRT-0036] met4 guide region query size = 20.
+[INFO DRT-0036] via4 guide region query size = 0.
+[INFO DRT-0036] met5 guide region query size = 2.
+[INFO DRT-0179] Init gr pin query.
+[INFO DRT-0245] skipped writing guide updates to database.
+[INFO DRT-0185] Post process initialize RPin region query.
+[INFO DRT-0181] Start track assignment.
+[INFO DRT-0184] Done with 1000 vertical wires in 2 frboxes and 706 horizontal wires in 1 frboxes.
+[INFO DRT-0186] Done with 67 vertical wires in 2 frboxes and 97 horizontal wires in 1 frboxes.
+[INFO DRT-0182] Complete track assignment.
+[INFO DRT-0267] cpu time = 00:00:04, elapsed time = 00:00:00, memory = 168.39 (MB), peak = 168.39 (MB)
+[INFO DRT-0187] Start routing data preparation.
+[INFO DRT-0267] cpu time = 00:00:00, elapsed time = 00:00:00, memory = 168.39 (MB), peak = 168.39 (MB)
+[INFO DRT-0194] Start detail routing.
+[INFO DRT-0195] Start 0th optimization iteration.
+    Completing 10% with 0 violations.
+    elapsed time = 00:00:00, memory = 218.64 (MB).
+    Completing 20% with 0 violations.
+    elapsed time = 00:00:00, memory = 208.60 (MB).
+    Completing 30% with 0 violations.
+    elapsed time = 00:00:00, memory = 189.18 (MB).
+    Completing 40% with 34 violations.
+    elapsed time = 00:00:00, memory = 232.96 (MB).
+    Completing 50% with 34 violations.
+    elapsed time = 00:00:00, memory = 228.70 (MB).
+    Completing 60% with 43 violations.
+    elapsed time = 00:00:00, memory = 225.52 (MB).
+    Completing 70% with 43 violations.
+    elapsed time = 00:00:00, memory = 246.89 (MB).
+    Completing 80% with 43 violations.
+    elapsed time = 00:00:01, memory = 248.27 (MB).
+    Completing 90% with 42 violations.
+    elapsed time = 00:00:01, memory = 263.52 (MB).
+    Completing 100% with 48 violations.
+    elapsed time = 00:00:01, memory = 254.18 (MB).
+[INFO DRT-0199]   Number of violations = 50.
+Viol/Layer        met1   met3   met4
+Metal Spacing        1     30      6
+Recheck              2      0      0
+Short                5      5      1
+[INFO DRT-0267] cpu time = 00:00:21, elapsed time = 00:00:01, memory = 595.80 (MB), peak = 607.68 (MB)
+Total wire length = 31122 um.
+Total wire length on LAYER li1 = 0 um.
+Total wire length on LAYER met1 = 14214 um.
+Total wire length on LAYER met2 = 13463 um.
+Total wire length on LAYER met3 = 2834 um.
+Total wire length on LAYER met4 = 595 um.
+Total wire length on LAYER met5 = 12 um.
+Total number of vias = 1445.
+Up-via summary (total 1445):
+
+-----------------------
+ FR_MASTERSLICE       0
+            li1     504
+           met1     724
+           met2     181
+           met3      34
+           met4       2
+-----------------------
+                   1445
+
+
+[INFO DRT-0195] Start 1st optimization iteration.
+    Completing 10% with 50 violations.
+    elapsed time = 00:00:00, memory = 604.92 (MB).
+    Completing 20% with 50 violations.
+    elapsed time = 00:00:00, memory = 606.55 (MB).
+    Completing 30% with 50 violations.
+    elapsed time = 00:00:00, memory = 606.80 (MB).
+    Completing 40% with 49 violations.
+    elapsed time = 00:00:00, memory = 615.67 (MB).
+    Completing 50% with 49 violations.
+    elapsed time = 00:00:00, memory = 615.67 (MB).
+    Completing 60% with 48 violations.
+    elapsed time = 00:00:00, memory = 618.05 (MB).
+    Completing 70% with 48 violations.
+    elapsed time = 00:00:00, memory = 618.17 (MB).
+    Completing 80% with 48 violations.
+    elapsed time = 00:00:00, memory = 619.92 (MB).
+    Completing 90% with 11 violations.
+    elapsed time = 00:00:00, memory = 621.92 (MB).
+    Completing 100% with 11 violations.
+    elapsed time = 00:00:00, memory = 622.05 (MB).
+[INFO DRT-0199]   Number of violations = 11.
+Viol/Layer        met1   met2   met3
+Metal Spacing        0      0      4
+Short                6      1      0
+[INFO DRT-0267] cpu time = 00:00:15, elapsed time = 00:00:01, memory = 625.24 (MB), peak = 637.05 (MB)
+Total wire length = 31057 um.
+Total wire length on LAYER li1 = 0 um.
+Total wire length on LAYER met1 = 14252 um.
+Total wire length on LAYER met2 = 13375 um.
+Total wire length on LAYER met3 = 2848 um.
+Total wire length on LAYER met4 = 580 um.
+Total wire length on LAYER met5 = 0 um.
+Total number of vias = 1419.
+Up-via summary (total 1419):
+
+-----------------------
+ FR_MASTERSLICE       0
+            li1     503
+           met1     718
+           met2     171
+           met3      27
+           met4       0
+-----------------------
+                   1419
+
+
+[INFO DRT-0195] Start 2nd optimization iteration.
+    Completing 10% with 11 violations.
+    elapsed time = 00:00:00, memory = 625.24 (MB).
+    Completing 20% with 11 violations.
+    elapsed time = 00:00:00, memory = 625.24 (MB).
+    Completing 30% with 11 violations.
+    elapsed time = 00:00:00, memory = 625.24 (MB).
+    Completing 40% with 7 violations.
+    elapsed time = 00:00:00, memory = 625.49 (MB).
+    Completing 50% with 7 violations.
+    elapsed time = 00:00:00, memory = 625.49 (MB).
+    Completing 60% with 7 violations.
+    elapsed time = 00:00:00, memory = 625.49 (MB).
+    Completing 70% with 7 violations.
+    elapsed time = 00:00:00, memory = 625.49 (MB).
+    Completing 80% with 7 violations.
+    elapsed time = 00:00:00, memory = 630.24 (MB).
+    Completing 90% with 3 violations.
+    elapsed time = 00:00:00, memory = 630.24 (MB).
+    Completing 100% with 2 violations.
+    elapsed time = 00:00:00, memory = 632.49 (MB).
+[INFO DRT-0199]   Number of violations = 2.
+Viol/Layer        met1
+Short                2
+[INFO DRT-0267] cpu time = 00:00:10, elapsed time = 00:00:00, memory = 629.66 (MB), peak = 641.49 (MB)
+Total wire length = 31044 um.
+Total wire length on LAYER li1 = 0 um.
+Total wire length on LAYER met1 = 14249 um.
+Total wire length on LAYER met2 = 13359 um.
+Total wire length on LAYER met3 = 2837 um.
+Total wire length on LAYER met4 = 598 um.
+Total wire length on LAYER met5 = 0 um.
+Total number of vias = 1415.
+Up-via summary (total 1415):
+
+-----------------------
+ FR_MASTERSLICE       0
+            li1     503
+           met1     707
+           met2     171
+           met3      34
+           met4       0
+-----------------------
+                   1415
+
+
+[INFO DRT-0195] Start 3rd optimization iteration.
+    Completing 10% with 2 violations.
+    elapsed time = 00:00:00, memory = 629.66 (MB).
+    Completing 20% with 2 violations.
+    elapsed time = 00:00:00, memory = 629.66 (MB).
+    Completing 30% with 2 violations.
+    elapsed time = 00:00:00, memory = 629.66 (MB).
+    Completing 40% with 2 violations.
+    elapsed time = 00:00:00, memory = 629.66 (MB).
+    Completing 50% with 2 violations.
+    elapsed time = 00:00:00, memory = 629.66 (MB).
+    Completing 60% with 2 violations.
+    elapsed time = 00:00:00, memory = 629.66 (MB).
+    Completing 70% with 2 violations.
+    elapsed time = 00:00:00, memory = 629.66 (MB).
+    Completing 80% with 2 violations.
+    elapsed time = 00:00:00, memory = 629.66 (MB).
+    Completing 90% with 2 violations.
+    elapsed time = 00:00:00, memory = 629.66 (MB).
+    Completing 100% with 0 violations.
+    elapsed time = 00:00:00, memory = 629.66 (MB).
+[INFO DRT-0199]   Number of violations = 0.
+[INFO DRT-0267] cpu time = 00:00:04, elapsed time = 00:00:00, memory = 629.66 (MB), peak = 641.54 (MB)
+Total wire length = 31044 um.
+Total wire length on LAYER li1 = 0 um.
+Total wire length on LAYER met1 = 14247 um.
+Total wire length on LAYER met2 = 13361 um.
+Total wire length on LAYER met3 = 2837 um.
+Total wire length on LAYER met4 = 598 um.
+Total wire length on LAYER met5 = 0 um.
+Total number of vias = 1420.
+Up-via summary (total 1420):
+
+-----------------------
+ FR_MASTERSLICE       0
+            li1     503
+           met1     712
+           met2     171
+           met3      34
+           met4       0
+-----------------------
+                   1420
+
+
+[INFO DRT-0198] Complete detail routing.
+Total wire length = 31044 um.
+Total wire length on LAYER li1 = 0 um.
+Total wire length on LAYER met1 = 14247 um.
+Total wire length on LAYER met2 = 13361 um.
+Total wire length on LAYER met3 = 2837 um.
+Total wire length on LAYER met4 = 598 um.
+Total wire length on LAYER met5 = 0 um.
+Total number of vias = 1420.
+Up-via summary (total 1420):
+
+-----------------------
+ FR_MASTERSLICE       0
+            li1     503
+           met1     712
+           met2     171
+           met3      34
+           met4       0
+-----------------------
+                   1420
+
+
+[INFO DRT-0267] cpu time = 00:00:52, elapsed time = 00:00:03, memory = 629.66 (MB), peak = 641.54 (MB)
+
+[INFO DRT-0180] Post processing.
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+counter_all_inst matched with counter_all_inst
+alarm_inst matched with alarm_inst
+decode_all_inst matched with decode_all_inst
+decode_day_inst matched with decode_day_inst
+decode_input_inst matched with decode_input_inst
+Updating metrics…
+Cell type report:                       Count       Area
+  Macro                                     5   25504.02
+  Fill cell                               508    1906.83
+  Tap cell                                966    1208.66
+  Antenna cell                            276     690.66
+  Clock buffer                              3      75.07
+  Timing Repair Buffer                    110     523.00
+  Clock inverter                            1      30.03
+  Total                                  1869   29938.27
+Writing OpenROAD database to '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/runs/macros/44-openroad-detailedrouting/clock_century.odb'…
+Writing netlist to '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/runs/macros/44-openroad-detailedrouting/clock_century.nl.v'…
+Writing powered netlist to '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/runs/macros/44-openroad-detailedrouting/clock_century.pnl.v'…
+Writing layout to '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/runs/macros/44-openroad-detailedrouting/clock_century.def'…
+Writing timing constraints to '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/runs/macros/44-openroad-detailedrouting/clock_century.sdc'…

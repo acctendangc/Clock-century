@@ -1,0 +1,486 @@
+{
+  "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+  "modules": {
+    "clock_century": {
+      "attributes": {
+        "hdlname": "clock_century",
+        "top": "00000000000000000000000000000001",
+        "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:1.1-248.10"
+      },
+      "ports": {
+        "VPWR": {
+          "direction": "inout",
+          "bits": [ 2 ]
+        },
+        "VGND": {
+          "direction": "inout",
+          "bits": [ 3 ]
+        },
+        "clk": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "reset_n": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "mode": {
+          "direction": "input",
+          "bits": [ 6, 7 ]
+        },
+        "select": {
+          "direction": "input",
+          "bits": [ 8, 9, 10, 11, 12, 13 ]
+        },
+        "button_inc": {
+          "direction": "input",
+          "bits": [ 14 ]
+        },
+        "button_dec": {
+          "direction": "input",
+          "bits": [ 15 ]
+        },
+        "am_pm": {
+          "direction": "input",
+          "bits": [ 16 ]
+        },
+        "alarm_min": {
+          "direction": "input",
+          "bits": [ 17, 18, 19, 20, 21, 22 ]
+        },
+        "alarm_hour": {
+          "direction": "input",
+          "bits": [ 23, 24, 25, 26, 27 ]
+        },
+        "alarm_i": {
+          "direction": "input",
+          "bits": [ 28 ]
+        },
+        "alarm_o": {
+          "direction": "output",
+          "bits": [ 29 ]
+        },
+        "led_day": {
+          "direction": "output",
+          "bits": [ 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43 ]
+        },
+        "led_month": {
+          "direction": "output",
+          "bits": [ 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57 ]
+        },
+        "led_year": {
+          "direction": "output",
+          "bits": [ 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71 ]
+        },
+        "led_hour": {
+          "direction": "output",
+          "bits": [ 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85 ]
+        },
+        "led_min": {
+          "direction": "output",
+          "bits": [ 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99 ]
+        },
+        "led_sec": {
+          "direction": "output",
+          "bits": [ 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113 ]
+        }
+      },
+      "cells": {
+        "alarm_inst": {
+          "hide_name": 0,
+          "type": "alarm",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:51.7-60.2"
+          },
+          "port_directions": {
+            "alarm_hour": "input",
+            "alarm_i": "input",
+            "alarm_min": "input",
+            "alarm_o": "output",
+            "clk": "input",
+            "hour": "input",
+            "minute": "input",
+            "rst_n": "input"
+          },
+          "connections": {
+            "alarm_hour": [ 23, 24, 25, 26, 27 ],
+            "alarm_i": [ 28 ],
+            "alarm_min": [ 17, 18, 19, 20, 21, 22 ],
+            "alarm_o": [ 29 ],
+            "clk": [ 4 ],
+            "hour": [ 114, 115, 116, 117, 118 ],
+            "minute": [ 119, 120, 121, 122, 123, 124 ],
+            "rst_n": [ 5 ]
+          }
+        },
+        "counter_all_inst": {
+          "hide_name": 0,
+          "type": "counter_all",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:186.13-202.2"
+          },
+          "port_directions": {
+            "clk": "input",
+            "day": "output",
+            "day_num": "input",
+            "dec": "input",
+            "done_dec": "output",
+            "done_inc": "output",
+            "en": "input",
+            "hour": "output",
+            "hour_num": "input",
+            "inc": "input",
+            "minute": "output",
+            "month": "output",
+            "reset_n": "input",
+            "second": "output",
+            "year": "output"
+          },
+          "connections": {
+            "clk": [ 4 ],
+            "day": [ 125, 126, 127, 128, 129 ],
+            "day_num": [ 130, 131, 132, 133, 134 ],
+            "dec": [ 135, 136, 137, 138, 139, 140 ],
+            "done_dec": [ 141, 142, 143, 144, 145 ],
+            "done_inc": [ 146, 147, 148, 149, 150 ],
+            "en": [ 151, 152, 153, 154, 155, 156 ],
+            "hour": [ 114, 115, 116, 117, 118 ],
+            "hour_num": [ 157, 158, 159, 160, 161 ],
+            "inc": [ 162, 163, 164, 165, 166, 167 ],
+            "minute": [ 119, 120, 121, 122, 123, 124 ],
+            "month": [ 168, 169, 170, 171 ],
+            "reset_n": [ 5 ],
+            "second": [ 172, 173, 174, 175, 176, 177 ],
+            "year": [ 178, 179, 180, 181, 182, 183, 184 ]
+          }
+        },
+        "decode_all_inst": {
+          "hide_name": 0,
+          "type": "decode_all",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:234.12-247.2"
+          },
+          "port_directions": {
+            "day": "input",
+            "hour": "input",
+            "led_day": "output",
+            "led_hour": "output",
+            "led_min": "output",
+            "led_month": "output",
+            "led_sec": "output",
+            "led_year": "output",
+            "minute": "input",
+            "month": "input",
+            "second": "input",
+            "year": "input"
+          },
+          "connections": {
+            "day": [ 125, 126, 127, 128, 129 ],
+            "hour": [ 114, 115, 116, 117, 118 ],
+            "led_day": [ 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43 ],
+            "led_hour": [ 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85 ],
+            "led_min": [ 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99 ],
+            "led_month": [ 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57 ],
+            "led_sec": [ 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113 ],
+            "led_year": [ 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71 ],
+            "minute": [ 119, 120, 121, 122, 123, 124 ],
+            "month": [ 168, 169, 170, 171 ],
+            "second": [ 172, 173, 174, 175, 176, 177 ],
+            "year": [ 178, 179, 180, 181, 182, 183, 184 ]
+          }
+        },
+        "decode_day_inst": {
+          "hide_name": 0,
+          "type": "decode_day",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:78.12-88.2"
+          },
+          "port_directions": {
+            "am_pm": "input",
+            "day_num": "output",
+            "hour_num": "output",
+            "month": "input",
+            "year": "input"
+          },
+          "connections": {
+            "am_pm": [ 16 ],
+            "day_num": [ 130, 131, 132, 133, 134 ],
+            "hour_num": [ 157, 158, 159, 160, 161 ],
+            "month": [ 168, 169, 170, 171 ],
+            "year": [ 178, 179, 180, 181, 182, 183, 184 ]
+          }
+        },
+        "decode_input_inst": {
+          "hide_name": 0,
+          "type": "decode_input",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:62.14-76.2"
+          },
+          "port_directions": {
+            "button_dec": "input",
+            "button_inc": "input",
+            "dec": "output",
+            "done_dec": "input",
+            "done_inc": "input",
+            "en": "output",
+            "inc": "output",
+            "mode": "input",
+            "select": "input"
+          },
+          "connections": {
+            "button_dec": [ 15 ],
+            "button_inc": [ 14 ],
+            "dec": [ 135, 136, 137, 138, 139, 140 ],
+            "done_dec": [ 141, 142, 143, 144, 145 ],
+            "done_inc": [ 146, 147, 148, 149, 150 ],
+            "en": [ 151, 152, 153, 154, 155, 156 ],
+            "inc": [ 162, 163, 164, 165, 166, 167 ],
+            "mode": [ 6, 7 ],
+            "select": [ 8, 9, 10, 11, 12, 13 ]
+          }
+        }
+      },
+      "netnames": {
+        "VGND": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:4.15-4.19"
+          }
+        },
+        "VPWR": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:3.15-3.19"
+          }
+        },
+        "alarm_hour": {
+          "hide_name": 0,
+          "bits": [ 23, 24, 25, 26, 27 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:18.21-18.31"
+          }
+        },
+        "alarm_i": {
+          "hide_name": 0,
+          "bits": [ 28 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:19.21-19.28"
+          }
+        },
+        "alarm_min": {
+          "hide_name": 0,
+          "bits": [ 17, 18, 19, 20, 21, 22 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:17.21-17.30"
+          }
+        },
+        "alarm_o": {
+          "hide_name": 0,
+          "bits": [ 29 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:20.21-20.28"
+          }
+        },
+        "am_pm": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:15.21-15.26"
+          }
+        },
+        "button_dec": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:13.21-13.31"
+          }
+        },
+        "button_inc": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:12.21-12.31"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:6.21-6.24"
+          }
+        },
+        "day": {
+          "hide_name": 0,
+          "bits": [ 125, 126, 127, 128, 129 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:32.15-32.18"
+          }
+        },
+        "day_num": {
+          "hide_name": 0,
+          "bits": [ 130, 131, 132, 133, 134 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:39.12-39.19"
+          }
+        },
+        "dec": {
+          "hide_name": 0,
+          "bits": [ 135, 136, 137, 138, 139, 140 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:46.12-46.15"
+          }
+        },
+        "done_dec": {
+          "hide_name": 0,
+          "bits": [ 141, 142, 143, 144, 145 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:43.12-43.20"
+          }
+        },
+        "done_inc": {
+          "hide_name": 0,
+          "bits": [ 146, 147, 148, 149, 150 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:42.12-42.20"
+          }
+        },
+        "en": {
+          "hide_name": 0,
+          "bits": [ 151, 152, 153, 154, 155, 156 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:48.12-48.14"
+          }
+        },
+        "hour": {
+          "hide_name": 0,
+          "bits": [ 114, 115, 116, 117, 118 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:35.15-35.19"
+          }
+        },
+        "hour_num": {
+          "hide_name": 0,
+          "bits": [ 157, 158, 159, 160, 161 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:40.12-40.20"
+          }
+        },
+        "inc": {
+          "hide_name": 0,
+          "bits": [ 162, 163, 164, 165, 166, 167 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:45.12-45.15"
+          }
+        },
+        "led_day": {
+          "hide_name": 0,
+          "bits": [ 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:22.21-22.28"
+          }
+        },
+        "led_hour": {
+          "hide_name": 0,
+          "bits": [ 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:26.21-26.29"
+          }
+        },
+        "led_min": {
+          "hide_name": 0,
+          "bits": [ 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:27.21-27.28"
+          }
+        },
+        "led_month": {
+          "hide_name": 0,
+          "bits": [ 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:23.21-23.30"
+          }
+        },
+        "led_sec": {
+          "hide_name": 0,
+          "bits": [ 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:28.21-28.28"
+          }
+        },
+        "led_year": {
+          "hide_name": 0,
+          "bits": [ 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:24.21-24.29"
+          }
+        },
+        "minute": {
+          "hide_name": 0,
+          "bits": [ 119, 120, 121, 122, 123, 124 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:36.15-36.21"
+          }
+        },
+        "mode": {
+          "hide_name": 0,
+          "bits": [ 6, 7 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:9.21-9.25"
+          }
+        },
+        "month": {
+          "hide_name": 0,
+          "bits": [ 168, 169, 170, 171 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:33.15-33.20"
+          }
+        },
+        "reset_n": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:7.21-7.28"
+          }
+        },
+        "second": {
+          "hide_name": 0,
+          "bits": [ 172, 173, 174, 175, 176, 177 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:37.15-37.21"
+          }
+        },
+        "select": {
+          "hide_name": 0,
+          "bits": [ 8, 9, 10, 11, 12, 13 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:10.21-10.27"
+          }
+        },
+        "year": {
+          "hide_name": 0,
+          "bits": [ 178, 179, 180, 181, 182, 183, 184 ],
+          "attributes": {
+            "src": "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:34.15-34.19"
+          }
+        }
+      }
+    }
+  }
+}

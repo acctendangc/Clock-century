@@ -1,0 +1,26 @@
+106. Printing statistics.
+
+=== clock_century ===
+
+   Number of wires:                 88
+   Number of wire bits:            181
+   Number of public wires:          88
+   Number of public wire bits:     181
+   Number of ports:                 17
+   Number of port bits:            110
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     alarm                           1
+     counter_all                     1
+     decode_all                      1
+     decode_day                      1
+     decode_input                    1
+
+   Area for cell type \counter_all is unknown!
+   Area for cell type \alarm is unknown!
+   Area for cell type \decode_all is unknown!
+   Area for cell type \decode_day is unknown!
+   Area for cell type \decode_input is unknown!
+

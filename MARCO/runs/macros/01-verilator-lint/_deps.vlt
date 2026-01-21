@@ -1,0 +1,5 @@
+`verilator_config
+lint_off -rule DECLFILENAME
+lint_off -rule EOFNEWLINE
+lint_off -rule UNDRIVEN -file "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/runs/macros/tmp/f0ab71682aaa4e43a6c92a4cb6dbb0e0.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/runs/macros/tmp/f0ab71682aaa4e43a6c92a4cb6dbb0e0.bb.v"

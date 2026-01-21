@@ -1,0 +1,45 @@
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/runs/macros/tmp/f9be8ad3af4a4c709b170fb4283c3660.lib ",
+   "modules": {
+      "\\clock_century": {
+         "num_wires":         88,
+         "num_wire_bits":     181,
+         "num_pub_wires":     88,
+         "num_pub_wire_bits": 181,
+         "num_ports":         17,
+         "num_port_bits":     110,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         5,
+         "num_cells_by_type": {
+            "alarm": 1,
+            "counter_all": 1,
+            "decode_all": 1,
+            "decode_day": 1,
+            "decode_input": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         88,
+         "num_wire_bits":     181,
+         "num_pub_wires":     88,
+         "num_pub_wire_bits": 181,
+         "num_ports":         17,
+         "num_port_bits":     110,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         5,
+         "num_cells_by_type": {
+            "alarm": 1,
+            "counter_all": 1,
+            "decode_all": 1,
+            "decode_day": 1,
+            "decode_input": 1
+         }
+      }
+}
+

@@ -1,0 +1,26 @@
+%Error: /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:51:1: Cannot find file containing module: 'alarm'
+   51 | alarm alarm_inst(
+      | ^~~~~
+%Error: /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:51:1: This may be because there's no search path specified with -I<dir>.
+   51 | alarm alarm_inst(
+      | ^~~~~
+        ... Looked in:
+             alarm
+             alarm.v
+             alarm.sv
+             obj_dir/alarm
+             obj_dir/alarm.v
+             obj_dir/alarm.sv
+%Error: /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:62:1: Cannot find file containing module: 'decode_input'
+   62 | decode_input decode_input_inst(
+      | ^~~~~~~~~~~~
+%Error: /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:78:1: Cannot find file containing module: 'decode_day'
+   78 | decode_day decode_day_inst(
+      | ^~~~~~~~~~
+%Error: /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:186:1: Cannot find file containing module: 'counter_all'
+  186 | counter_all counter_all_inst(
+      | ^~~~~~~~~~~
+%Error: /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/hdl/clock_century.v:234:1: Cannot find file containing module: 'decode_all'
+  234 | decode_all decode_all_inst(
+      | ^~~~~~~~~~
+%Error: Exiting due to 6 error(s)

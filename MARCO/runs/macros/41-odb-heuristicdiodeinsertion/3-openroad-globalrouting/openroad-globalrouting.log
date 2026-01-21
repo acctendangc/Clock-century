@@ -1,0 +1,214 @@
+Reading OpenROAD database at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/runs/macros/41-odb-heuristicdiodeinsertion/2-openroad-detailedplacement/clock_century.odb'…
+Reading library file at '/home/lroot/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading library file at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/counter_all__max_ss_100C_1v60.lib'…
+Reading library file at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/alarm__max_ss_100C_1v60.lib'…
+Reading library file at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_all__max_ss_100C_1v60.lib'…
+Reading library file at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_day__max_ss_100C_1v60.lib'…
+Reading library file at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_input__max_ss_100C_1v60.lib'…
+Reading macro library file at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/counter_all__max_ss_100C_1v60.lib'…
+[WARNING STA-1140] /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/counter_all__max_ss_100C_1v60.lib line 1, library counter_all already exists.
+Reading macro library file at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/alarm__max_ss_100C_1v60.lib'…
+[WARNING STA-1140] /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/alarm__max_ss_100C_1v60.lib line 1, library alarm already exists.
+Reading macro library file at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_all__max_ss_100C_1v60.lib'…
+[WARNING STA-1140] /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_all__max_ss_100C_1v60.lib line 1, library decode_all already exists.
+Reading macro library file at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_day__max_ss_100C_1v60.lib'…
+[WARNING STA-1140] /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_day__max_ss_100C_1v60.lib line 1, library decode_day already exists.
+Reading macro library file at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_input__max_ss_100C_1v60.lib'…
+[WARNING STA-1140] /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_input__max_ss_100C_1v60.lib line 1, library decode_input already exists.
+Reading design constraints file at '/nix/store/ss2cw3sxbrwwx9jl0rrppbw4kgcmgi2n-python3-3.11.9-env/lib/python3.11/site-packages/openlane/scripts/base.sdc'…
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 200000000
+[INFO] Setting input delay to: 200000000
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[INFO] Setting timing derate to: 5%
+[INFO] Setting signal min routing layer to: met1 and clock min routing layer to met1. 
+[INFO] Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+-congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0019] Found 4 clock nets.
+[WARNING GRT-0036] Pin alarm_hour[0] is outside die area.
+[WARNING GRT-0036] Pin alarm_hour[1] is outside die area.
+[WARNING GRT-0036] Pin alarm_hour[2] is outside die area.
+[WARNING GRT-0036] Pin alarm_hour[3] is outside die area.
+[WARNING GRT-0036] Pin alarm_hour[4] is outside die area.
+[WARNING GRT-0036] Pin alarm_i is outside die area.
+[WARNING GRT-0036] Pin alarm_min[0] is outside die area.
+[WARNING GRT-0036] Pin alarm_min[1] is outside die area.
+[WARNING GRT-0036] Pin alarm_min[2] is outside die area.
+[WARNING GRT-0036] Pin alarm_min[3] is outside die area.
+[WARNING GRT-0036] Pin alarm_min[4] is outside die area.
+[WARNING GRT-0036] Pin alarm_min[5] is outside die area.
+[WARNING GRT-0036] Pin alarm_o is outside die area.
+[WARNING GRT-0036] Pin am_pm is outside die area.
+[WARNING GRT-0036] Pin button_dec is outside die area.
+[WARNING GRT-0036] Pin button_inc is outside die area.
+[WARNING GRT-0036] Pin clk is outside die area.
+[WARNING GRT-0036] Pin led_day[0] is outside die area.
+[WARNING GRT-0036] Pin led_day[10] is outside die area.
+[WARNING GRT-0036] Pin led_day[11] is outside die area.
+[WARNING GRT-0036] Pin led_day[12] is outside die area.
+[WARNING GRT-0036] Pin led_day[13] is outside die area.
+[WARNING GRT-0036] Pin led_day[1] is outside die area.
+[WARNING GRT-0036] Pin led_day[2] is outside die area.
+[WARNING GRT-0036] Pin led_day[3] is outside die area.
+[WARNING GRT-0036] Pin led_day[4] is outside die area.
+[WARNING GRT-0036] Pin led_day[5] is outside die area.
+[WARNING GRT-0036] Pin led_day[6] is outside die area.
+[WARNING GRT-0036] Pin led_day[7] is outside die area.
+[WARNING GRT-0036] Pin led_day[8] is outside die area.
+[WARNING GRT-0036] Pin led_day[9] is outside die area.
+[WARNING GRT-0036] Pin led_hour[0] is outside die area.
+[WARNING GRT-0036] Pin led_hour[10] is outside die area.
+[WARNING GRT-0036] Pin led_hour[11] is outside die area.
+[WARNING GRT-0036] Pin led_hour[12] is outside die area.
+[WARNING GRT-0036] Pin led_hour[13] is outside die area.
+[WARNING GRT-0036] Pin led_hour[1] is outside die area.
+[WARNING GRT-0036] Pin led_hour[2] is outside die area.
+[WARNING GRT-0036] Pin led_hour[3] is outside die area.
+[WARNING GRT-0036] Pin led_hour[4] is outside die area.
+[WARNING GRT-0036] Pin led_hour[5] is outside die area.
+[WARNING GRT-0036] Pin led_hour[6] is outside die area.
+[WARNING GRT-0036] Pin led_hour[7] is outside die area.
+[WARNING GRT-0036] Pin led_hour[8] is outside die area.
+[WARNING GRT-0036] Pin led_hour[9] is outside die area.
+[WARNING GRT-0036] Pin led_min[0] is outside die area.
+[WARNING GRT-0036] Pin led_min[10] is outside die area.
+[WARNING GRT-0036] Pin led_min[11] is outside die area.
+[WARNING GRT-0036] Pin led_min[12] is outside die area.
+[WARNING GRT-0036] Pin led_min[13] is outside die area.
+[WARNING GRT-0036] Pin led_min[1] is outside die area.
+[WARNING GRT-0036] Pin led_min[2] is outside die area.
+[WARNING GRT-0036] Pin led_min[3] is outside die area.
+[WARNING GRT-0036] Pin led_min[4] is outside die area.
+[WARNING GRT-0036] Pin led_min[5] is outside die area.
+[WARNING GRT-0036] Pin led_min[6] is outside die area.
+[WARNING GRT-0036] Pin led_min[7] is outside die area.
+[WARNING GRT-0036] Pin led_min[8] is outside die area.
+[WARNING GRT-0036] Pin led_min[9] is outside die area.
+[WARNING GRT-0036] Pin led_month[0] is outside die area.
+[WARNING GRT-0036] Pin led_month[10] is outside die area.
+[WARNING GRT-0036] Pin led_month[11] is outside die area.
+[WARNING GRT-0036] Pin led_month[12] is outside die area.
+[WARNING GRT-0036] Pin led_month[13] is outside die area.
+[WARNING GRT-0036] Pin led_month[1] is outside die area.
+[WARNING GRT-0036] Pin led_month[2] is outside die area.
+[WARNING GRT-0036] Pin led_month[3] is outside die area.
+[WARNING GRT-0036] Pin led_month[4] is outside die area.
+[WARNING GRT-0036] Pin led_month[5] is outside die area.
+[WARNING GRT-0036] Pin led_month[6] is outside die area.
+[WARNING GRT-0036] Pin led_month[7] is outside die area.
+[WARNING GRT-0036] Pin led_month[8] is outside die area.
+[WARNING GRT-0036] Pin led_month[9] is outside die area.
+[WARNING GRT-0036] Pin led_sec[0] is outside die area.
+[WARNING GRT-0036] Pin led_sec[10] is outside die area.
+[WARNING GRT-0036] Pin led_sec[11] is outside die area.
+[WARNING GRT-0036] Pin led_sec[12] is outside die area.
+[WARNING GRT-0036] Pin led_sec[13] is outside die area.
+[WARNING GRT-0036] Pin led_sec[1] is outside die area.
+[WARNING GRT-0036] Pin led_sec[2] is outside die area.
+[WARNING GRT-0036] Pin led_sec[3] is outside die area.
+[WARNING GRT-0036] Pin led_sec[4] is outside die area.
+[WARNING GRT-0036] Pin led_sec[5] is outside die area.
+[WARNING GRT-0036] Pin led_sec[6] is outside die area.
+[WARNING GRT-0036] Pin led_sec[7] is outside die area.
+[WARNING GRT-0036] Pin led_sec[8] is outside die area.
+[WARNING GRT-0036] Pin led_sec[9] is outside die area.
+[WARNING GRT-0036] Pin led_year[0] is outside die area.
+[WARNING GRT-0036] Pin led_year[10] is outside die area.
+[WARNING GRT-0036] Pin led_year[11] is outside die area.
+[WARNING GRT-0036] Pin led_year[12] is outside die area.
+[WARNING GRT-0036] Pin led_year[13] is outside die area.
+[WARNING GRT-0036] Pin led_year[1] is outside die area.
+[WARNING GRT-0036] Pin led_year[2] is outside die area.
+[WARNING GRT-0036] Pin led_year[3] is outside die area.
+[WARNING GRT-0036] Pin led_year[4] is outside die area.
+[WARNING GRT-0036] Pin led_year[5] is outside die area.
+[WARNING GRT-0036] Pin led_year[6] is outside die area.
+[WARNING GRT-0036] Pin led_year[7] is outside die area.
+[WARNING GRT-0036] Pin led_year[8] is outside die area.
+[WARNING GRT-0036] Pin led_year[9] is outside die area.
+[WARNING GRT-0036] Pin mode[0] is outside die area.
+[WARNING GRT-0036] Pin mode[1] is outside die area.
+[WARNING GRT-0036] Pin reset_n is outside die area.
+[WARNING GRT-0036] Pin select[0] is outside die area.
+[WARNING GRT-0036] Pin select[1] is outside die area.
+[WARNING GRT-0036] Pin select[2] is outside die area.
+[WARNING GRT-0036] Pin select[3] is outside die area.
+[WARNING GRT-0036] Pin select[4] is outside die area.
+[WARNING GRT-0036] Pin select[5] is outside die area.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 6
+[INFO GRT-0003] Macros: 5
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0004] Blockages: 453
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal      49870         22649          54.58%
+met2       Vertical        37157         20107          45.89%
+met3       Horizontal      24935         14668          41.18%
+met4       Vertical        14966          7549          49.56%
+met5       Horizontal       4987          2017          59.55%
+---------------------------------------------------------------
+
+[INFO GRT-0101] Running extra iterations to remove overflow.
+[INFO GRT-0197] Via related to pin nodes: 1066
+[INFO GRT-0198] Via related Steiner nodes: 50
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 1680
+[INFO GRT-0112] Final usage 3D: 9710
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1             22649          2086            9.21%             0 /  0 /  0
+met2             20107          2041           10.15%             0 /  0 /  0
+met3             14668           441            3.01%             0 /  0 /  0
+met4              7549            92            1.22%             0 /  0 /  0
+met5              2017            10            0.50%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total            66990          4670            6.97%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 38226 um
+[INFO GRT-0014] Routed nets: 294
+%OL_CREATE_REPORT antenna.rpt
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO ANT-0002] Found 0 net violations.
+[INFO ANT-0001] Found 0 pin violations.
+%OL_END_REPORT
+[INFO] Setting RC values…
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+counter_all_inst matched with counter_all_inst
+alarm_inst matched with alarm_inst
+decode_all_inst matched with decode_all_inst
+decode_day_inst matched with decode_day_inst
+decode_input_inst matched with decode_input_inst
+Updating metrics…
+Cell type report:                       Count       Area
+  Macro                                     5   25504.02
+  Fill cell                               508    1906.83
+  Tap cell                                966    1208.66
+  Antenna cell                            276     690.66
+  Clock buffer                              3      75.07
+  Timing Repair Buffer                    110     523.00
+  Clock inverter                            1      30.03
+  Total                                  1869   29938.27
+Writing OpenROAD database to '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/runs/macros/41-odb-heuristicdiodeinsertion/3-openroad-globalrouting/clock_century.odb'…
+Writing layout to '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/runs/macros/41-odb-heuristicdiodeinsertion/3-openroad-globalrouting/clock_century.def'…

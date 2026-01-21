@@ -1,0 +1,114 @@
+Reading timing models for corner nom_tt_025C_1v80…
+Reading timing library for the 'nom_tt_025C_1v80' corner at '/home/lroot/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading timing library for the 'nom_tt_025C_1v80' corner at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/counter_all__max_ss_100C_1v60.lib'…
+Reading timing library for the 'nom_tt_025C_1v80' corner at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/alarm__max_ss_100C_1v60.lib'…
+Reading timing library for the 'nom_tt_025C_1v80' corner at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_all__max_ss_100C_1v60.lib'…
+Reading timing library for the 'nom_tt_025C_1v80' corner at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_day__max_ss_100C_1v60.lib'…
+Reading timing library for the 'nom_tt_025C_1v80' corner at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_input__max_ss_100C_1v60.lib'…
+Reading timing models for corner nom_ff_n40C_1v95…
+Reading timing library for the 'nom_ff_n40C_1v95' corner at '/home/lroot/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib'…
+Reading timing library for the 'nom_ff_n40C_1v95' corner at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/counter_all__max_ss_100C_1v60.lib'…
+[WARNING STA-1140] /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/counter_all__max_ss_100C_1v60.lib line 1, library counter_all already exists.
+Reading timing library for the 'nom_ff_n40C_1v95' corner at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/alarm__max_ss_100C_1v60.lib'…
+[WARNING STA-1140] /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/alarm__max_ss_100C_1v60.lib line 1, library alarm already exists.
+Reading timing library for the 'nom_ff_n40C_1v95' corner at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_all__max_ss_100C_1v60.lib'…
+[WARNING STA-1140] /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_all__max_ss_100C_1v60.lib line 1, library decode_all already exists.
+Reading timing library for the 'nom_ff_n40C_1v95' corner at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_day__max_ss_100C_1v60.lib'…
+[WARNING STA-1140] /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_day__max_ss_100C_1v60.lib line 1, library decode_day already exists.
+Reading timing library for the 'nom_ff_n40C_1v95' corner at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_input__max_ss_100C_1v60.lib'…
+[WARNING STA-1140] /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_input__max_ss_100C_1v60.lib line 1, library decode_input already exists.
+Reading timing models for corner nom_ss_100C_1v60…
+Reading timing library for the 'nom_ss_100C_1v60' corner at '/home/lroot/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib'…
+Reading timing library for the 'nom_ss_100C_1v60' corner at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/counter_all__max_ss_100C_1v60.lib'…
+[WARNING STA-1140] /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/counter_all__max_ss_100C_1v60.lib line 1, library counter_all already exists.
+Reading timing library for the 'nom_ss_100C_1v60' corner at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/alarm__max_ss_100C_1v60.lib'…
+[WARNING STA-1140] /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/alarm__max_ss_100C_1v60.lib line 1, library alarm already exists.
+Reading timing library for the 'nom_ss_100C_1v60' corner at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_all__max_ss_100C_1v60.lib'…
+[WARNING STA-1140] /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_all__max_ss_100C_1v60.lib line 1, library decode_all already exists.
+Reading timing library for the 'nom_ss_100C_1v60' corner at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_day__max_ss_100C_1v60.lib'…
+[WARNING STA-1140] /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_day__max_ss_100C_1v60.lib line 1, library decode_day already exists.
+Reading timing library for the 'nom_ss_100C_1v60' corner at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_input__max_ss_100C_1v60.lib'…
+[WARNING STA-1140] /mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/macros/decode_input__max_ss_100C_1v60.lib line 1, library decode_input already exists.
+Reading OpenROAD database at '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/runs/macros/27-openroad-globalplacement/clock_century.odb'…
+Reading design constraints file at '/nix/store/ss2cw3sxbrwwx9jl0rrppbw4kgcmgi2n-python3-3.11.9-env/lib/python3.11/site-packages/openlane/scripts/base.sdc'…
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 200000000
+[INFO] Setting input delay to: 200000000
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[INFO] Setting timing derate to: 5%
+[INFO] Setting RC values…
+[INFO RSZ-0027] Inserted 24 input buffers.
+[INFO RSZ-0028] Inserted 85 output buffers.
+[WARNING RSZ-0065] max wire length less than 6335u increases wire delays.
+Iteration | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------
+        0 |       0 |       0 |             0 |       290
+       10 |       0 |       0 |             0 |       280
+       20 |       1 |       0 |             0 |       270
+       30 |      11 |       0 |             0 |       260
+       40 |      21 |       0 |             0 |       250
+       50 |      31 |       0 |             0 |       240
+       60 |      41 |       0 |             0 |       230
+       70 |      51 |       0 |             0 |       220
+       80 |      61 |       0 |             0 |       210
+       90 |      71 |       0 |             0 |       200
+      100 |      79 |       0 |             0 |       190
+      110 |      79 |       0 |             0 |       180
+      120 |      79 |       0 |             0 |       170
+      130 |      79 |       0 |             0 |       160
+      140 |      79 |       0 |             0 |       150
+      150 |      79 |       0 |             0 |       140
+      160 |      79 |       0 |             0 |       130
+      170 |      79 |       0 |             0 |       120
+      180 |      79 |       0 |             0 |       110
+      190 |      80 |       0 |             0 |       100
+      200 |      80 |       0 |             0 |        90
+      210 |      80 |       0 |             0 |        80
+      220 |      80 |       0 |             0 |        70
+      230 |      84 |       0 |             0 |        60
+      240 |      87 |       0 |             0 |        50
+      250 |      97 |       1 |             1 |        40
+      260 |      97 |       1 |             1 |        30
+      270 |      97 |       1 |             1 |        20
+      280 |      97 |       1 |             1 |        10
+      290 |      97 |       1 |             1 |         0
+    final |      97 |       1 |             1 |         0
+---------------------------------------------------------
+[INFO RSZ-0037] Found 1 long wires.
+[INFO RSZ-0038] Inserted 1 buffers in 1 nets.
+[INFO RSZ-0039] Resized 97 instances.
+Placement Analysis
+---------------------------------
+total displacement         89.6 u
+average displacement        0.1 u
+max displacement            2.9 u
+original HPWL           29854.7 u
+legalized HPWL          29895.4 u
+delta HPWL                    0 %
+
+[INFO DPL-0020] Mirrored 37 instances
+[INFO DPL-0021] HPWL before           29895.4 u
+[INFO DPL-0022] HPWL after            29844.7 u
+[INFO DPL-0023] HPWL delta               -0.2 %
+[INFO] Setting RC values…
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+counter_all_inst matched with counter_all_inst
+alarm_inst matched with alarm_inst
+decode_all_inst matched with decode_all_inst
+decode_day_inst matched with decode_day_inst
+decode_input_inst matched with decode_input_inst
+Updating metrics…
+Cell type report:                       Count       Area
+  Macro                                     5   25504.02
+  Fill cell                               508    1906.83
+  Tap cell                                966    1208.66
+  Timing Repair Buffer                    110     523.00
+  Total                                  1589   29142.51
+Writing OpenROAD database to '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/runs/macros/31-openroad-repairdesignpostgpl/clock_century.odb'…
+Writing netlist to '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/runs/macros/31-openroad-repairdesignpostgpl/clock_century.nl.v'…
+Writing powered netlist to '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/runs/macros/31-openroad-repairdesignpostgpl/clock_century.pnl.v'…
+Writing layout to '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/runs/macros/31-openroad-repairdesignpostgpl/clock_century.def'…
+Writing timing constraints to '/mnt/e/BKHN_DTVT/VLSI/MARCO/MARCO/runs/macros/31-openroad-repairdesignpostgpl/clock_century.sdc'…

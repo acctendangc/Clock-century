@@ -1,0 +1,16 @@
+┏━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━┓
+┃ P / R ┃ Partial ┃ Required ┃ Net          ┃ Pin                           ┃ Layer ┃
+┡━━━━━━━╇━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━┩
+│ 2.70  │ 1080.95 │ 400.00   │ day_num[4\]  │ counter_all_inst/day_num[4]   │ met3  │
+│ 2.56  │ 1022.66 │ 400.00   │ done_dec[4\] │ decode_input_inst/done_dec[4] │ met3  │
+│ 2.47  │ 986.48  │ 400.00   │ day_num[3\]  │ counter_all_inst/day_num[3]   │ met3  │
+│ 2.45  │ 980.19  │ 400.00   │ minute[1\]   │ decode_all_inst/minute[1]     │ met4  │
+│ 1.89  │ 754.37  │ 400.00   │ day_num[2\]  │ counter_all_inst/day_num[2]   │ met3  │
+│ 1.84  │ 735.77  │ 400.00   │ hour_num[0\] │ counter_all_inst/hour_num[0]  │ met5  │
+│ 1.48  │ 592.98  │ 400.00   │ hour_num[3\] │ counter_all_inst/hour_num[3]  │ met3  │
+│ 1.18  │ 3276.98 │ 2778.20  │ year[4\]     │ decode_all_inst/year[4]       │ met5  │
+│ 1.12  │ 448.65  │ 400.00   │ net63        │ output63/A                    │ met1  │
+│ 1.10  │ 441.43  │ 400.00   │ net61        │ output61/A                    │ met1  │
+│ 1.10  │ 439.67  │ 400.00   │ net62        │ output62/A                    │ met1  │
+│ 1.03  │ 411.40  │ 400.00   │ net67        │ output67/A                    │ met1  │
+└───────┴─────────┴──────────┴──────────────┴───────────────────────────────┴───────┘

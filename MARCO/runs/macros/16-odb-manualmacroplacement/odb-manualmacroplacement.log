@@ -1,0 +1,10 @@
+[WARNING ORD-0039] .openroad ignored with -python
+Placing the following macros:
+{'counter_all_inst': ['counter_all_inst', 40000, 160000, 'N'], 'alarm_inst': ['alarm_inst', 280000, 40000, 'N'], 'decode_all_inst': ['decode_all_inst', 180000, 160000, 'N'], 'decode_day_inst': ['decode_day_inst', 40000, 40000, 'N'], 'decode_input_inst': ['decode_input_inst', 180000, 40000, 'N']}
+Design name: clock_century
+Placing alarm_inst
+Placing counter_all_inst
+Placing decode_all_inst
+Placing decode_day_inst
+Placing decode_input_inst
+Successfully placed 5 instances.
